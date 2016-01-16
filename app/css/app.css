@@ -1,0 +1,61 @@
+body{
+  background: #ddd;
+}
+
+@-webkit-keyframes removed-item-animation {
+  from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@-moz-keyframes removed-item-animation {
+  from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@-o-keyframes removed-item-animation {
+  from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes removed-item-animation {
+  from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+#box {
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	margin-top: -50px;
+  	margin-left: -50px;
+	-webkit-animation: removed-item-animation .6s forwards; /* Safari 4+ */
+  	-moz-animation:    removed-item-animation .6s forwards; /* Fx 5+ */
+  	-o-animation:      removed-item-animation .6s forwards; /* Opera 12+ */
+  	animation:         removed-item-animation .6s forwards; /* IE 10+, Fx 29+ */
+  	animation-delay: 2s;
+}
