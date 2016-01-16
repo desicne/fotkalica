@@ -1,6 +1,40 @@
 body{
-  background: #ddd;
+  	background: #ddd;
+  	padding: 0; 
+  	margin: 0;
+  	height:100%;
 }
+
+.logoLoad {
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	margin-top: -50px;
+  	margin-left: -50px;
+	-webkit-animation: removed-item-animation .6s forwards; /* Safari 4+ */
+  	-moz-animation:    removed-item-animation .6s forwards; /* Fx 5+ */
+  	-o-animation:      removed-item-animation .6s forwards; /* Opera 12+ */
+  	animation:         removed-item-animation .6s forwards; /* IE 10+, Fx 29+ */
+  	animation-delay: 2s;
+}
+
+.main {
+	position:absolute; 
+	top:0; 
+	left:0;
+	width:100%;
+	height:100%;
+  	background-attachment: scroll;
+  	background-position: 0% 0%; 
+  	background-size: cover; 
+  	background-repeat: no-repeat;
+}
+
+/*
+*
+*	Animation of the logo
+*
+*/
 
 @-webkit-keyframes removed-item-animation {
   from {
@@ -45,17 +79,4 @@ body{
         opacity: 0;
         transform: scale(0);
     }
-}
-
-#box {
-	position: absolute;
-	top: 50%; 
-	left: 50%; 
-	margin-top: -50px;
-  	margin-left: -50px;
-	-webkit-animation: removed-item-animation .6s forwards; /* Safari 4+ */
-  	-moz-animation:    removed-item-animation .6s forwards; /* Fx 5+ */
-  	-o-animation:      removed-item-animation .6s forwards; /* Opera 12+ */
-  	animation:         removed-item-animation .6s forwards; /* IE 10+, Fx 29+ */
-  	animation-delay: 2s;
 }
