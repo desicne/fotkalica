@@ -108,3 +108,9 @@ body{
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
 }
+
+.fade-in.logo{
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
