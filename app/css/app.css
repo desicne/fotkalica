@@ -3,6 +3,13 @@ body{
   	padding: 0; 
   	margin: 0;
   	height:100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 300;
+  color:#ddd;
 }
 
 .logoLoad {
@@ -24,7 +31,7 @@ body{
 	left:0;
 	width:100%;
 	height:100%;
-  background-image: url('../images/back1.jpg');
+  background-image: url('../images/back.jpg');
   background-attachment: scroll;
 	background-position: 0% 0%; 
   background-size: cover; 
@@ -137,4 +144,10 @@ body{
   -webkit-box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
   -moz-box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
   box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
+}
+
+.shadow-main{
+  -webkit-box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
+  -moz-box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
+  box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
 }
