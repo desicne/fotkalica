@@ -1,5 +1,5 @@
 body{
-  	background: #ddd;
+  	background: #fafafa;
   	padding: 0; 
   	margin: 0;
   	height:100%;
@@ -9,8 +9,8 @@ body{
 	position: absolute;
 	top: 50%; 
 	left: 50%; 
-	margin-top: -50px;
-  margin-left: -50px;
+	margin-top: -125px;
+  margin-left: -125px;
 	-webkit-animation: removed-item-animation .6s forwards; /* Safari 4+ */
 	-moz-animation:    removed-item-animation .6s forwards; /* Fx 5+ */
   -o-animation:      removed-item-animation .6s forwards; /* Opera 12+ */
@@ -24,7 +24,7 @@ body{
 	left:0;
 	width:100%;
 	height:100%;
-  background-image: url('../images/back.jpg');
+  background-image: url('../images/back1.jpg');
   background-attachment: scroll;
 	background-position: 0% 0%; 
   background-size: cover; 
@@ -109,8 +109,20 @@ body{
   animation-delay: 1.6s;
 }
 
-.fade-in.logo{
+.fade-in.firstMenu{
   -webkit-animation-delay: 2.1s;
   -moz-animation-delay: 2.1s;
   animation-delay: 2.1s;
+}
+
+.fade-in.secondMenu{
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+.fade-in.thirdMenu{
+  -webkit-animation-delay: 3.3s;
+  -moz-animation-delay: 3.3s;
+  animation-delay: 3.3s;
 }
