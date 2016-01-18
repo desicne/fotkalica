@@ -11,10 +11,18 @@ h2{
   font-weight: 300;
   color:#ddd;
 }
-h2:hover { 
-    font-size: 2.3rem;
-    font-weight: 400;
-    color: #fff;
+a {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -moz-transition: -moz-transform .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+a:hover {
+    z-index:20;
+    opacity: 1.0;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 .logoLoad {
