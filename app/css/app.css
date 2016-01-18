@@ -126,3 +126,15 @@ body{
   -moz-animation-delay: 3.3s;
   animation-delay: 3.3s;
 }
+
+.fade-in.fourthMenu{
+  -webkit-animation-delay: 3.9s;
+  -moz-animation-delay: 3.9s;
+  animation-delay: 3.9s;
+}
+
+.shadow{
+  -webkit-box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
+  -moz-box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
+  box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
+}
