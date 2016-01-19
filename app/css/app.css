@@ -12,17 +12,18 @@ h2{
   color:#ddd;
 }
 a {
+  text-decoration: none;
   -webkit-transition: -webkit-transform .2s ease-in-out;
   -moz-transition: -moz-transform .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 a:hover {
-    z-index:20;
+    z-index: 20;
     opacity: 1.0;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .logoLoad {
@@ -49,6 +50,10 @@ a:hover {
 	background-position: 0% 0%; 
   background-size: cover; 
 	background-repeat: no-repeat;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 /*
