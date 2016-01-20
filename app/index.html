@@ -25,7 +25,7 @@
     <div class="main fade-in row">
 
         <a href="#" class="fade-in firstMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; height: 25%; background: rgba(254,254,254,0.85); text-align:center; display: inline-block;
-    overflow: hidden; z-index:10;">    
+    overflow: hidden; z-index:10;" onclick="homeView()">    
             
             <!-- LOGO -->
             <img src="./images/menu-logo.png" alt="Fotkalica" style="height:85%; margin-top:0.5rem; z-index:20;">
@@ -41,7 +41,7 @@
             <h2>pitanja</h2>
         </a>
         
-        <a href="#kontakt" class="fade-in fourthMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; top: 75%; height: 25%; background: rgba(255,40,255,0.85); text-align:center; z-index:10;">
+        <a href="#kontakt" onclick="getContentK()" class="fade-in fourthMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; top: 75%; height: 25%; background: rgba(255,40,255,0.85); text-align:center; z-index:10;">
             <h2>kontakt</h2>    
         </a>
 
@@ -50,12 +50,17 @@
         </div>
 
         <!-- CONTENT BOX, show on clicks-->
-        <div id="ponudaContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #259597; opacity: 0.95; z-index: 5;">
+        <div id="ponudaContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #209597; opacity: 0.95; z-index: 5;">
 
 
         </div>
 
-        <div id="pitanjaContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #259597; opacity: 0.95; z-index: 5;">
+        <div id="pitanjaContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #8b50ce; opacity: 0.95; z-index: 5;">
+
+
+        </div>
+
+        <div id="kontaktContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #f2effb; opacity: 0.95; z-index: 5;">
 
 
         </div>
