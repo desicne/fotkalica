@@ -33,11 +33,11 @@
             <!--<h2 style="color:#555555; margin: 0; padding: 0;">fotkalica</h2>-->
         </a>
 
-        <a href="#ponuda" class="fade-in secondMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; top: 25%; height: 25%; background: rgba(39,180,183,0.85); text-align:center; z-index:10;">    
+        <a href="#ponuda" id="ponuda" class="fade-in secondMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; top: 25%; height: 25%; background: rgba(39,180,183,0.85); text-align:center; z-index:10;" onclick="getContentP()">    
             <h2>ponuda</h2>
         </a>
 
-        <a href="#pitanja" class="fade-in thirdMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; top: 50%; height: 25%; background: rgba(137,115,216,0.85); text-align:center; z-index:10;">    
+        <a href="#pitanja" onclick="getContentPt()" class="fade-in thirdMenu shadow-main small-12 medium-3 large-2 columns" style="display:block; position: fixed; left: 0; top: 50%; height: 25%; background: rgba(137,115,216,0.85); text-align:center; z-index:10;">    
             <h2>pitanja</h2>
         </a>
         
@@ -50,14 +50,12 @@
         </div>
 
         <!-- CONTENT BOX, show on clicks-->
-        <div id="ponuda" class="hidden clicked small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #fefefe; opacity: 0.9; z-index: 5;">
+        <div id="ponudaContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #259597; opacity: 0.95; z-index: 5;">
 
 
+        </div>
 
-
-
-
-
+        <div id="pitanjaContent" class="hidden small-hidden medium-visible columns" style="position:fixed; right: 4%; top: 0%; height: 100%; width: 79.3333%; background: #259597; opacity: 0.95; z-index: 5;">
 
 
         </div>
