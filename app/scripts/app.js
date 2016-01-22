@@ -10,11 +10,24 @@ function homeView(){
 // NEW FUNCTION FOR THE MENU
 
 function myFunction() {
-    document.getElementById("myDIV").style.visibility = "visible"; // Code for Chrome, Safari and Opera
-    document.getElementById("myDIV").style.WebkitAnimation = "mymove 2s 1"; // Code for Chrome, Safari and Opera
-    document.getElementById("myDIV").style.animation = "mymove 2s 1";
-    document.getElementById("myDIV").style.right = "0";
-}
+    
+    var menuOne = document.getElementById("myDIV");
+
+    if(menuOne.style.visibility === "visible"){
+        menuOne.style.WebkitAnimation = "hideMove 2s 1";
+        menuOne.style.animation = "hideMove 2s 1";
+        menuOne.style.left = "0";
+        setTimeout(function(){
+            menuOne.style.visibility = "hidden";   
+            menuOne.style.left = "20%"; 
+        }, 2000);
+    } else {
+        menuOne.style.visibility = "visible"; 
+        menuOne.style.WebkitAnimation = "mymove 2s 1";
+        menuOne.style.animation = "mymove 2s 1";
+        menuOne.style.right = "0";
+    } 
+};
 
 
 

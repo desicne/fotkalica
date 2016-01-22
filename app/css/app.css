@@ -248,3 +248,14 @@ a:hover {
     from {left: -100%;}
     to {left: 20%;}
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes hideMove {
+    from {left: 20%;}
+    to {left: -100%;}
+}
+
+@keyframes hideMove {
+    from {left: 20%;}
+    to {left: -100%;}
+}
