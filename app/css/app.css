@@ -223,3 +223,27 @@ a:hover {
   -moz-box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
   box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
 }
+
+
+/*
+ *  NEW ANIMATION FOR THE MENU
+ */
+
+ #myDIV {
+    width: 80%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: -100%;}
+    to {left: 20%;}
+}
+
+@keyframes mymove {
+    from {left: -100%;}
+    to {left: 20%;}
+}

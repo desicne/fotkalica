@@ -7,6 +7,16 @@ function homeView(){
     pit.style.visibility = "hidden";
     kon.style.visibility = "hidden";
 }
+// NEW FUNCTION FOR THE MENU
+
+function myFunction() {
+    document.getElementById("myDIV").style.visibility = "visible"; // Code for Chrome, Safari and Opera
+    document.getElementById("myDIV").style.WebkitAnimation = "mymove 2s 1"; // Code for Chrome, Safari and Opera
+    document.getElementById("myDIV").style.animation = "mymove 2s 1";
+    document.getElementById("myDIV").style.right = "0";
+}
+
+
 
 
 function getContentP() {
