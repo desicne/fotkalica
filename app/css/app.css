@@ -24,17 +24,12 @@ h2{
   left:0;
   width:100%;
   height:100%;
-  position:absolute; 
-  top:0; 
-  left:0;
-  width:100%;
-  height:100%;
-  background: -moz-linear-gradient(249deg, rgba(22,223,171,0.85) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -webkit-gradient(249deg, rgba(22,223,171,0.85) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -webkit-linear-gradient(249deg, rgba(22,223,171,0.85) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -o-linear-gradient(249deg, rgba(22,223,171,0.85) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -ms-linear-gradient(249deg, rgba(22,223,171,0.85) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: linear-gradient(249deg, rgba(22,223,171,0.85) 0%, #6a16df), url('../images/back1.jpg') no-repeat;;
+  background: -moz-linear-gradient(249deg, rgba(22,223,171,0.9) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
+  background: -webkit-gradient(249deg, rgba(22,223,171,0.9) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
+  background: -webkit-linear-gradient(249deg, rgba(22,223,171,0.9) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
+  background: -o-linear-gradient(249deg, rgba(22,223,171,0.9) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
+  background: -ms-linear-gradient(249deg, rgba(22,223,171,0.9) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
+  background: linear-gradient(249deg, rgba(22,223,171,0.9) 0%, #6a16df), url('../images/back1.jpg') no-repeat;;
   background-attachment: scroll;
   background-size: cover;
 
@@ -70,10 +65,10 @@ a {
 a:hover {
     z-index: 20;
     opacity: 1.0;
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 .logoLoad {
