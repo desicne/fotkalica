@@ -57,6 +57,7 @@ h2{
 
 
 a {
+  color: #bbb;
   text-decoration: none;
   -webkit-transition: -webkit-transform .2s ease-in-out;
   -moz-transition: -moz-transform .2s ease-in-out;
@@ -64,7 +65,7 @@ a {
 }
 a:hover {
     z-index: 20;
-    opacity: 1.0;
+    color: #fff;
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
     -o-transform: scale(1.15);
@@ -187,7 +188,7 @@ a:hover {
   animation-delay: 1.6s;
 }
 
-.fade-in.firstMenu{
+.fade-in.logoMenu{
   -webkit-animation-delay: 2.1s;
   -moz-animation-delay: 2.1s;
   animation-delay: 2.1s;
