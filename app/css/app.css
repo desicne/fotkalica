@@ -230,7 +230,7 @@ a:hover {
  *  NEW ANIMATION FOR THE MENU
  */
 
- #myDIV {
+ #ponude, #pitanja, #kontakt {
     width: 80%;
     height: 100%;
     background: rgba(255,255,255,0.9);

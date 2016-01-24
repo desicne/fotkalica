@@ -22,32 +22,36 @@
   <body>
 
     <div class="my fade-in row" style="text-align:center;"> 
-        <img src="./images/menu-logo.png" alt="Fotkalica" style="height:8rem; margin-top:0.5rem; z-index:10;"/>
+        <img src="./images/menu-logo.png" alt="Fotkalica" style="height:8rem; margin-top:0.5rem;"/>
         <h2 style="color:#dadaea; font-size: 3rem; margin: 0; padding: 0">fotkalica</h2>
     </div>
     
-    <div class="main fade-in row" style="display:block; position: fixed; left: 0; height: 100%; width: 20%;background: rgba(40,40,40,1); text-align:center; display: inline-block;  overflow: hidden; z-index:10;">
+    <div class="main fade-in row" style="display:block; position: fixed; left: 0; height: 100%; width: 20%;background: rgba(40,40,40,1); text-align:center; display: inline-block;  overflow: hidden; z-index:100;">
         <!-- Logo in the menu field-->
-        <a href="#" class="fade-in logoMenu"style="left: 0; height: 25%; width: 100%; text-align:center; display: inline-block; overflow: hidden; color: #dadaea" onclick="myFunction()">    
-            <img src="./images/menu-logo.png" alt="Fotkalica" style="height:80%; margin-top:10%; z-index:10;"/>
+        <a href="#" class="fade-in logoMenu"style="left: 0; height: 25%; width: 100%; text-align:center; display: inline-block; overflow: hidden; color: #dadaea">    
+            <img src="./images/menu-logo.png" alt="Fotkalica" style="height:80%; margin-top:10%;"/>
         </a>
 
-        <a href="#ponude" style="left: 0; margin-top: 35%; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; z-index:10; font-size: 2.1rem" onclick="myFunction()">    
+        <a href="#ponude" style="left: 0; margin-top: 35%; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('ponude')">    
             ponude
         </a>
-        <a href="#pitanja" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; z-index:10; font-size: 2.1rem" onclick="homeView()">    
+        <a href="#pitanja" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden;  font-size: 2.1rem" onclick="showMenu('pitanja')">    
             pitanja
         </a>
-        <a href="#kontakt" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; z-index:10; font-size: 2.1rem" onclick="homeView()">    
+        <a href="#kontakt" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('kontakt')">    
             kontakt
         </a>
-        <div style="left: 0; height: 5%; margin-top:10%; width: 100%; text-align:center; display: inline-block; overflow: hidden; z-index:10; font-size: 0.7rem; color: #dadaea"> 2015@fotkalica 
+        <div style="left: 0; height: 5%; margin-top:10%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 0.7rem; color: #dadaea;"> 2015@fotkalica 
         </div>
 
     </div>
 
     <!--   CONTAINER 1 SET HERE -->
-    <div id="myDIV" style=""></div>
+    <div id="ponude" style=""></div>
+    <!--   CONTAINER 2 SET HERE -->
+    <div id="pitanja" style=""></div>
+    <!--   CONTAINER 3 SET HERE -->
+    <div id="kontakt" style=""></div>
 
 
 
