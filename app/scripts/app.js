@@ -1,12 +1,4 @@
-function homeView(){
-    var pon = document.getElementById("ponudaContent");
-    var pit = document.getElementById("pitanjaContent");
-    var kon = document.getElementById("kontaktContent");
 
-    pon.style.visibility = "hidden";
-    pit.style.visibility = "hidden";
-    kon.style.visibility = "hidden";
-}
 // NEW FUNCTION FOR THE MENU
 
 function showMenu(menuItem) {
@@ -14,6 +6,9 @@ function showMenu(menuItem) {
     var nameOne = 'ponude';
     var nameTwo = 'pitanja';
     var nameThree = 'kontakt';
+
+    var logoBig = document.getElementById("mainLogo");
+    var logoSide = document.getElementById("sideLogo");
 
     if (menuItem == nameOne){
         console.log('Ponude su kliknute');
@@ -34,6 +29,8 @@ function showMenu(menuItem) {
         console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
     };
 
+    
+
     if(main.style.visibility === "visible")
         {
             console.log("Usao u petlju da je izabrani meni vidljiv");
@@ -41,15 +38,26 @@ function showMenu(menuItem) {
             main.style.WebkitAnimation = "hideMove 2s 1";
             main.style.animation = "hideMove 2s 1";
             main.style.left = "0";
+
+            logoSide.style.WebkitAnimation = "fadeOut 1s 1";
+            logoSide.style.animation = "fadeOut 1s 1";
             
+            logoBig.style.WebkitAnimation = "fadeIn 2s 1";
+            logoBig.style.animation = "fadeIn 2s 1";
+
             setTimeout(function(){
                 console.log("sakriva ga - glavni izabrani meni, sa tajmautom");
                 main.style.visibility = "hidden";   
                 main.style.left = "20%"; 
+
+                logoBig.style.opacity = 1;
+                logoSide.style.opacity = 0;
+
             }, 1000);
     } else {
 
         console.log("Izabrani meni nije vidljiv , prosao inicijalno ok");
+
 
         if(siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible"){
 
@@ -83,57 +91,19 @@ function showMenu(menuItem) {
         main.style.animation = "mymove 2s 1";
         main.style.right = "0";
         main.style.visibility = "visible";
+
+        logoBig.style.WebkitAnimation = "fadeOut 2s 1";
+        logoBig.style.animation = "fadeOut 2s 1";
+
+        logoSide.style.WebkitAnimation = "fadeIn 1s 1";
+        logoSide.style.animation = "fadeIn 1s 1";
+
+        setTimeout(function(){
+            logoBig.style.opacity = 0;
+            logoSide.style.opacity = 1;
+        }, 1000)
+        
+
+
     } 
 };
-
-
-/*
-
-function getContentP() {
-    
-	var pon = document.getElementById("ponudaContent");
-    var pit = document.getElementById("pitanjaContent");
-    var kon = document.getElementById("kontaktContent");
-
-    pit.style.visibility = "hidden";
-    kon.style.visibility = "hidden";
-
-    if (pon.style.visibility === "visible") {
-        pon.style.visibility = "hidden";
-    } else {
-    	pon.style.visibility = "visible";
-    }
-};
-
-function getContentPt() {
-    
-	var pon = document.getElementById("ponudaContent");
-    var pit = document.getElementById("pitanjaContent");
-    var kon = document.getElementById("kontaktContent");
-
-    pon.style.visibility = "hidden";
-    kon.style.visibility = "hidden";
-
-    if (pit.style.visibility === "visible") {
-        pit.style.visibility = "hidden";
-    } else {
-    	pit.style.visibility = "visible";
-    }
-};
-
-function getContentK() {
-    
-    var kon = document.getElementById("kontaktContent");
-    var pon = document.getElementById("ponudaContent");
-    var pit = document.getElementById("pitanjaContent");
-
-    pit.style.visibility = "hidden";
-    pon.style.visibility = "hidden";
-
-
-    if (kon.style.visibility === "visible") {
-        kon.style.visibility = "hidden";
-    } else {
-        kon.style.visibility = "visible";
-    }
-};*/

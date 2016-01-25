@@ -169,6 +169,30 @@ a:hover {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+
+@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@-o-keyframes fadeOut {from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+
+.fade-out {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeOut ease-in 1;
+  animation:fadeOut ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+}
+
+
 .fade-in {
   opacity: 0;  /* make things invisible upon start */
   -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -188,29 +212,23 @@ a:hover {
   animation-delay: 1.6s;
 }
 
-.fade-in.logoMenu{
+.fade-in.ponudeMenu{
   -webkit-animation-delay: 2.1s;
   -moz-animation-delay: 2.1s;
   animation-delay: 2.1s;
 
 }
 
-.fade-in.secondMenu{
+.fade-in.pitanjaMenu{
   -webkit-animation-delay: 2.7s;
   -moz-animation-delay: 2.7s;
   animation-delay: 2.7s;
 }
 
-.fade-in.thirdMenu{
+.fade-in.kontaktMenu{
   -webkit-animation-delay: 3.3s;
   -moz-animation-delay: 3.3s;
   animation-delay: 3.3s;
-}
-
-.fade-in.fourthMenu{
-  -webkit-animation-delay: 3.9s;
-  -moz-animation-delay: 3.9s;
-  animation-delay: 3.9s;
 }
 
 .shadow{
@@ -233,9 +251,17 @@ a:hover {
  #ponude, #pitanja, #kontakt {
     width: 80%;
     height: 100%;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.7);
     position: absolute;
     visibility: hidden;
+}
+
+#mainLogo {
+  opacity: 1;
+}
+
+#sideLogo {
+  opacity: 0;
 }
 
 /* Chrome, Safari, Opera */
