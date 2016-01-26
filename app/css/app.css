@@ -51,6 +51,31 @@ h2{
   background-size: cover;
 }
 
+#rodjendani {
+  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#poslovne {
+  background: -moz-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -webkit-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 97%}
     50%{background-position:100% 4%}
@@ -69,7 +94,7 @@ h2{
 
 
 a {
-  color: #bbb;
+  color: #888;
   text-decoration: none;
   -webkit-transition: -webkit-transform .2s ease-in-out;
   -moz-transition: -moz-transform .2s ease-in-out;
@@ -77,11 +102,12 @@ a {
 }
 a:hover {
     z-index: 20;
-    color: #fff;
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15);
+    color: #444;
+    text-decoration: bold;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
 .logoLoad {
