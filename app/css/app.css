@@ -39,6 +39,18 @@ h2{
 
 }
 
+#vencanja {
+  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 97%}
     50%{background-position:100% 4%}
@@ -280,6 +292,68 @@ a:hover {
 #sideLogo {
   opacity: 0;
 }
+
+
+@-webkit-keyframes expand-width {
+    from { width: 33%;}
+    to {width: 59%;}
+}
+
+@keyframes expand-width {
+    from { width: 33%;}
+    to {width: 59%;}
+}
+
+@-webkit-keyframes expand-large-width {
+    from { width: 20%;}
+    to {width: 59%;}
+}
+
+@keyframes expand-large-width {
+    from { width: 20%;}
+    to {width: 59%;}
+}
+
+@-webkit-keyframes shrink-width {
+    from { width: 33%;}
+    to {width: 20%;}
+}
+
+@keyframes shrink-width {
+    from { width: 33%;}
+    to {width: 20%;}
+}
+
+@-webkit-keyframes return-width {
+    from { width: 59%;}
+    to {width: 33%;}
+}
+
+@keyframes return-width {
+    from { width: 59%;}
+    to {width: 33%;}
+}
+
+@-webkit-keyframes return-sib-width {
+    from { width: 20%;}
+    to {width: 33%;}
+}
+
+@keyframes return-sib-width {
+    from { width: 20%;}
+    to {width: 33%;}
+}
+
+@-webkit-keyframes return-large-width {
+    from { width: 59%;}
+    to {width: 20%;}
+}
+
+@keyframes return-large-width {
+    from { width: 59%;}
+    to {width: 20%;}
+}
+
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {

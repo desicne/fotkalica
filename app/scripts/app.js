@@ -1,6 +1,8 @@
 
 // NEW FUNCTION FOR THE MENU
 
+var hoverActive;
+
 function showMenu(menuItem) {
     
     var nameOne = 'ponude';
@@ -29,7 +31,6 @@ function showMenu(menuItem) {
         console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
     };
 
-    
 
     if(main.style.visibility === "visible")
         {
@@ -107,3 +108,77 @@ function showMenu(menuItem) {
 
     } 
 };
+
+function focusDiv(menuItem) {
+    
+    var nameOne = 'vencanja';
+    var nameTwo = 'rodjendani';
+    var nameThree = 'poslovne';
+
+    if (menuItem == nameOne){
+        console.log('Vencanja hover');
+        blockFocusOut = false;
+        var main = document.getElementById("vencanja");
+        var siblingOne = document.getElementById("rodjendani");
+        var siblingTwo = document.getElementById("poslovne");
+    } else if (menuItem == nameTwo){
+        console.log('Rodjendani hover');
+        blockFocusOut = true;
+        var main = document.getElementById("rodjendani");
+        var siblingOne = document.getElementById("vencanja");
+        var siblingTwo = document.getElementById("poslovne");
+    } else if (menuItem == nameThree){
+        console.log('Poslovne hover');
+        blockFocusOut = true;
+        var main = document.getElementById("poslovne");
+        var siblingOne = document.getElementById("rodjendani");
+        var siblingTwo = document.getElementById("vencanja");
+    } else {
+        console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
+    };
+
+    if(hoverActive || (siblingOne.style.width == "59%" || siblingTwo.style.width == "59%")){
+        console.log("Novo stanje HOVER ACTIVA JE TRUE");
+
+        if(siblingOne.style.width == "59%"){
+            
+            siblingOne.style.WebkitAnimation = "return-large-width 1s 1 ease-in-out";
+            siblingOne.style.animation = "return-large-width 1s 1 ease-in-out";
+            siblingOne.style.width = "20%";
+
+            main.style.WebkitAnimation = "expand-large-width 1s 1 ease-in-out";
+            main.style.animation = "expand-large-width 1s 1 ease-in-out";
+            main.style.width = "59%";
+                        
+        } else if (siblingTwo.style.width == "59%"){
+
+            siblingTwo.style.WebkitAnimation = "return-large-width 1s 1 ease-in-out";
+            siblingTwo.style.animation = "return-large-width 1s 1 ease-in-out";
+            siblingTwo.style.width = "20%";
+
+            main.style.WebkitAnimation = "expand-large-width 1s 1 ease-in-out";
+            main.style.animation = "expand-large-width 1s 1 ease-in-out";
+            main.style.width = "59%";
+
+        }
+
+    } else {
+        console.log("Inicijalno stanje HOVER ACTIVA JE FALSE");
+        main.style.WebkitAnimation = "expand-width 1s 1 ease-in-out";
+        main.style.animation = "expand-width 1s 1 ease-in-out";
+        main.style.width = "59%";
+     
+        siblingOne.style.WebkitAnimation = "shrink-width 1s 1 ease-in-out";
+        siblingOne.style.animation = "shrink-width 1s 1 ease-in-out";
+        siblingOne.style.width = "20%";
+
+        siblingTwo.style.WebkitAnimation = "shrink-width 1s 1 ease-in-out";
+        siblingTwo.style.animation = "shrink-width 1s 1 ease-in-out";
+        siblingTwo.style.width = "20%";
+        hoverActive = true;
+        console.log('Postavljam HOVER na TRUE');
+    }
+
+};
+
+

@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./css/grid.css" type='text/css' />
    
     <!--Switch font maybe-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
 
@@ -54,18 +54,18 @@
     <div id="ponude" style="padding: 0px;">
 
         <!--    vencanja     -->
-        <div id="vencanja" class="ponudeCont" style="background:#00aaff;">
-            <div style="position: relative; top: 50%; left: 0">Vencanja</div>
+        <div id="vencanja" class="ponudeCont" onmouseover="focusDiv('vencanja')">
+            <div style="position: relative; top: 50%; left: 0">Venčanja</div>
         </div>
 
         <!--    rodjendani     -->
-        <div id="rodjendani" class="ponudeCont" style="background:#ff00aa;">
-            <div style="position: relative; top: 50%; left: 0">Rodjendani i Proslave</div>
+        <div id="rodjendani" class="ponudeCont" style="background:#ff00aa;" onmouseover="focusDiv('rodjendani')">
+            <div style="position: relative; top: 50%; right: 0">Rođendani i Proslave</div>
         </div>
 
         <!--    poslovni     -->
-        <div id="poslovne" class="ponudeCont" style="background:#6a16df;">
-            <div style="position: relative; top: 50%; left: 0">Poslovni dogadjaji</div>
+        <div id="poslovne" class="ponudeCont" style="background:#6a16df;" onmouseover="focusDiv('poslovne')">
+            <div style="position: relative; top: 50%; right: 0">Poslovni događaji</div>
         </div>
 
     </div>
