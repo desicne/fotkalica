@@ -312,7 +312,7 @@ a:hover {
 }
 
 
-#mainLogo {
+#mainLogo, #headline, #testimonial {
   opacity: 1;
 }
 
