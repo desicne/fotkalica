@@ -35,23 +35,26 @@
 
         <div id="testimonial" class="row" style="display:block; position: fixed; left: 20%; top:85%; height: 15%; width: 80%;background: rgba(0,0,0,0.1); display: inline-block;  overflow: hidden; z-index:100;">
             <div class="small-12 medium-4 column row" style="display:block; color:#dadaea; margin: 0; padding: 0">
-                <img class="small-5 columns" src="./images/testimonial-3.png" alt="testimonial-1" style="padding-top: 10px; padding-left: 45px; height:80px; width: 80px"/>
+                <img class="small-5 columns" src="./images/testimonial-6.png" alt="testimonial-1" style="padding-top: 10px; padding-left: 45px; height:80px; width: 80px"/>
                 <span class="small-7 columns">
                     <b style="font-size: 1.2rem">Jovana</b><br/>
-                    <i style="font-size: 0.8rem">"Bolje nego sto sam mogla i da pretpostavim da ce biti. Odusevljena sam!"</i>
+                    <i style="font-size: 0.8rem;">"Bolje nego sto sam mogla i da pretpostavim da ce biti. Odusevljena sam!"</i>
                 </span>
             </div>
         </div>
 
     </div>
+
+    <!--  SIDE MENU  -->
     
-    <div class="main fade-in row" style="display:block; position: fixed; left: 0; height: 100%; width: 20%;background: rgba(250,250,250,1); text-align:center; display: inline-block;  overflow: hidden; z-index:100;">
+    <div class="main fade-in row" style="display:block; position: fixed; left: 0; height: 100%; width: 20%;background: rgba(250,250,250,1); text-align:center; overflow: hidden; z-index:100;">
+        
         <!-- Logo in the menu field-->
-        <a href="#" style="left: 0; height: 30%; width: 100%; text-align:center; display: inline-block; overflow: hidden; color: #dadaea">    
+        <a href="#" style="left: 0; height: 30%; width: 100%; text-align:center; display: inline-block; overflow: hidden; color: #dadaea" onclick="closeMenu()">
             <img id="sideLogo" src="./images/menu-logo-name.png" alt="Fotkalica" style="height:70%; margin-top:15%;"/>
         </a>
 
-        <a href="#ponude" class="fade-in ponudeMenu" style="left: 0; margin-top: 15%; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('ponude')">    
+        <a href="#ponude" class="fade-in ponudeMenu" style="left: 0; margin-top: 20%; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('ponude')">    
             ponude
         </a>
         <a href="#pitanja" class="fade-in pitanjaMenu" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden;  font-size: 2.1rem" onclick="showMenu('pitanja')">    

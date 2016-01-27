@@ -109,6 +109,57 @@ function showMenu(menuItem) {
     } 
 };
 
+function closeMenu() {
+    
+    var logoBig = document.getElementById("mainLogo");
+    var logoSide = document.getElementById("sideLogo");
+
+    var main = document.getElementById("ponude");
+    var siblingOne = document.getElementById("pitanja");
+    var siblingTwo = document.getElementById("kontakt");
+
+    if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible")
+        {
+        console.log("Usao u petlju da je izabrani meni vidljiv");
+        
+        if (main.style.visibility === "visible"){
+            main.style.WebkitAnimation = "hideMove 2s 1";
+            main.style.animation = "hideMove 2s 1";
+            main.style.left = "0";
+        } else if (siblingOne.style.visibility === "visible"){
+            siblingOne.style.WebkitAnimation = "hideMove 2s 1";
+            siblingOne.style.animation = "hideMove 2s 1";
+            siblingOne.style.left = "0";
+        } else {
+            siblingTwo.style.WebkitAnimation = "hideMove 2s 1";
+            siblingTwo.style.animation = "hideMove 2s 1";
+            siblingTwo.style.left = "0";
+        };
+
+
+        logoSide.style.WebkitAnimation = "fadeOut 1s 1";
+        logoSide.style.animation = "fadeOut 1s 1";
+        
+        logoBig.style.WebkitAnimation = "fadeIn 2s 1";
+        logoBig.style.animation = "fadeIn 2s 1";
+
+        setTimeout(function(){
+            console.log("sakriva ga - glavni izabrani meni, sa tajmautom");
+            main.style.visibility = "hidden";   
+            main.style.left = "20%";
+            siblingOne.style.visibility = "hidden";   
+            siblingOne.style.left = "20%";
+            siblingTwo.style.visibility = "hidden";   
+            siblingTwo.style.left = "20%"; 
+
+            logoBig.style.opacity = 1;
+            logoSide.style.opacity = 0;
+
+        }, 1000);
+    } 
+};
+
+
 function focusDiv(menuItem) {
     
     var nameOne = 'vencanja';
