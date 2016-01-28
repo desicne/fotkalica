@@ -15,6 +15,10 @@ body{
 h1{
   font-family: 'Fotkalica', sans-serif;
   font-weight: normal;
+  color:#dadaea; 
+  font-size: 2.2rem; 
+  margin: 0; 
+  padding: 0;
 }
 
 h2{
@@ -48,6 +52,33 @@ h2{
   -moz-animation: AnimationName 3s ease infinite;
   animation: AnimationName 3s ease infinite;
 
+}
+
+.home {
+  position:absolute; 
+  top:0; 
+  left:20%;
+  width:80%;
+  height:100%;
+  text-align: center;
+}
+
+#headline {
+  margin-top: 15%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  z-index:50; 
+  font-family: 'Fotkalica', sans-serif; 
+  font-size: 3rem; 
+  text-align: center; 
+  text-shadow: 5px 3px 15px #aaa;
+  font-weight: bold;
+}
+
+
+#mainLogo, #headline, #testimonial {
+  opacity: 1;
 }
 
 #vencanja {
