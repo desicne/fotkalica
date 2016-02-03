@@ -193,19 +193,25 @@ a:hover {
   height: 100%; 
   
   flex: 33% 1 1;
-  transition: flex-basis 1s 0.1s;
 
   text-align: center;
   font-size: 2.4rem;
   color: #fefefe;
 
   opacity: 0.75;
+
+  -webkit-transition-property: flex-basis, font-size, font-weight;
+  -webkit-transition-duration: 0.8s;
+  -webkit-transition-delay: 0.1s;
+  transition-property: flex-basis, font-size, font-weight;
+  transition-duration: 0.8s;
+  transition-delay: 0.1s;
 }
 
 .ponudeCont:hover {
   flex-basis: 60%;
-  font-size: 2.7rem;
-  font-weight: bold; 
+  font-size: 2.9rem;
+  font-weight: bold;
 }
 
 
