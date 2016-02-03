@@ -76,11 +76,6 @@ h2{
   font-weight: bold;
 }
 
-
-#mainLogo, #headline, #testimonial {
-  opacity: 1;
-}
-
 #vencanja {
   background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
@@ -195,15 +190,22 @@ a:hover {
   border: 0;
   float: left;
 
-  width:33%; 
   height: 100%; 
-  display: inline-block;
+  
+  flex: 33% 1 1;
+  transition: flex-basis 1s 0.1s;
 
   text-align: center;
   font-size: 2.4rem;
   color: #fefefe;
 
   opacity: 0.75;
+}
+
+.ponudeCont:hover {
+  flex-basis: 60%;
+  font-size: 2.7rem;
+  font-weight: bold; 
 }
 
 
@@ -346,6 +348,7 @@ a:hover {
  */
 
  #ponude, #pitanja, #kontakt {
+    display: flex;
     width: 80%;
     height: 100%;
     background: rgba(255,255,255,0.7);

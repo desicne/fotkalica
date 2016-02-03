@@ -187,7 +187,7 @@ function focusDiv(menuItem) {
     var nameOne = 'vencanja';
     var nameTwo = 'rodjendani';
     var nameThree = 'poslovne';
-
+    
     if (menuItem == nameOne){
         console.log('Vencanja hover');
         blockFocusOut = false;
