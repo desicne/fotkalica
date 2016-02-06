@@ -1,32 +1,35 @@
 // ON LOAD - LOAD SOME CRITERIA
 
-var chosenValue = (function() {
-    var rez;
-    var value1 = 'my_first_div';
-    var value2 = 'my_second_div';
-    var value3 = 'my_third_div';
-    var value4 = 'my_fourth_div';
-    var value5 = 'my_fifth_div';
-    var value6 = 'my_sixth_div';
-    var broj = Math.random();
-    if (broj < 0.15){
-      rez = value1;
-    } else if ( broj < 0.3){
-      rez = value2;
-    } else if ( broj < 0.45){
-      rez = value3;
-    }else if ( broj < 0.6){
-      rez = value4;
-    }else if ( broj < 0.75){
-      rez = value5;
-    } else {
-      rez = value6;
-    }
-    return rez;
-})();
-var chosenDiv = document.getElementById(chosenValue);
-chosenDiv.style.display = "block";
 
+(function Some(){
+    var chosenValue = (function() {
+        var rez;
+        var value1 = 'test-first';
+        var value2 = 'test-second';
+        var value3 = 'test-third';
+        var value4 = 'test-fourth';
+        var value5 = 'test-fifth';
+        var value6 = 'test-sixth';
+        var broj = Math.random();
+        if (broj < 0.15){
+          rez = value1;
+        } else if ( broj < 0.3){
+          rez = value2;
+        } else if ( broj < 0.45){
+          rez = value3;
+        }else if ( broj < 0.6){
+          rez = value4;
+        }else if ( broj < 0.75){
+          rez = value5;
+        } else {
+          rez = value6;
+        }
+        return rez;
+    })();
+
+    var chosenDiv = document.getElementById(chosenValue);
+    chosenDiv.style.display = "block";
+})();
 
 
 // NEW FUNCTION FOR THE MENU
