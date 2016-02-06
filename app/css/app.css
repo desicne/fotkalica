@@ -202,10 +202,8 @@ a:hover {
 
   -webkit-transition-property: flex-basis, font-size, font-weight;
   -webkit-transition-duration: 0.8s;
-  -webkit-transition-delay: 0.1s;
   transition-property: flex-basis, font-size, font-weight;
   transition-duration: 0.8s;
-  transition-delay: 0.1s;
 }
 
 .ponudeCont:hover {
@@ -362,8 +360,18 @@ a:hover {
     visibility: hidden;
 }
 
-
-#mainLogo, #headline, #testimonial {
+#testimonial {
+  display:block; 
+  position: fixed; 
+  left: 20%; 
+  top:85%; 
+  height: 15%; 
+  width: 80%;
+  background: rgba(0,0,0,0.1);  
+  z-index:100;
+  opacity: 1;
+}
+#mainLogo, #headline {
   opacity: 1;
 }
 
