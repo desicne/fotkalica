@@ -78,6 +78,14 @@ h2{
 
 #akcija {
 
+  position: relative;
+  left: calc(50% - 100px);
+
+
+  display: block;
+  z-index:50; 
+  
+  color:#fefefe;
   background-color: rgba(255,255,255,0);
   width: 200px;
   border-radius: 10px; 
@@ -87,10 +95,6 @@ h2{
   padding: 10px;
   text-decoration: none;
 
-  display: block;
-  vertical-align: middle;
-  line-height: normal;
-  z-index:50; 
   text-align: center; 
 
   -o-transition:.8s;
