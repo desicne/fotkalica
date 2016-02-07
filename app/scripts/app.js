@@ -18,16 +18,31 @@ function showMenu(menuItem) {
         var main = document.getElementById("ponude");
         var siblingOne = document.getElementById("pitanja");
         var siblingTwo = document.getElementById("kontakt");
+
+        var menuName = document.getElementById("ponudeMenu");
+        var menuSibOne = document.getElementById("pitanjaMenu");
+        var menuSibTwo = document.getElementById("kontaktMenu");
+
     } else if (menuItem == nameTwo){
         console.log('Pitanja su kliknuta');
         var main = document.getElementById("pitanja");
         var siblingOne = document.getElementById("ponude");
         var siblingTwo = document.getElementById("kontakt");
+
+        var menuName = document.getElementById("pitanjaMenu");
+        var menuSibOne = document.getElementById("ponudeMenu");
+        var menuSibTwo = document.getElementById("kontaktMenu");
+
     } else if (menuItem == nameThree){
         console.log('Kontakt je kliknut');
         var main = document.getElementById("kontakt");
         var siblingOne = document.getElementById("pitanja");
         var siblingTwo = document.getElementById("ponude");
+
+        var menuName = document.getElementById("kontaktMenu");
+        var menuSibOne = document.getElementById("pitanjaMenu");
+        var menuSibTwo = document.getElementById("ponudeMenu");
+
     } else {
         console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
     };
@@ -50,6 +65,8 @@ function showMenu(menuItem) {
             head.style.animation = "fadeIn 2s 1";
             akc.style.WebkitAnimation = "fadeIn 2s 1";
             akc.style.animation = "fadeIn 2s 1";
+
+            menuName.style.color = "#888";
 
             setTimeout(function(){
                 console.log("sakriva ga - glavni izabrani meni, sa tajmautom");
@@ -74,11 +91,13 @@ function showMenu(menuItem) {
             siblingOne.style.WebkitAnimation = "hideMove 1s 1";
             siblingOne.style.animation = "hideMove 1s 1";
             siblingOne.style.left = "0";
+            menuSibOne.style.color = "#888";
 
             siblingTwo.style.WebkitAnimation = "hideMove 1s 1";
             siblingTwo.style.animation = "hideMove 1s 1";
             siblingTwo.style.left = "0";
-            
+            menuSibTwo.style.color = "#888";
+
             setTimeout(function(){
 
                 console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
@@ -99,6 +118,7 @@ function showMenu(menuItem) {
         main.style.animation = "mymove 2s 1";
         main.style.right = "0";
         main.style.visibility = "visible";
+        menuName.style.color = "#dd28dd";
 
         logoBig.style.WebkitAnimation = "fadeOut 2s 1";
         logoBig.style.animation = "fadeOut 2s 1";
@@ -133,6 +153,10 @@ function closeMenu() {
     var siblingOne = document.getElementById("pitanja");
     var siblingTwo = document.getElementById("kontakt");
 
+    var menuName = document.getElementById("pitanjaMenu");
+    var menuSibOne = document.getElementById("ponudeMenu");
+    var menuSibTwo = document.getElementById("kontaktMenu");
+
     if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible")
         {
         console.log("Usao u petlju da je izabrani meni vidljiv");
@@ -151,6 +175,9 @@ function closeMenu() {
             siblingTwo.style.left = "0";
         };
 
+        menuName.style.color = "#888";
+        menuSibOne.style.color = "#888";
+        menuSibTwo.style.color = "#888";
 
         logoSide.style.WebkitAnimation = "fadeOut 1s 1";
         logoSide.style.animation = "fadeOut 1s 1";
