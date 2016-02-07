@@ -76,6 +76,35 @@ h2{
   font-weight: bold;
 }
 
+#akcija {
+
+  background-color: rgba(255,255,255,0);
+  width: 200px;
+  border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border: 2px solid #FEFEFE;
+  padding: 10px;
+  text-decoration: none;
+
+  display: block;
+  vertical-align: middle;
+  line-height: normal;
+  z-index:50; 
+  text-align: center; 
+
+  -o-transition:.8s;
+  -ms-transition:.8s;
+  -moz-transition:.8s;
+  -webkit-transition:.8s;
+  transition:.8s;
+}
+
+#akcija:hover {
+
+  background-color: rgba(100,255,100,0.6);
+}
+
 #vencanja {
   background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
@@ -130,14 +159,14 @@ h2{
   }
 
 
-a {
+.sideLink{
   color: #888;
   text-decoration: none;
   -webkit-transition: -webkit-transform .2s ease-in-out;
   -moz-transition: -moz-transform .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-a:hover {
+.sideLink:hover {
     z-index: 20;
     color: #444;
     text-decoration: bold;
@@ -198,7 +227,7 @@ a:hover {
   font-size: 2.4rem;
   color: #fefefe;
 
-  opacity: 0.75;
+  opacity: 0.85;
 
   -webkit-transition-property: flex-basis, font-size, font-weight;
   -webkit-transition-duration: 0.8s;
@@ -360,25 +389,6 @@ a:hover {
     visibility: hidden;
 }
 
-#testimonial {
-  display:block; 
-  position: fixed; 
-  left: 70%; 
-  top:85%; 
-  height: 100px; 
-  width: 30%;
-  z-index:100;
-  opacity: 1;
-  color:#333;
-  margin: 0;
-  padding: 0;
-  background:rgba(255,255,255,0.9);
-  border-top: 1px solid #fff;
-}
-
-#test-first, #test-second, #test-third, #test-fourth, #test-fifth, #test-sixth {
-  display: none;
-}
 
 #mainLogo, #headline {
   opacity: 1;
