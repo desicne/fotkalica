@@ -1,37 +1,3 @@
-// ON LOAD - LOAD SOME CRITERIA
-
-
-(function Some(){
-    var chosenValue = (function() {
-        var rez;
-        var value1 = 'test-first';
-        var value2 = 'test-second';
-        var value3 = 'test-third';
-        var value4 = 'test-fourth';
-        var value5 = 'test-fifth';
-        var value6 = 'test-sixth';
-        var broj = Math.random();
-        if (broj < 0.15){
-          rez = value1;
-        } else if ( broj < 0.3){
-          rez = value2;
-        } else if ( broj < 0.45){
-          rez = value3;
-        }else if ( broj < 0.6){
-          rez = value4;
-        }else if ( broj < 0.75){
-          rez = value5;
-        } else {
-          rez = value6;
-        }
-        return rez;
-    })();
-
-    var chosenDiv = document.getElementById(chosenValue);
-    chosenDiv.style.display = "block";
-})();
-
-
 // NEW FUNCTION FOR THE MENU
 
 var hoverActive;
@@ -44,7 +10,6 @@ function showMenu(menuItem) {
 
     var logoBig = document.getElementById("mainLogo");
     var head = document.getElementById("headline");
-    var testi = document.getElementById("testimonial");
     var logoSide = document.getElementById("sideLogo");
 
     if (menuItem == nameOne){
@@ -82,8 +47,6 @@ function showMenu(menuItem) {
             logoBig.style.animation = "fadeIn 2s 1";
             head.style.WebkitAnimation = "fadeIn 2s 1";
             head.style.animation = "fadeIn 2s 1";
-            testi.style.WebkitAnimation = "fadeIn 2s 1";
-            testi.style.animation = "fadeIn 2s 1";
 
             setTimeout(function(){
                 console.log("sakriva ga - glavni izabrani meni, sa tajmautom");
@@ -92,7 +55,6 @@ function showMenu(menuItem) {
 
                 logoBig.style.opacity = 1;
                 head.style.opacity = 1;
-                testi.style.opacity = 1;
                 logoSide.style.opacity = 0;
 
             }, 1000);
@@ -138,8 +100,6 @@ function showMenu(menuItem) {
         logoBig.style.animation = "fadeOut 2s 1";
         head.style.WebkitAnimation = "fadeOut 2s 1";
         head.style.animation = "fadeOut 2s 1";
-        testi.style.WebkitAnimation = "fadeOut 2s 1";
-        testi.style.animation = "fadeOut 2s 1";
 
         logoSide.style.WebkitAnimation = "fadeIn 1s 1";
         logoSide.style.animation = "fadeIn 1s 1";
@@ -147,7 +107,6 @@ function showMenu(menuItem) {
         setTimeout(function(){
             logoBig.style.opacity = 0;
             head.style.opacity = 0;
-            testi.style.opacity = 0;
             logoSide.style.opacity = 1;
         }, 1000)
         
@@ -160,7 +119,6 @@ function closeMenu() {
     
     var logoBig = document.getElementById("mainLogo");
     var head = document.getElementById("headline");
-    var testi = document.getElementById("testimonial");
     var logoSide = document.getElementById("sideLogo");
 
     var main = document.getElementById("ponude");
@@ -193,8 +151,6 @@ function closeMenu() {
         logoBig.style.animation = "fadeIn 2s 1";
         head.style.WebkitAnimation = "fadeIn 2s 1";
         head.style.animation = "fadeIn 2s 1";
-        testi.style.WebkitAnimation = "fadeIn 2s 1";
-        testi.style.animation = "fadeIn 2s 1";
 
         setTimeout(function(){
             console.log("sakriva ga - glavni izabrani meni, sa tajmautom");
@@ -207,7 +163,6 @@ function closeMenu() {
 
             logoBig.style.opacity = 1;
             head.style.opacity = 1;
-            testi.style.opacity = 1;
             logoSide.style.opacity = 0;
 
         }, 1000);
