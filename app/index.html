@@ -17,6 +17,8 @@
    
     <!--Switch font maybe-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.css' rel='stylesheet' />
 
   </head>
   <body>
@@ -98,8 +100,44 @@
     <!--   CONTAINER 2 SET HERE -->
     <div id="pitanja" style=""></div>
     <!--   CONTAINER 3 SET HERE -->
-    <div id="kontakt" style=""></div>
+    <div id="kontakt" style="">
 
+        <div style="position:absolute; width:100%; height:15%; background: #6a16df; text-align: center">
+            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
+            <h2 style="color:#fefefe">kontakt</h2>
+        </div>
+
+        <!--map load-->
+        <div id="map" style="position: relative; top:15%; width:50%; height:85%">
+        </div>
+        
+        <!--map description and contact form-->
+        <div style="position: relative; top:15%; width:50%; height:85%;">
+            <div style="height:20%; background:#ff28ff;"></div>
+            <div style="height:80%; background:#ffddff;"></div>
+        </div>
+        
+
+        <script type="text/javascript">
+
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 45.258374, lng: 19.819484},
+                zoom: 13
+            });
+        }
+
+        </script>
+        
+<!-- NASA ADRESA
+    
+    lat: 45.235954, lng: 19.796398
+
+-->
+
+
+    </div>
 
 
     <!--Add logo container-->
@@ -111,7 +149,12 @@
 
     <!--Google Analytics-->
 
-    
+    <!--Google Maps-->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmORqcW0sVPzb7fDouvtKZwi8SpjSdKQI&callback=initMap">
+    </script>
+
+
     <script src="./scripts/app.js"></script>
     <!--These scripts should all change-->
     <!--

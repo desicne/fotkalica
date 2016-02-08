@@ -65,7 +65,6 @@ h2{
 
 #headline {
   margin-top: 15%;
-  display: inline-block;
   vertical-align: middle;
   line-height: normal;
   z-index:50; 
@@ -80,7 +79,6 @@ h2{
 
   position: relative;
   left: calc(50% - 100px);
-
 
   display: block;
   z-index:50; 
@@ -105,7 +103,6 @@ h2{
 }
 
 #akcija:hover {
-
   background-color: rgba(100,255,100,0.6);
 }
 
@@ -145,6 +142,10 @@ h2{
   background-size: cover;
 }
 
+#map { 
+  height: 85%;
+  width:50%;
+}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 97%}
