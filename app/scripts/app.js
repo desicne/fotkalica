@@ -118,7 +118,14 @@ function showMenu(menuItem) {
         main.style.animation = "mymove 2s 1";
         main.style.right = "0";
         main.style.visibility = "visible";
-        menuName.style.color = "#dd28dd";
+        
+        if (menuItem == nameOne) {
+            menuName.style.color = "#00aaff";
+        } else if (menuItem === nameTwo) {
+            menuName.style.color = "#27b4b7";
+        } else {
+            menuName.style.color = "#6a16df";   
+        };
 
         logoBig.style.WebkitAnimation = "fadeOut 2s 1";
         logoBig.style.animation = "fadeOut 2s 1";
