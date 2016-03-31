@@ -122,9 +122,9 @@ function showMenu(menuItem) {
         if (menuItem == nameOne) {
             menuName.style.color = "#00aaff";
         } else if (menuItem === nameTwo) {
-            menuName.style.color = "#27b4b7";
+            menuName.style.color = "#aa84e9";
         } else {
-            menuName.style.color = "#6a16df";   
+            menuName.style.color = "#6a16df";
         };
 
         logoBig.style.WebkitAnimation = "fadeOut 2s 1";
