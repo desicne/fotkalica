@@ -13,9 +13,9 @@ function showMenu(menuItem) {
     var akc = document.getElementById("akcija");
     var logoSide = document.getElementById("sideLogo");
 
-    var venc = document.getElementById("vencanja");
-    var rodj = document.getElementById("rodjendani");
-    var posl = document.getElementById("poslovni");
+    var venc = document.getElementById("wedding-detail");
+    var rodj = document.getElementById("bday-detail");
+    var posl = document.getElementById("corp-detail");
 
     if (menuItem == nameOne){
         console.log('Ponude su kliknute');
@@ -228,9 +228,9 @@ function closeMenu() {
     var menuSibOne = document.getElementById("ponudeMenu");
     var menuSibTwo = document.getElementById("kontaktMenu");
 
-    var venc = document.getElementById("vencanja");
-    var rodj = document.getElementById("rodjendani");
-    var posl = document.getElementById("poslovni");
+    var venc = document.getElementById("wedding-detail");
+    var rodj = document.getElementById("bday-detail");
+    var posl = document.getElementById("corp-detail");
 
 
     if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible"
@@ -250,7 +250,9 @@ function closeMenu() {
             siblingTwo.style.WebkitAnimation = "hideMove 2s 1";
             siblingTwo.style.animation = "hideMove 2s 1";
             siblingTwo.style.left = "0";
-        } else if (venc.style.visibility === "visible"){
+        };
+
+        if (venc.style.visibility === "visible"){
             venc.style.WebkitAnimation = "hideMove 2s 1";
             venc.style.animation = "hideMove 2s 1";
             venc.style.left = "0";

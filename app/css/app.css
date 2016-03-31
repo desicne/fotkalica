@@ -394,6 +394,16 @@ h2{
     visibility: hidden;
 }
 
+#wedding-detail, #bday-detail, #corp-detail {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    background: rgba(255,255,255,0.95);
+    position: absolute;
+    visibility: hidden;
+    z-index = 60;
+}
+
 
 #mainLogo, #headline {
   opacity: 1;

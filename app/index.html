@@ -81,37 +81,43 @@
     <div id="ponude" style="padding: 0px;">
 
         <!--    vencanja     -->
-        <div id="vencanja" class="ponudeCont">
-            <div style="position: relative; top: 50%; left: 0">Venčanja</div>
+        <div id="vencanja" class="ponudeCont" onclick="showDetailMenu('wedding-detail')">
+            <div style="position: relative; top: 50%; left: 0" >
+                <span onclick="showDetailMenu('wedding-detail')">Venčanja</span>
+            </div>
         </div>
 
         <!--    rodjendani     -->
-        <div id="rodjendani" class="ponudeCont">
-            <div style="position: relative; top: 50%; right: 0">Rođendani i Proslave</div>
+        <div id="rodjendani" class="ponudeCont" onclick="showDetailMenu('bday-detail')">
+            <div style="position: relative; top: 50%; right: 0" >
+                <span onclick="showDetailMenu('bday-detail')">Rođendani i Proslave</span>
+            </div>
         </div>
 
         <!--    poslovni     -->
-        <div id="poslovne" class="ponudeCont">
-            <div style="position: relative; top: 50%; right: 0">Poslovni događaji</div>
+        <div id="poslovne" class="ponudeCont" onclick="showDetailMenu('corp-detail')">
+            <div style="position: relative; top: 50%; right: 0" >
+                <span onclick="showDetailMenu('corp-detail')">Poslovni događaji</span>
+            </div>
         </div>
 
     </div>
 
     <!-- SET SPACE FOR WEDDING VIEW -->
     <div id="wedding-detail">
-
+        <span onclick="closeDetailMenu('wedding-detail')">CLOSE TEST</span>
     </div>
 
 
     <!-- SET SPACE FOR B-DAY VIEW -->
     <div id="bday-detail">
-
+        <span onclick="closeDetailMenu('bday-detail')">CLOSE TEST</span>
     </div>
 
 
     <!-- SET SPACE FOR CORP VIEW -->
     <div id="corp-detail">
-
+        <span onclick="closeDetailMenu('corp-detail')">CLOSE TEST</span>
     </div>
 
 
