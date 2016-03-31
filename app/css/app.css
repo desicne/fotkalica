@@ -404,6 +404,16 @@ h2{
     z-index = 60;
 }
 
+#wedding-detail {
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
 #mainLogo, #headline {
   opacity: 1;
