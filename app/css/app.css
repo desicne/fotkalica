@@ -10,6 +10,7 @@ body{
   	height:100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    overflow:hidden;
 }
 
 h1{
@@ -410,7 +411,7 @@ h2{
   background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -421,7 +422,7 @@ h2{
   background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
   background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
   background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover; 
 }
@@ -432,7 +433,7 @@ h2{
   background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
   background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
   background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
