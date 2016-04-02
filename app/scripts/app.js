@@ -51,11 +51,45 @@ function showMenu(menuItem) {
         console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
     };
 
+    var venc = document.getElementById("wedding-detail");
+    var rodj = document.getElementById("bday-detail");
+    var posl = document.getElementById("corp-detail");
+
 
     if(main.style.visibility === "visible")
         {
             console.log("Usao u petlju da je izabrani meni vidljiv");
             
+            if (venc.style.visibility === "visible") {
+                venc.style.WebkitAnimation = "hideMove 2s 1";
+                venc.style.animation = "hideMove 2s 1";
+                venc.style.left = "0";
+
+                setTimeout(function(){
+                    venc.style.visibility = "hidden";   
+                    venc.style.left = "20%";
+                }, 1000);
+
+            } else if (rodj.style.visibility === "visible"){
+                rodj.style.WebkitAnimation = "hideMove 2s 1";
+                rodj.style.animation = "hideMove 2s 1";
+                rodj.style.left = "0";
+
+                setTimeout(function(){
+                    rodj.style.visibility = "hidden";   
+                    rodj.style.left = "20%";
+                }, 1000);
+            } else if (posl.style.visibility === "visible"){
+                posl.style.WebkitAnimation = "hideMove 2s 1";
+                posl.style.animation = "hideMove 2s 1";
+                posl.style.left = "0";
+
+                setTimeout(function(){
+                    posl.style.visibility = "hidden";   
+                    posl.style.left = "20%";
+                }, 1000);
+            }
+
             main.style.WebkitAnimation = "hideMove 2s 1";
             main.style.animation = "hideMove 2s 1";
             main.style.left = "0";
