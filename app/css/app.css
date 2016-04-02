@@ -416,23 +416,23 @@ h2{
 }
 
 #bday-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;;
   background-attachment: scroll;
   background-size: cover; 
 }
 
 #corp-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;;
   background-attachment: scroll;
   background-size: cover;
 }
