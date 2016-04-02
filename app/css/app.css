@@ -401,7 +401,7 @@ h2{
     background: rgba(255,255,255,0.95);
     position: absolute;
     visibility: hidden;
-    z-index = 60;
+    z-index: 60;
 }
 
 #wedding-detail {
