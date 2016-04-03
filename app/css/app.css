@@ -282,18 +282,6 @@ h2{
 
 }
 
-@media screen and (max-width: 860px){
-
-  .wbcText {
-   
-    top:20px;
-    height: 50vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-  }
-}
-
 .wbcButtonContainer {
 
   position: relative;
@@ -348,21 +336,41 @@ h2{
   background-color: rgba(106,22,223,0.6);
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 860px){
+
+  .wbcText {
+    top:20px;
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .wbcButtonContainer {
+    position: absolute;
+    top: 110%;
+  }
+  .wbcButton {
+    width: 70px;
+  }
+
+}
+
+@media screen and (min-width: 861px) and (max-width: 960px){
 
   .wbcButtonContainer {
-   
-    visibility: hidden;
-
+    position: absolute;
+    top: 105%;
   }
+
+  .wbcButton {
+    width: 70px;
+  }
+
 }
 
 @media screen and (min-width: 961px) and (max-width: 1140px){
 
   .wbcButtonContainer {
-   
-    top: 30px;
-
+    top: 25px;
   }
 }
 
