@@ -168,10 +168,6 @@ h2{
   background-size: cover;
 }
 
-#map { 
-  height: 85%;
-  width:50%;
-}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 97%}
@@ -297,6 +293,79 @@ h2{
 
   }
 }
+
+.wbcButtonContainer {
+
+  position: relative;
+  top: 80px;
+  margin: 0 center;
+  text-align: center;
+
+}
+
+.wbcButton {
+  
+  display: inline-block;
+
+  color:#888;
+  background-color: rgba(255,255,255,0);
+  width: 100px;
+  border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-decoration: none;
+
+  text-align: center; 
+
+  -o-transition:.8s;
+  -ms-transition:.8s;
+  -moz-transition:.8s;
+  -webkit-transition:.8s;
+  transition:.8s;
+
+}
+
+.wbcButton:hover {
+  color: #fefefe;
+  background-color: rgb(85,204,85); 
+  border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border: 1px solid #fefefe;
+}
+
+.wbcWedAction:hover {
+  background-color: rgba(0,170,255,0.6);
+}
+
+.wbcBdaAction:hover {
+  background-color: #aa84e9;
+}
+
+.wbcCorAction:hover {
+  background-color: rgba(106,22,223,0.6);
+}
+
+@media screen and (max-width: 960px){
+
+  .wbcButtonContainer {
+   
+    visibility: hidden;
+
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1140px){
+
+  .wbcButtonContainer {
+   
+    top: 30px;
+
+  }
+}
+
 
 /*
 *
