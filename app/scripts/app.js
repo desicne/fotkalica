@@ -229,7 +229,6 @@ function showDetailMenu(menuItem) {
  
 };
 
-
 function closeDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
@@ -244,6 +243,30 @@ function closeDetailMenu(menuItem) {
     }, 1000); 
 };
 
+
+function showModal(menuItem) {
+
+    console.log(menuItem + 'kliknut');
+    var main = document.getElementById(menuItem);
+
+    main.style.WebkitAnimation = "fadeIn 1.4s 1";
+    main.style.animation = "fadeIn 1.4s 1";
+    main.style.visibility = "visible";
+    
+};
+
+function closeModal(menuItem) {
+
+    console.log(menuItem + 'kliknut');
+    var main = document.getElementById(menuItem);
+
+    main.style.WebkitAnimation = "fadeOut 1.4s 1";
+    main.style.animation = "fadeOut 1.4s 1";
+
+    setTimeout(function(){
+            main.style.visibility = "hidden";
+    }, 1450); 
+};
 
 
 function closeMenu() {

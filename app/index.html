@@ -112,20 +112,29 @@
 
             <div class="wbcButtonContainer">
 
-                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px"><!--onclick="showMenu('ponude')"-->
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal')">
                     Detalji
                 </a>
-                <a class="wbcButton" href="#" ><!--onclick="showMenu('ponude')"-->
+                <a class="wbcButton" href="#" onclick="showMenu('kontakt')"><!---->
                     Rezerviši
                 </a>
             </div>
 
         </div>
 
-        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb">
+        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('wedModal')">
             od
             <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
             </p><!--onclick="showMenu('detaljiCene')"-->
+        </div>
+
+        <!-- Detalji modal background -->
+        <div id="wedModal" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
+                NESTO
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal')"/>
+            </div>
         </div>
 
     </div>
@@ -144,20 +153,29 @@
 
             <div class="wbcButtonContainer">
 
-                <a class="wbcButton wbcBdaAction" href="#" style="margin-right: 10px"><!--onclick="showMenu('ponude')"-->
+                <a class="wbcButton wbcBdaAction" href="#" style="margin-right: 10px" onclick="showModal('bdaModal')">
                     Detalji
                 </a>
-                <a class="wbcButton" href="#" ><!--onclick="showMenu('ponude')"-->
+                <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                     Rezerviši
                 </a>
             </div>
 
         </div>
 
-        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb">
+        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('bdaModal')">
             od
             <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">60€
-            </p><!--onclick="showMenu('detaljiCene')"-->
+            </p>
+        </div>
+
+        <!-- Detalji modal background -->
+        <div id="bdaModal" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
+                NESTO
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal')"/>
+            </div>
         </div>
 
     </div>
@@ -176,20 +194,29 @@
 
             <div class="wbcButtonContainer">
 
-                <a class="wbcButton wbcCorAction" href="#" style="margin-right: 10px"><!--onclick="showMenu('ponude')"-->
+                <a class="wbcButton wbcCorAction" href="#" style="margin-right: 10px"onclick="showModal('corModal')">
                     Detalji
                 </a>
-                <a class="wbcButton" href="#" ><!--onclick="showMenu('detaljiCene')"-->
+                <a class="wbcButton" href="#"  onclick="showMenu('kontakt')">
                     Rezerviši
                 </a>
             </div>
 
         </div>
 
-        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb">
+        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('corModal')">
             od
             <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
             </p><!--onclick="showMenu('detaljiCene')"-->
+        </div>
+
+        <!-- Detalji modal background -->
+        <div id="corModal" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
+                NESTO
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal')"/>
+            </div>
         </div>
 
     </div>
