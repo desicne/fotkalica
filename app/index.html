@@ -215,7 +215,7 @@
         <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('corModal')">
             od
             <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
-            </p><!--onclick="showMenu('detaljiCene')"-->
+            </p>
         </div>
 
         <!-- Detalji modal background -->
@@ -232,14 +232,78 @@
 
     <!--   CONTAINER 2 SET HERE -->
     <div id="pitanja">
-        <div style="position:absolute; width:100%; height:15%; background: #aa84e9; text-align: center">
+        <div style="position:absolute; width:100%; height:15%; background: #aa84e9; text-align: center; z-index: 60;">
             <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
             <h2 style="color:#fefefe">pitanja</h2>
+
         </div>
+        <div style="position: absolute; width:100%; height: 7%; top:15%; background: #fefefe; text-align: left; z-index: 60;">
+                <p style="margin-top: 10px; margin-left: 40px">Najčešće postavljena pitanja:</p>
+        </div>
+        <div style="position: absolute; width:100%; top:22%; height: 75vh; overflow-y: scroll">
+            <div class="queCont">
+                <div id="q1" class="question" onclick="toggleAnswer('q1','a1')">
+                    Šta je Fotkalica?
+                </div>
+                <hr>
+                    <div id="a1" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+                <div id="q2" class="question" onclick="toggleAnswer('q2','a2')">
+                    Kako izgleda ceo proces oko rezervacije?
+                </div>
+                <hr>
+                    <div id="a2" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+                <div id="q3" class="question" onclick="toggleAnswer('q3','a3')">
+                    Koje je minimalno vreme iznajmljivanja uređaja?
+                </div>
+                <hr>
+                    <div id="a3" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+                <div id="q4" class="question" onclick="toggleAnswer('q4','a4')">
+                    Šta sve spada u ponudu?
+                </div>
+                <hr>
+                    <div id="a4" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+                <div id="q5" class="question" onclick="toggleAnswer('q5','a5')">
+                    Koja je cena usluge?
+                </div>
+                <hr>
+                    <div id="a5" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+                <div id="q6" class="question" onclick="toggleAnswer('q6','a6')">
+                    Da li je moguće iznajmiti uređaj van Novog Sada?
+                </div>
+                <hr>
+                    <div id="a6" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+                <div id="q7" class="question" onclick="toggleAnswer('q7','a7')">
+                    Koliko vremena unapred je neophodna rezervacija?
+                </div>
+                <hr>
+                    <div id="a7" class="answer">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        <hr>
+                    </div>
+            </div>
+            </div>
 
     </div>
     <!--   CONTAINER 3 SET HERE -->
-    <div id="kontakt" style="">
+    <div id="kontakt">
 
         <div style="position:absolute; width:100%; height:15%; background: #6a16df; text-align: center">
             <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
