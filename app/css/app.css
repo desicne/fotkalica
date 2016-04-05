@@ -132,6 +132,27 @@ h2{
   background-color: rgba(100,255,100,0.6);
 }
 
+#linkDetailCont {
+
+  position: absolute;
+  top: 94%;
+  left: calc(50% - 140px);
+
+  color: #fefefe;
+  display: block;
+  z-index:50; 
+
+}
+
+.linkDetail {
+  display: inline-block;
+  color:#fefefe;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+
 #vencanja {
   background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
