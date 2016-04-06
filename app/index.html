@@ -315,21 +315,15 @@
         </div>
 
         <div style="position: absolute; width:50%; left:25%; top:22%;">
-            <form method="post" action="send.php" id="myform">
-
-                <div id="name-group" class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Ime">
-                </div>
-                <div id="email-group" class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email">
-                </div>
-                <div id="message-group" class="form-group">
-                    <textarea style="height:20%; min-height:100px" type="text" class="form-control" name="message" placeholder="Vaša poruka"></textarea>
-                </div>
-                <input class="radius2 button small-12 columns" id="submit" name="submit" type="submit" value="Pošalji">
-
+            
+            <form action="https://formspree.io/desicne@gmail.com" method="POST">
+                <input class="form-group" type="text" name="name" placeholder="ime">
+                <input class="form-group" type="email" name="_replyto" placeholder="email">
+                <textarea class="form-group" type="text" name="message" placeholder="poruka"></textarea>
+                <input class="form-group" type="submit" value="pošalji">
             </form>
-          </div>
+
+        </div>
         <!--map load
         <div id="map" style="position: relative; top:15%; width:50%; height:85%">
         </div>
@@ -369,14 +363,10 @@
       <img src="./images/animateLogo.gif" alt="Fotkalica">
     </div>
 
-
-
     <!--Google Analytics-->
 
     <!---->
     <script src="./scripts/app.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="./scripts/connect.js"></script>
 
   </body>
 </html>
