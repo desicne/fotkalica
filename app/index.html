@@ -314,13 +314,30 @@
                 <p style="margin-top: 10px; margin-left: 40px">Pozovite nas ili nam pošaljite poruku!</p>
         </div>
 
-        <div style="position: absolute; width:50%; left:25%; top:22%;">
+        <div style="position: absolute; width:50%; left:25%; top:30%;">
             
             <form action="https://formspree.io/desicne@gmail.com" method="POST">
-                <input class="form-group" type="text" name="name" placeholder="ime">
-                <input class="form-group" type="email" name="_replyto" placeholder="email">
-                <textarea class="form-group" type="text" name="message" placeholder="poruka"></textarea>
-                <input class="form-group" type="submit" value="pošalji">
+                <div class="group">
+                    <input type="text" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Ime</label>
+                </div>
+                <div class="group">
+                    <input type="email" name="_replyto" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+                
+                <div class="group">
+                    <textarea type="text" name="message" required></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Poruka</label>
+                </div>
+                
+                <input class="btn" type="submit" value="pošalji">
             </form>
 
         </div>
