@@ -17,6 +17,47 @@ function showMenu(menuItem) {
     var rodj = document.getElementById("bday-detail");
     var posl = document.getElementById("corp-detail");
 
+    //modal removal
+    var wedMod = document.getElementById("wedModal");
+    var wedMod2 = document.getElementById("wedModal2");
+    var bdaMod = document.getElementById("bdaModal");
+    var bdaMod2 = document.getElementById("bdaModal2");
+    var corMod = document.getElementById("corModal");
+    var corMod2 = document.getElementById("corModal2");
+
+    if (wedMod.style.visibility === "visible" || wedMod2.style.visibility === "visible") {
+        wedMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        wedMod.style.animation = "fadeOut 1.4s 1";
+        wedMod2.style.WebkitAnimation = "fadeOut 1.4s 1";
+        wedMod2.style.animation = "fadeOut 1.4s 1";
+        
+        setTimeout(function(){
+            wedMod.style.visibility = "hidden";
+            wedMod2.style.visibility = "hidden";
+        }, 1450); 
+    } else if (bdaMod.style.visibility === "visible" || bdaMod2.style.visibility === "visible") {
+        bdaMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        bdaMod.style.animation = "fadeOut 1.4s 1";
+        bdaMod2.style.WebkitAnimation = "fadeOut 1.4s 1";
+        bdaMod2.style.animation = "fadeOut 1.4s 1";
+        
+        setTimeout(function(){
+            bdaMod.style.visibility = "hidden";
+            bdaMod2.style.visibility = "hidden";
+        }, 1450); 
+    } else if (corMod.style.visibility === "visible" || corMod2.style.visibility === "visible") {
+        corMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        corMod.style.animation = "fadeOut 1.4s 1";
+        corMod2.style.WebkitAnimation = "fadeOut 1.4s 1";
+        corMod2.style.animation = "fadeOut 1.4s 1";
+        
+        setTimeout(function(){
+            corMod.style.visibility = "hidden";
+            corMod2.style.visibility = "hidden";
+        }, 1450); 
+    };
+    // modal removal end
+
     if (menuItem == nameOne){
         console.log('Ponude su kliknute');
         var main = document.getElementById("ponude");
@@ -308,6 +349,48 @@ function closeMenu() {
     var venc = document.getElementById("wedding-detail");
     var rodj = document.getElementById("bday-detail");
     var posl = document.getElementById("corp-detail");
+
+
+    //modal removal
+    var wedMod = document.getElementById("wedModal");
+    var wedMod2 = document.getElementById("wedModal2");
+    var bdaMod = document.getElementById("bdaModal");
+    var bdaMod2 = document.getElementById("bdaModal2");
+    var corMod = document.getElementById("corModal");
+    var corMod2 = document.getElementById("corModal2");
+
+    if (wedMod.style.visibility === "visible" || wedMod2.style.visibility === "visible") {
+        wedMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        wedMod.style.animation = "fadeOut 1.4s 1";
+        wedMod2.style.WebkitAnimation = "fadeOut 1.4s 1";
+        wedMod2.style.animation = "fadeOut 1.4s 1";
+        
+        setTimeout(function(){
+            wedMod.style.visibility = "hidden";
+            wedMod2.style.visibility = "hidden";
+        }, 1450); 
+    } else if (bdaMod.style.visibility === "visible" || bdaMod2.style.visibility === "visible") {
+        bdaMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        bdaMod.style.animation = "fadeOut 1.4s 1";
+        bdaMod2.style.WebkitAnimation = "fadeOut 1.4s 1";
+        bdaMod2.style.animation = "fadeOut 1.4s 1";
+        
+        setTimeout(function(){
+            bdaMod.style.visibility = "hidden";
+            bdaMod2.style.visibility = "hidden";
+        }, 1450); 
+    } else if (corMod.style.visibility === "visible" || corMod2.style.visibility === "visible") {
+        corMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        corMod.style.animation = "fadeOut 1.4s 1";
+        corMod2.style.WebkitAnimation = "fadeOut 1.4s 1";
+        corMod2.style.animation = "fadeOut 1.4s 1";
+        
+        setTimeout(function(){
+            corMod.style.visibility = "hidden";
+            corMod2.style.visibility = "hidden";
+        }, 1450); 
+    };
+    // modal removal end
 
 
     if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible"
