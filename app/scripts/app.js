@@ -332,9 +332,7 @@ function toggleAnswer(question, answer){
         que.style.color = "#888";
         ans.style.WebkitAnimation = "fadeOut 1.4s 1";
         ans.style.animation = "fadeOut 1.4s 1";
-        setTimeout(function(){
-            ans.style.display = "none";
-        }, 450);
+        ans.style.display = "none";
     } else {
         que.style.color = "#6a16df";
         ans.style.WebkitAnimation = "fadeIn 1.4s 1";
