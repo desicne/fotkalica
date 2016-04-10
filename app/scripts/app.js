@@ -1,3 +1,16 @@
+// Get the screen size and nav to mobile/index.html
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+console.log('width: ' + width + ' px');
+console.log('height: ' + height + ' px');
+
+
+if (width < 600) {
+    //window.location = "http://www.yoururl.com";
+}
+
+
 // NEW FUNCTION FOR THE MENU
 
 var hoverActive;
