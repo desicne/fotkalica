@@ -242,7 +242,7 @@ function showMenu(menuItem) {
         if (menuItem == nameOne) {
             menuName.style.color = "#00aaff";
         } else if (menuItem === nameTwo) {
-            menuName.style.color = "#aa84e9";
+            menuName.style.color = "#0088cc";
         } else {
             menuName.style.color = "#6a16df";
         };
@@ -334,7 +334,7 @@ function toggleAnswer(question, answer){
         ans.style.animation = "fadeOut 1.4s 1";
         ans.style.display = "none";
     } else {
-        que.style.color = "#6a16df";
+        que.style.color = "#006699";
         ans.style.WebkitAnimation = "fadeIn 1.4s 1";
         ans.style.animation = "fadeIn 1.4s 1";
         ans.style.display = "block";
