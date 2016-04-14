@@ -579,6 +579,7 @@ textarea:focus ~ .highlight {
 .wbcButton:hover {
   color: #fefefe;
   background-color: rgb(85,204,85); 
+  font-weight: bold;
   border-radius: 10px; 
   -moz-border-radius: 10px; 
   -webkit-border-radius: 10px; 
