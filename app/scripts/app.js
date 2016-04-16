@@ -326,7 +326,7 @@ function closeModal(menuItem) {
 
     setTimeout(function(){
             main.style.visibility = "hidden";
-    }, 1450); 
+    }, 650); 
 };
 
 function toggleAnswer(question, answer){
