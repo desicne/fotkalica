@@ -25,6 +25,7 @@ function showMenu(menuItem) {
     var head = document.getElementById("headline");
     var akc = document.getElementById("akcija");
     var logoSide = document.getElementById("sideLogo");
+    var shortcut = document.getElementById("linkDetailCont");
 
     var venc = document.getElementById("wedding-detail");
     var rodj = document.getElementById("bday-detail");
@@ -156,6 +157,8 @@ function showMenu(menuItem) {
             head.style.animation = "fadeIn 2s 1";
             akc.style.WebkitAnimation = "fadeIn 2s 1";
             akc.style.animation = "fadeIn 2s 1";
+            shortcut.style.WebkitAnimation = "fadeIn 2s 1";
+            shortcut.style.animation = "fadeIn 2s 1";
 
             menuName.style.color = "#888";
 
@@ -167,6 +170,7 @@ function showMenu(menuItem) {
                 logoBig.style.opacity = 1;
                 head.style.opacity = 1;
                 akc.style.opacity = 1;
+                shortcut.style.opacity = 1;
                 logoSide.style.opacity = 0;
 
             }, 1000);
@@ -253,6 +257,8 @@ function showMenu(menuItem) {
         head.style.animation = "fadeOut 2s 1";
         akc.style.WebkitAnimation = "fadeOut 2s 1";
         akc.style.animation = "fadeOut 2s 1";
+        shortcut.style.WebkitAnimation = "fadeOut 2s 1";
+        shortcut.style.animation = "fadeOut 2s 1";
 
         logoSide.style.WebkitAnimation = "fadeIn 1s 1";
         logoSide.style.animation = "fadeIn 1s 1";
@@ -261,6 +267,7 @@ function showMenu(menuItem) {
             logoBig.style.opacity = 0;
             head.style.opacity = 0;
             akc.style.opacity = 0;
+            shortcut.style.opacity = 0;
             logoSide.style.opacity = 1;
         }, 1000)
         
@@ -348,6 +355,7 @@ function closeMenu() {
     var head = document.getElementById("headline");
     var akc = document.getElementById("akcija");
     var logoSide = document.getElementById("sideLogo");
+    var shortcut = document.getElementById("linkDetailCont");
 
     var main = document.getElementById("ponude");
     var siblingOne = document.getElementById("pitanja");
@@ -450,6 +458,8 @@ function closeMenu() {
         head.style.animation = "fadeIn 2s 1";
         akc.style.WebkitAnimation = "fadeIn 2s 1";
         akc.style.animation = "fadeIn 2s 1";
+        shortcut.style.WebkitAnimation = "fadeIn 2s 1";
+        shortcut.style.animation = "fadeIn 2s 1";
 
         setTimeout(function(){
             console.log("sakriva ga - glavni izabrani meni, sa tajmautom");
@@ -469,6 +479,7 @@ function closeMenu() {
             logoBig.style.opacity = 1;
             head.style.opacity = 1;
             akc.style.opacity = 1;
+            shortcut.style.opacity = 1;
             logoSide.style.opacity = 0;
 
         }, 1000);
