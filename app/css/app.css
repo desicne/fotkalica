@@ -33,6 +33,17 @@ hr {
   opacity: 0.85;
   z-index: 50;
 }
+
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 13px;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}​
 /***************************************/
 
 /* EMAIL FORM stylings ------------------------------- */
@@ -446,7 +457,6 @@ textarea:focus ~ .highlight {
 
   visibility: hidden;
 }
-
 
 .logoLoad {
 	position: absolute;

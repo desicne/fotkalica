@@ -141,11 +141,52 @@
         <!-- Detalji modal background -->
         <div id="wedModal" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
-            <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
-                <h2>Open Air foto kabina</h2>
+            <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px; overflow-y: scroll"><!--Overflow samo na ekrane nize od 600px recimo, treba proveriti-->
+
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(0,170,255); text-align: center;">Open Air foto kabina</h2>
                 <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal')"/>
 
 
+                <div style="color: #999; position: absolute; top: 20%; margin-left:0; padding-left: 5%; width: 40%;text-align: left">
+                    <i style="color: rgb(0,170,255); font-size: 1.4rem"><u>Ponuda obuhvata</u></i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td style="color: rgb(0,170,255)"><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Broj slika po sesiji</td>
+                                <td style="color: rgb(0,170,255)"><b>2</b></td>
+                            </tr>
+                            <tr>
+                                <td>Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td>Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td>Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td>Dodaci (propsi)</td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td>od <b style="color: rgb(0,170,255); font-size: 1.3rem">120€</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 20%; margin-left:60%; width: 40%;text-align: left">
+                    <i style="font-size: 1.4rem"><u>Dodaci:</u></i>
+
+
+                </div>
 
 
 
@@ -155,8 +196,7 @@
 
 
 
-
-                <div class="wbcButtonContainer">
+                <div style="position: absolute; top: 88%; right: 10px">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -168,7 +208,7 @@
         <div id="wedModal2" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
             <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
-                NESTO
+                <h2 style="color: rgb(0,170,255)">Social Print</h2>
                 <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal2')"/>
 
 
@@ -231,7 +271,7 @@
         <div id="bdaModal" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
             <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
-                <h2>Open Air fotokabina</h2>
+                <h2 style="color: rgb(255,0,170)">Open Air foto kabina</h2>
                 <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal')"/>
 
 
@@ -267,7 +307,7 @@
         <div id="bdaModal2" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
             <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
-                NESTO
+                <h2 style="color: rgb(255,0,170)">Social Print</h2>
                 <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal2')"/>
 
 
@@ -338,7 +378,7 @@
         <div id="corModal" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
             <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
-                NESTO
+                <h2 style="color: rgb(106,22,223)">Open Air foto kabina</h2>
                 <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal')"/>
 
            
@@ -374,7 +414,7 @@
         <div id="corModal2" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
             <div style="position: relative; top: 15%; left:12%; height: 70%; width: 75%; text-align:center; color: #dadaea; z-index: 150; background-color: #fefefe; padding-top: 10px">
-                NESTO
+                <h2 style="color: rgb(106,22,223)">Social Print</h2>
                 <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal2')"/>
 
 
