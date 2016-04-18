@@ -282,11 +282,18 @@ function showDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
     var main = document.getElementById(menuItem);
+    var logoSide = document.getElementById("sideLogo");
 
     main.style.WebkitAnimation = "mymove 2s 1";
     main.style.animation = "mymove 2s 1";
     main.style.right = "0";
     main.style.visibility = "visible";
+
+    if (logoSide.style.opacity !== 1) {
+        logoSide.style.WebkitAnimation = "fadeIn 1s 1";
+        logoSide.style.animation = "fadeIn 1s 1";
+        logoSide.style.opacity = 1;
+    }
  
 };
 
@@ -294,6 +301,8 @@ function closeDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
     var main = document.getElementById(menuItem);
+    var logoSide = document.getElementById("sideLogo");
+    var dad = document.getElementById("ponude");
 
     main.style.WebkitAnimation = "hideMove 2s 1";
     main.style.animation = "hideMove 2s 1";
@@ -301,6 +310,11 @@ function closeDetailMenu(menuItem) {
     setTimeout(function(){
             main.style.visibility = "hidden";   
             main.style.left = "20%";
+            if (dad.style.visibility !== "visible") {
+                logoSide.style.WebkitAnimation = "fadeOut 1s 1";
+                logoSide.style.animation = "fadeOut 1s 1";
+                logoSide.style.opacity = 0;
+            }
     }, 1000); 
 };
 
