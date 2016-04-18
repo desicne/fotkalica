@@ -11,6 +11,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     overflow: hidden;
+    cursor: context-menu;
 
 }
 
@@ -792,6 +793,7 @@ textarea:focus ~ .highlight {
 
 #ponude {
     background: rgba(255,255,255,0.6);
+    cursor: pointer;
 }
 
 #pitanja, #kontakt {
@@ -847,6 +849,10 @@ textarea:focus ~ .highlight {
 
 #sideLogo {
   opacity: 0;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6, #q7 {
+  cursor: pointer;
 }
 
 
