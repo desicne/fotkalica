@@ -455,6 +455,34 @@ textarea:focus ~ .highlight {
   visibility: hidden;
 }
 
+.modalCont {
+  position: relative; 
+  top: 15%; 
+  left:12%; 
+  height: 70%; 
+  width: 75%; 
+  text-align:center; 
+  color: #dadaea; 
+  z-index: 150; 
+  background-color: #fefefe;
+  padding-top: 10px;
+}
+
+@media screen and (max-height: 600px){
+
+  .modalCont {
+
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+}
+
 .logoLoad {
 	position: absolute;
 	top: 50%; 
