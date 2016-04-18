@@ -6,8 +6,8 @@ console.log('width: ' + width + ' px');
 console.log('height: ' + height + ' px');
 
 
-if (width < 600) {
-    //window.location = "http://www.yoururl.com";
+if ((width < 600) || (height < 550)) {
+    window.location = "./mobile/index.html";
 }
 
 

@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotkalica</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="description" content="Fotkalica" />
+    <meta name="keywords" content="fotokabina, photobooth srbija, photobooth, slikanje vencanja, slikanje rodjendani" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/mobile.css" type='text/css' />
+   
+    <!--Switch font maybe-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+
+    <div class="my fade-in">
+
+        <div class="home">
+            
+            <div id="mainLogo">
+                <img src="./images/menu-logo.png" alt="Fotkalica" style="height:8rem; margin-top:0.5rem;"/>
+                <h1>fotkalica</h1>
+            </div>
+
+
+            <h2 id="headline">Momenti koji se ne zaboravljaju</h2>
+
+            
+            <a id="akcija" href="#" onclick="showMenu('ponude')">Saznaj više</a>
+            
+            <div id="linkDetailCont">
+                <a href="#" class="linkDetail" onclick="showDetailMenu('wedding-detail')">Venčanja</a> - 
+                <a href="#" class="linkDetail" onclick="showDetailMenu('bday-detail')">Rođendani</a> - 
+                <a href="#" class="linkDetail" onclick="showDetailMenu('corp-detail')">Poslovni događaji</a>    
+            </div>
+        </div>
+    </div>
+
+    <!--  SIDE MENU  -->
+    
+    <div class="main fade-in row" style="position: fixed; left: 0; height: 100%; width: 20%;background: rgba(250,250,250,1); text-align:center; overflow: hidden; z-index:100;">
+        
+        <!-- Logo in the menu field-->
+        <a href="#" class="sideLink" style="left: 0; height: 30%; width: 100%; text-align:center; display: inline-block; overflow: hidden; color: #dadaea" onclick="closeMenu()">
+            <img id="sideLogo" src="./images/menu-logo-name.png" alt="Fotkalica" style="height:70%; margin-top:15%;">
+        </a>
+
+        <a href="#" id="ponudeMenu" class="fade-in sideLink" style="left: 0; margin-top: 20%; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('ponude')">    
+            ponude
+        </a>
+        <a href="#" id="pitanjaMenu" class="fade-in sideLink" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden;  font-size: 2.1rem" onclick="showMenu('pitanja')">    
+            pitanja
+        </a>
+        <a href="#" id="kontaktMenu" class="fade-in sideLink" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('kontakt')">    
+            kontakt
+        </a>
+
+        <div style="left: 0; bottom: 0;height: 5%; margin-top:5%; width: 100%; text-align:center; display: inline-block;"> 
+            <a href="#" style="margin-right:20px; text-decoration: none">
+                <img src="./images/face.svg" alt="Facebook Fotkalica" style="height:100%">
+            </a>
+            <a href="#" style="text-decoration: none">
+                <img src="./images/insta.svg" alt="Instagram Fotkalica" style="height:100%">
+            </a>
+        </div>
+
+        <div style="left: 0; bottom: 0;height: 5%; margin-top:5%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 0.7rem; color: #444444;"> 2016@fotkalica 
+        </div>
+
+    </div>
+
+
+    <!--   CONTAINER 1 SET HERE -->
+    <div id="ponude" style="padding: 0px;">
+
+        <!--    vencanja     -->
+        <div id="vencanja" class="ponudeCont" onclick="showDetailMenu('wedding-detail')">
+            <div style="position: relative; top: 50%; left: 0" >
+                <span onclick="showDetailMenu('wedding-detail')">Venčanja</span><br>
+                <a href="#" class="activeLink" onclick="showDetailMenu('wedding-detail')">saznaj više</a>
+            </div>
+        </div>
+
+        <!--    rodjendani     -->
+        <div id="rodjendani" class="ponudeCont" onclick="showDetailMenu('bday-detail')">
+            <div style="position: relative; top: 50%; right: 0" >
+                <span onclick="showDetailMenu('bday-detail')">Rođendani i Proslave</span><br>
+                <a href="#" class="activeLink" onclick="showDetailMenu('bday-detail')">saznaj više</a>
+            </div>
+        </div>
+
+        <!--    poslovni     -->
+        <div id="poslovne" class="ponudeCont" onclick="showDetailMenu('corp-detail')">
+            <div style="position: relative; top: 50%; right: 0" >
+                <span onclick="showDetailMenu('corp-detail')">Poslovni događaji</span><br>
+                <a href="#" class="activeLink" onclick="showDetailMenu('corp-detail')">saznaj više</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SET SPACE FOR WEDDING VIEW -->
+    <div id="wedding-detail">
+        <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
+
+        <div style="position: absolute; top: 80px; right: 40px;width: 40%">
+            <h2 style="position: relative; margin: auto; color: rgb(0,170,255); text-align: center; font-size: 2.5rem">Venčanja</h2>
+
+            <p class="wbcText">
+                Vaš poseban dan je i naš poseban dan!<br>
+                Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
+                Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
+
+            </p>
+
+            <div class="wbcButtonContainer">
+
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal')">
+                    Foto kabina
+                </a>
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal2')">
+                    Social Print
+                </a>
+            </div>
+
+        </div>
+
+        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('wedModal')">
+            od
+            <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
+            </p>
+        </div>
+
+        <!-- Detalji modal background -->
+        <div id="wedModal" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div class="modalCont"><!--Overflow samo na ekrane nize od 600px recimo, treba proveriti-->
+
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(0,170,255); text-align: center;">Open Air foto kabina</h2>
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal')"/>
+
+                <div style="background-color: rgba(0,170,255, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">2 slike po sesiji</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tema venčanja</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Live feed</td>
+                                <td><b>10€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">50€/h</b>*</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+                <p style="position: absolute; top: 88%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>* minimalna cena za iznajmljivanje od 2h je 120€</i></p>
+
+                <div style="position: absolute; top: 88%; right: 10px">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalji modal 2!!!! background -->
+        <div id="wedModal2" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div class="modalCont">
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(0,170,255); text-align: center;">Social Print</h2>
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal2')"/>
+                <div style="background-color: rgba(0,170,255, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">100 slika po satu</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>na upit</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">50€/h</b></td>
+                            </tr>
+                        </table>                   
+                    </div>
+                </div>
+
+                <div style="position: absolute; top: 88%; right: 10px">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SET SPACE FOR B-DAY VIEW -->
+    <div id="bday-detail">
+        <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeDetailMenu('bday-detail')"/>
+
+        <div style="position: absolute; top: 80px; right: 40px;width: 40%">
+            <h2 style="position: relative; margin: auto; color: rgb(255,0,170); text-align: center; font-size: 2.5rem">Rođendani i Proslave</h2>
+
+            <p class="wbcText">
+                Želite da vaš rođendan učinite nezaboravnim?<br>Ne gledajte dalje, sve što vam je potrebno da odlučite jeste vreme i mesto! <br><br>
+                Velika mogućnost personalizacija, dekoracija, kao i malenih ali trajnih uspomena koja će sigurno obradovati vaše najmilije. Odaberite pravu ponudu za vas!
+            </p>
+
+            <div class="wbcButtonContainer">
+
+                <a class="wbcButton wbcBdaAction" href="#" style="margin-right: 10px" onclick="showModal('bdaModal')">
+                    Foto kabina
+                </a>
+                <a class="wbcButton wbcBdaAction" href="#" style="margin-right: 10px" onclick="showModal('bdaModal2')">
+                    Social Print
+                </a>
+            </div>
+
+        </div>
+
+        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('bdaModal')">
+            od
+            <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">60€
+            </p>
+        </div>
+
+        <!-- Detalji modal background -->
+        <div id="bdaModal" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div class="modalCont">
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(255,0,170); text-align: center;">Open Air foto kabina</h2>
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal')"/>
+
+                <div style="background-color: rgba(255,0,170, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">2 slike po sesiji</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>1h</b>*</td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Live feed</td>
+                                <td><b>10€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specifična tema</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(255,0,170)">50€/h</b>**</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <p style="position: absolute; top: 82%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>* nakon 19h minimum je 2h</i></p>
+                <p style="position: absolute; top: 90%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>** cena za 1h je 60€, doplata za drugi sat u igraonicama je 30€</i></p>
+
+                <div style="position: absolute; top: 88%; right: 10px">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalji modal 2!!!! background -->
+        <div id="bdaModal2" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div class="modalCont">
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(255,0,170); text-align: center;">Social Print</h2>
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal2')"/>
+                <div style="background-color: rgba(255,0,170, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">100 slika po satu</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255,0,170)">Dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>na upit</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(255,0,170)">50€/h</b></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+
+                <div style="position: absolute; top: 88%; right: 10px">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SET SPACE FOR CORP VIEW -->
+    <div id="corp-detail">
+        <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeDetailMenu('corp-detail')"/>
+
+        <div style="position: absolute; top: 80px; right: 40px;width: 40%">
+            <h2 style="position: relative; margin: auto; color: rgb(106,22,223); text-align: center; font-size: 2.5rem">Poslovni događaji</h2>
+
+            <p class="wbcText">
+                Bilo da se radi o Happy Hour petku, proslavi Vaše firme ili animaciji i predstavljanju klijentima? <br><br>
+                Na nov i inovativan način, u ležernijem okruženju na izuzetno profesionalnom nivou, mi smo tu da se pobrinemo da se vaša poruka prenese na najbolji način.
+            </p>
+
+            <div class="wbcButtonContainer">
+
+                <a class="wbcButton wbcCorAction" href="#" style="margin-right: 10px"onclick="showModal('corModal')">
+                    Foto kabina
+                </a>
+                <a class="wbcButton wbcCorAction" href="#" style="margin-right: 10px"onclick="showModal('corModal2')">
+                    Social Print
+                </a>
+            </div>
+
+        </div>
+
+        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('corModal')">
+            od
+            <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
+            </p>
+        </div>
+
+        <!-- Detalji modal background -->
+        <div id="corModal" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div class="modalCont">
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(106,22,223); text-align: center;">Open Air foto kabina</h2>
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal')"/>
+
+                <div style="background-color: rgba(106,22,223, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">2 slike po sesiji</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Live feed</td>
+                                <td><b>10€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Korporativna tema</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Brendiranje mašine</td>
+                                <td><b>35€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(106,22,223)">50€/h</b></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+                <div style="position: absolute; top: 88%; right: 10px">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+     
+
+        <!-- Detalji modal 2!!!! background -->
+        <div id="corModal2" class="modalBack" style="position: absolute;">
+            <!-- Detalji modal basically -->
+            <div class="modalCont">
+                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(106,22,223); text-align: center;">Social Print</h2>
+                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal2')"/>
+                
+                <div style="background-color: rgba(106,22,223, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">100 slika po satu</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(106,22,223)">Dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div style="margin-top: 20px; width:100%; left: 10%">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Korporativna tema</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>na upit</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(106,22,223)">50€/h</b></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+                </div>
+                
+                <div style="position: absolute; top: 88%; right: 10px">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--   CONTAINER 2 SET HERE -->
+    <div id="pitanja">
+        <div style="position:absolute; width:100%; height:15%; background: #0088cc; text-align: center; z-index: 60;">
+            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
+            <h2 style="color:#fefefe">pitanja</h2>
+
+        </div>
+        <div style="position: absolute; width:100%; height: 7%; top:15%; background: #fefefe; text-align: left; z-index: 60;">
+                <p style="margin-top: 10px; margin-left: 40px">Najčešće postavljana pitanja</p>
+        </div>
+        <div style="position: absolute; width:100%; top:22%; height: 75vh; overflow-y: scroll">
+            <div class="queCont">
+                <div id="q1" class="question" onclick="toggleAnswer('q1','a1')">
+                    Kako funkcioniše ceo proces rezervacije?
+                </div>
+                    <div id="a1" class="answer">
+                        Prilikom rezervisanja usluge, sa našim operaterom proći ćete kroz par detalja neophodnih kako bi događaj bio adekvatno pripremljen i protekao baš onako kako ste vi i zamislili. U zavisnosi od izabrane usluge, to može značiti odabir templejta za slike, brendiranje, odabir teme događaja, podešavanje društvenih profila ili specifičnih idejnih rešenja.
+                        <br><br>
+                        Na sam dan događaja, u zavisnosti od izabrane usluge, pola sata pre ugovorenog vremena naš operater stiže da postavi opremu i pripremi je za nesmetan rad tokom vremena trajanja rezervacije. Nakon uspešnog završetka događaja operater demontira opremu. <br><br>
+                        Par dana nakon završenog događaja, dostavljamo vam digitalni sadržaj.
+                    </div>
+                <div id="q2" class="question" onclick="toggleAnswer('q2','a2')">
+                    Šta sve spada u ponudu? (montaža, demontaža i prevoz)
+                </div>
+                    <div id="a2" class="answer">
+                        U cenu aranžmana je uvek uključena montaža i demontaža opreme od strane našeg profesionalnog operatera. Prevoz opreme takođe obavljamo mi, i na području Novog Sada i okoline uključen je u osnovnu cenu.  <br><br>
+                        Detaljnije informacije o ponudi koju obuhvata aranžman za koju ste zainteresovani možete pronaći među detaljima usluge na stranici posvećenoj tom tipu usluge.
+                    </div>
+                <div id="q3" class="question" onclick="toggleAnswer('q3','a3')">
+                    Koje su sve vrste usluga dostupne?
+                </div>
+                    <div id="a3" class="answer">
+                        Trenutno su dostupne dve osnovne vrste usluga koje pružamo. To su <b style="color: #0088cc">Open Air</b> foto kabina i <b style="color: #0088cc">Social Print</b>.
+                        <br><br>
+                        Obe usluge obuhvataju visok nivo personalizacije i prilagođavanja vašim željama i potrebama. Za svaki nivo jedinstvenog zahteva slobodno nas kontaktirajte. 
+                    </div>
+                <div id="q4" class="question" onclick="toggleAnswer('q4','a4')">
+                    Specijalne ideje, personalizacija, praćenje teme događaja?
+                </div>
+                    <div id="a4" class="answer">
+                        Za sve specifične ideje i želje koje imate potrebno je da nam najavite unapred kako bismo uspeli da organizujemo i pripremimo njihovo ispunjenje. <br><br>
+                        Prilagođavanje naše usluge temi događaja koji organizujete je bitan deo naše ponude i učiniće vaš događaj još više posebnim. 
+                    </div>
+                <div id="q5" class="question" onclick="toggleAnswer('q5','a5')">
+                    Iznajmljivanje na duže vreme?
+                </div>
+                    <div id="a5" class="answer">
+                        Ponuda za duže vremenske periode (dan, više dana, nedelja) je moguća i ne podleže standardnom cenovniku usluga. Za više detalja svakako nas kontaktirajte.
+                    </div>
+                <div id="q6" class="question" onclick="toggleAnswer('q6','a6')">
+                    Iznajmljivanje van okoline Novog Sada?
+                </div>
+                    <div id="a6" class="answer">
+                        Za iznajmljivanje van okoline Novog Sada, naplaćuje se dodatna usluga prevoza u zavisnosti od udaljenosti.
+                    </div>
+                <div id="q7" class="question" onclick="toggleAnswer('q7','a7')">
+                    Plaćanje?
+                </div>
+                    <div id="a7" class="answer">
+                        Cene ponuda su izražene u EUR. Plaćanje se vrši prema srednjem kursu NBS na dan obračuna.                        
+                    </div>
+            </div>
+            </div>
+
+    </div>
+    <!--   CONTAINER 3 SET HERE -->
+    <div id="kontakt">
+
+        <div style="position:absolute; width:100%; height:15%; background: #6a16df; text-align: center">
+            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
+            <h2 style="color:#fefefe">kontakt</h2>
+        </div>
+
+        <div style="position: absolute; width:100%; height: 7%; top:15%; background: #fefefe; text-align: left; z-index: 60;">
+                <p style="margin-top: 10px; margin-left: 40px">Pozovite nas ili nam pošaljite poruku!</p>
+        </div>
+
+        <div style="position: absolute; width:50%; left:25%; top:30%;">
+            
+            <form action="https://formspree.io/desicne@gmail.com" method="POST">
+                <div class="group">
+                    <input type="text" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Ime</label>
+                </div>
+                <div class="group">
+                    <input type="email" name="_replyto" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+                
+                <div class="group">
+                    <textarea type="text" name="message" required></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Poruka</label>
+                </div>
+                
+                <input class="btn" type="submit" value="pošalji">
+            </form>
+
+        </div>
+        <!--map load
+        <div id="map" style="position: relative; top:15%; width:50%; height:85%">
+        </div>
+        -->
+        <!--map description and contact form
+        <div style="position: relative; top:15%; width:50%; height:85%;">
+            <div style="height:20%; background:#ff28ff;"></div>
+            <div style="height:80%; background:#ffddff;"></div>
+        </div>
+        
+
+        <script type="text/javascript">
+
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 45.258374, lng: 19.819484},
+                zoom: 13
+            });
+
+        }
+
+        </script>
+        -->
+<!-- NASA ADRESA
+    
+    lat: 45.235954, lng: 19.796398
+
+-->
+
+
+    </div>
+
+
+    <!--Add logo container-->
+    <div class="logoLoad">
+      <img src="./images/animateLogo.gif" alt="Fotkalica">
+    </div>
+
+    <!--Google Analytics-->
+
+    <!---->
+    <script src="./mobile.js"></script>
+
+  </body>
+</html>
