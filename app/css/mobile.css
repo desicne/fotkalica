@@ -202,6 +202,22 @@ textarea:focus ~ .highlight {
 
 }
 
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 97%}
+  50%{background-position:100% 4%}
+  100%{background-position:0% 97%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 97%}
+  50%{background-position:100% 4%}
+  100%{background-position:0% 97%}
+}
+@keyframes AnimationName { 
+  0%{background-position:0% 97%}
+  50%{background-position:100% 4%}
+  100%{background-position:0% 97%}
+}
+
 .home {
   position:absolute; 
   top:0; 
@@ -223,201 +239,6 @@ textarea:focus ~ .highlight {
   font-weight: bold;
 }
 
-#akcija {
-
-  position: relative;
-  left: calc(50% - 100px);
-
-  display: block;
-  z-index:50; 
-  
-  color:#fefefe;
-  background-color: rgba(255,255,255,0);
-  width: 200px;
-  border-radius: 10px; 
-  -moz-border-radius: 10px; 
-  -webkit-border-radius: 10px; 
-  border: 2px solid #FEFEFE;
-  padding: 10px;
-  text-decoration: none;
-
-  text-align: center; 
-
-  -o-transition:.8s;
-  -ms-transition:.8s;
-  -moz-transition:.8s;
-  -webkit-transition:.8s;
-  transition:.8s;
-}
-
-#akcija:hover {
-  background-color: rgba(100,255,100,0.6);
-}
-
-#linkDetailCont {
-
-  position: absolute;
-  top: 94%;
-  left: calc(50% - 140px);
-
-  color: #fefefe;
-  display: block;
-  z-index:50; 
-
-}
-
-.linkDetail {
-  display: inline-block;
-  color:#fefefe;
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-}
-
-
-#vencanja {
-  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#rodjendani {
-  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;;
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#poslovne {
-  background: -moz-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;;
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 97%}
-    50%{background-position:100% 4%}
-    100%{background-position:0% 97%}
-  }
-  @-moz-keyframes AnimationName {
-    0%{background-position:0% 97%}
-    50%{background-position:100% 4%}
-    100%{background-position:0% 97%}
-  }
-  @keyframes AnimationName { 
-    0%{background-position:0% 97%}
-    50%{background-position:100% 4%}
-    100%{background-position:0% 97%}
-  }
-
-.queCont {
-  margin-top: 20px; 
-  margin-left: 80px; 
-  margin-right: 80px; 
-  text-align: left; 
-  font-size: 1.7rem;
-}
-
-.question {
-  display: block;
-  color: #444;
-  background-color: rgba(254,254,254, 0.6);
-  border-radius: 5px;
-  border: 1px rgb(200,200,200);
-  padding: 5px;
-  padding-left: 15px;
-  margin-bottom: 8px;
-}
-
-.question:hover {
-  color: #0088cc;
-}
-
-
-.answer {
-  display: none;
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-  padding-left: 5px;  
-}
-
-.sideLink{
-  color: #888;
-  text-decoration: none;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  -moz-transition: -moz-transform .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-.sideLink:hover {
-    z-index: 20;
-    color: #444;
-    text-decoration: bold;
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    transform: scale(1.25);
-}
-
-.modalBack {
-  top: 0; 
-  left: 0; 
-  height: 100%; 
-  width: 100%;
-
-  text-align:center; 
-  overflow: hidden; 
-  z-index: 70;
-  background-color: rgba(200,200,200,0.7);
-
-  visibility: hidden;
-}
-
-.modalCont {
-  position: relative; 
-  top: 15%; 
-  left:12%; 
-  height: 70%; 
-  width: 75%; 
-  text-align:center; 
-  color: #dadaea; 
-  z-index: 150; 
-  background-color: #fefefe;
-  padding-top: 10px;
-}
-
-@media screen and (max-height: 630px){
-
-  .modalCont {
-
-    top: 5%;
-    left: 5%;
-    height: 90%;
-    width: 90%;
-
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-  }
-}
-
 .logoLoad {
 	position: absolute;
 	top: 50%; 
@@ -431,231 +252,27 @@ textarea:focus ~ .highlight {
 	animation-delay: 2s;
 }
 
-.main {
-	position:absolute; 
-	top:0; 
-	left:0;
-	width:100%;
-	height:100%;
-  background-image: url('../images/back.jpg');
-  background-attachment: scroll;
-	background-position: 0% 0%; 
-  background-size: cover; 
-	background-repeat: no-repeat;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-
-.clicked {
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  -moz-transition: -moz-transform 1s ease-in-out;
-  transition:all 1s ease;
-}
-
-.ponudeCont {
-  padding-top: 0;
-  margin-left: 1px;
-  border: 0;
-  float: left;
-
-  height: 100%; 
-  
-  flex: 33% 1 1;
-
-  text-align: center;
-  font-size: 2.4rem;
-  color: #fefefe;
-
-  opacity: 0.85;
-
-  -webkit-transition-property: flex-basis, font-size, font-weight;
-  -webkit-transition-duration: 0.8s;
-  transition-property: flex-basis, font-size, font-weight;
-  transition-duration: 0.8s;
-}
-
-.ponudeCont:hover {
-  flex-basis: 60%;
-  font-size: 2.9rem;
-  font-weight: bold;
-}
-
-.activeLink {
-  margin-top: -20px;
-  font-size: 1rem;
-  color: #fefefe;
-  text-decoration: underline;
-  visibility: hidden;
-}
-
-.ponudeCont:hover .activeLink {
-    -webkit-transition-property: visibility;
-    -webkit-transition-duration: 0.8s;
-    transition-property: visibility;
-    transition-duration: 0.8s;
-    visibility: visible; 
-  }
-
-.wbcText {
-  
-  position: relative; 
-  top: 40px; 
-  
-  color: #888; 
-  
-  text-align: center;
-  font-size: 1.4rem;
-
-
-
-}
-
-.wbcButtonContainer {
-
-  position: relative;
-  top: 80px;
-  margin: 0 center;
-  text-align: center;
-
-}
-
-.wbcButton {
-  
-  display: inline-block;
-
-  color:#888;
-  background-color: rgba(255,255,255,0);
-  width: 100px;
-  border-radius: 10px; 
-  -moz-border-radius: 10px; 
-  -webkit-border-radius: 10px; 
-  border: 1px solid #aaa;
-  padding: 10px;
-  text-decoration: none;
-
-  text-align: center; 
-
-  -o-transition:.8s;
-  -ms-transition:.8s;
-  -moz-transition:.8s;
-  -webkit-transition:.8s;
-  transition:.8s;
-
-}
-
-.wbcButton:hover {
-  color: #fefefe;
-  background-color: rgb(85,204,85); 
-  font-weight: bold;
-  border-radius: 10px; 
-  -moz-border-radius: 10px; 
-  -webkit-border-radius: 10px; 
-  border: 1px solid #fefefe;
-}
-
-.wbcWedAction:hover {
-  background-color: rgba(0,170,255,0.6);
-}
-
-.wbcBdaAction:hover {
-  background-color: #aa84e9;
-}
-
-.wbcCorAction:hover {
-  background-color: rgba(106,22,223,0.6);
-}
-
-@media screen and (max-width: 860px){
-
-  .wbcText {
-    top:20px;
-    height: 50vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .wbcButtonContainer {
-    position: absolute;
-    top: 110%;
-  }
-  .wbcButton {
-    width: 70px;
-  }
-
-}
-
-@media screen and (min-width: 861px) and (max-width: 960px){
-
-  .wbcButtonContainer {
-    position: absolute;
-    top: 105%;
-  }
-
-  .wbcButton {
-    width: 70px;
-  }
-
-}
-
-@media screen and (min-width: 961px) and (max-width: 1140px){
-
-  .wbcButtonContainer {
-    top: 25px;
-  }
-}
-
-
 /*
 *
 *	Animation of the logo
 *
 */
 
-@-webkit-keyframes removed-item-animation {
-  from {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(0);
-    }
+@-webkit-keyframes removed-item-animation { 
+  from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0); }
 }
 @-moz-keyframes removed-item-animation {
-  from {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(0);
-    }
+  from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0); }
 }
 @-o-keyframes removed-item-animation {
-  from {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(0);
-    }
+  from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0); }
 }
 @keyframes removed-item-animation {
-  from {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(0);
-    }
+  from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0); }
 }
 
 /* ANIMATE BG */
@@ -665,30 +282,6 @@ textarea:focus ~ .highlight {
 @-o-keyframes fadeIn {from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-
-@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-@-o-keyframes fadeOut {from { opacity:1; } to { opacity:0; } }
-@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-
-
-
-.fade-out {
-  opacity: 0;  /* make things invisible upon start */
-  -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeOut ease-in 1;
-  animation:fadeOut ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-
-}
 
 
 .fade-in {
@@ -708,135 +301,4 @@ textarea:focus ~ .highlight {
   -webkit-animation-delay: 1.6s;
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
-}
-
-.fade-in.ponudeMenu{
-  -webkit-animation-delay: 2.1s;
-  -moz-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-
-}
-
-.fade-in.pitanjaMenu{
-  -webkit-animation-delay: 2.7s;
-  -moz-animation-delay: 2.7s;
-  animation-delay: 2.7s;
-}
-
-.fade-in.kontaktMenu{
-  -webkit-animation-delay: 3.3s;
-  -moz-animation-delay: 3.3s;
-  animation-delay: 3.3s;
-}
-
-.shadow{
-  -webkit-box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
-  -moz-box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
-  box-shadow: -10px 0px 20px 1px rgba(100,100,100,0.75);
-}
-
-.shadow-main{
-  -webkit-box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
-  -moz-box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
-  box-shadow: 20px 0px 20px -8px rgba(100,100,100,0.5);
-}
-
-
-/*
- *  NEW ANIMATION FOR THE MENU
- */
-
- #ponude, #pitanja, #kontakt {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    position: absolute;
-    visibility: hidden;
-}
-
-#ponude {
-    background: rgba(255,255,255,0.6);
-    cursor: pointer;
-}
-
-#pitanja, #kontakt {
-    background: rgba(255,255,255,0.85);
-}
-
-#wedding-detail, #bday-detail, #corp-detail {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    background: rgba(255,255,255,0.95);
-    position: absolute;
-    visibility: hidden;
-    z-index: 60;
-}
-
-#wedding-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#bday-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background-attachment: scroll;
-  background-size: cover; 
-}
-
-#corp-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#mainLogo, #headline {
-  opacity: 1;
-}
-
-#sideLogo {
-  opacity: 0;
-}
-
-#q1, #q2, #q3, #q4, #q5, #q6, #q7 {
-  cursor: pointer;
-}
-
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    from {left: -100%;}
-    to {left: 20%;}
-}
-
-@keyframes mymove {
-    from {left: -100%;}
-    to {left: 20%;}
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes hideMove {
-    from {left: 20%;}
-    to {left: -100%;}
-}
-
-@keyframes hideMove {
-    from {left: 20%;}
-    to {left: -100%;}
 }
