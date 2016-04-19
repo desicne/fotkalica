@@ -31,6 +31,10 @@ h2{
   color:#ddd;
 }
 
+h3 {
+  color: #fefefe;
+}
+
 hr {
   opacity: 0.85;
   z-index: 50;
@@ -218,13 +222,19 @@ textarea:focus ~ .highlight {
   100%{background-position:0% 97%}
 }
 
-.home {
+#home {
   position:absolute; 
   top:0; 
   left:0%;
   width:100%;
   height:70%;
   text-align: center;
+  opacity: 1;
+}
+
+.headline-image {
+  height:100px; 
+  margin-top:32px;
 }
 
 #headline {
@@ -237,6 +247,52 @@ textarea:focus ~ .highlight {
   text-align: center; 
   text-shadow: 5px 3px 15px #aaa;
   font-weight: bold;
+  font-size: 32px;
+}
+
+.menu-item {
+  position:absolute;
+  width:100%; 
+  height:15%; 
+  text-align: center; 
+  z-index: 10; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+#wedd {
+  top: 75%; 
+  background-color: rgb(0,170,255);
+  opacity: 1;
+}
+
+#bday {
+  top: 90%; 
+  background-color: rgb(255,0,170);
+  opacity: 1;
+}
+
+#corp {
+  top: 105%; 
+  background-color: #6A15DF;
+  opacity: 1;
+}
+
+#cont {
+  top: 120%;
+  height:10%; 
+  line-height: 10%; 
+  background-color: #2D2D2D;
+  opacity: 1;
+}
+
+#weddText, #bdayText, #corpText, #contText {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .logoLoad {
@@ -277,11 +333,16 @@ textarea:focus ~ .highlight {
 
 /* ANIMATE BG */
 
-
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-o-keyframes fadeIn {from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@-o-keyframes fadeOut {from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
 
 
 .fade-in {

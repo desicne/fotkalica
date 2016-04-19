@@ -10,7 +10,6 @@ if ((width < 600) || (height < 550)) {
     window.location = "./mobile/index.html";
 }
 
-
 // NEW FUNCTION FOR THE MENU
 
 var hoverActive;
@@ -270,13 +269,8 @@ function showMenu(menuItem) {
             shortcut.style.opacity = 0;
             logoSide.style.opacity = 1;
         }, 1000)
-        
-
-
     } 
 };
-
-
 
 function showDetailMenu(menuItem) {
 
@@ -360,8 +354,7 @@ function toggleAnswer(question, answer){
         ans.style.animation = "fadeIn 1.4s 1";
         ans.style.display = "block";
     }
-}
-
+};
 
 function closeMenu() {
     
@@ -424,7 +417,6 @@ function closeMenu() {
         }, 1450); 
     };
     // modal removal end
-
 
     if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible"
         || venc.style.visibility === "visible" || rodj.style.visibility === "visible" || posl.style.visibility === "visible")
@@ -499,4 +491,3 @@ function closeMenu() {
         }, 1000);
     } 
 };
-

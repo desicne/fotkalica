@@ -28,60 +28,73 @@
     <!-- Main stuff, logo, and slogan -->
     <div class="my fade-in">
 
-        <div class="home">
+        <div id="home">
             <div id="mainLogo">
-                <img src="../images/menu-logo.png" alt="Fotkalica" style="height:100px; margin-top:32px;"/>
+                <img src="../images/menu-logo.png" alt="Fotkalica" class="headline-image"/>
                 <h1>fotkalica</h1>
             </div>
 
-            <h2 id="headline" style="font-size: 32px">Momenti koji se ne zaboravljaju</h2>
+            <h2 id="headline">Momenti koji se ne zaboravljaju</h2>
         </div>
 
-        <div style="position:absolute; top: 75%; width:100%; height:15%; background: rgb(0,170,255); text-align: center; z-index: 10; display: flex; justify-content: center; align-items: center;">
-            <h3 style="color: #fefefe; ">venčanja</h3>
-            <!--
-            <p class="wbcText">
-                Vaš poseban dan je i naš poseban dan!<br>
-                Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
-                Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
-
-            </p>-->
+        <div id="wedd" class="menu-item" onclick="showDetail('wedd')">
+            <h3>venčanja</h3>
         </div>
 
-        <div style="position:absolute; top: 90%; width:100%; height:15%; line-height: 15%; background: rgb(255,0,170); text-align: center; z-index: 10; display: flex; justify-content: center; align-items: center;">
-            <h3 style="color: #fefefe">rođendani i proslave</h3>
-
-            <!--
-            <p class="wbcText">
-                Želite da vaš rođendan učinite nezaboravnim?<br>Ne gledajte dalje, sve što vam je potrebno da odlučite jeste vreme i mesto! <br><br>
-                Velika mogućnost personalizacija, dekoracija, kao i malenih ali trajnih uspomena koja će sigurno obradovati vaše najmilije. Odaberite pravu ponudu za vas!
-            </p>-->
-
-
+        <div id="weddText">
+            Vaš poseban dan je i naš poseban dan!<br>
+            Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
+            Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
         </div>
 
-        <div style="position:absolute; top: 105%; width:100%; height:15%; line-height: 15%; background: #6A15DF; text-align: center; z-index: 10; display: flex; justify-content: center; align-items: center;">
-            <h3 style="color: #fefefe">poslovni događaji</h3>
-
-            <!--
-            <p class="wbcText">
-                Bilo da se radi o Happy Hour petku, proslavi Vaše firme ili animaciji i predstavljanju klijentima? <br><br>
-                Na nov i inovativan način, u ležernijem okruženju na izuzetno profesionalnom nivou, mi smo tu da se pobrinemo da se vaša poruka prenese na najbolji način.
-            </p>
-            -->
+        <div id="bday" class="menu-item" onclick="showDetail('bday')">
+            <h3>rođendani i proslave</h3>
         </div>
 
-        <div style="position:absolute; top: 120%; width:100%; height:10%; line-height: 10%; background: #2D2D2D; text-align: center; z-index: 10; display: flex; justify-content: center; align-items: center;">
-            <h3 style="color:#fefefe">kontakt</h3>
+        <div id="bdayText">
+            Želite da vaš rođendan učinite nezaboravnim?<br>Ne gledajte dalje, sve što vam je potrebno da odlučite jeste vreme i mesto! <br><br>
+            Velika mogućnost personalizacija, dekoracija, kao i malenih ali trajnih uspomena koja će sigurno obradovati vaše najmilije. Odaberite pravu ponudu za vas!
         </div>
 
-    </div>    
+        <div id="corp" class="menu-item" onclick="showDetail('corp')">
+            <h3>poslovni događaji</h3>
+        </div>
 
-    <!--   CONTAINER 3 SET HERE 
-    <div id="kontakt">
+        <div id="corpText">
+            Bilo da se radi o Happy Hour petku, proslavi Vaše firme ili animaciji i predstavljanju klijentima? <br><br>
+            Na nov i inovativan način, u ležernijem okruženju na izuzetno profesionalnom nivou, mi smo tu da se pobrinemo da se vaša poruka prenese na najbolji način.
+        </div>
 
-        
+        <div id="cont" class="menu-item" onclick="showDetail('cont')">
+            <h3>kontakt</h3>
+        </div>
 
+        <div id="contText">
+            <form action="https://formspree.io/desicne@gmail.com" method="POST">
+                <div class="group">
+                    <input type="text" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Ime</label>
+                </div>
+                <div class="group">
+                    <input type="email" name="_replyto" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+                
+                <div class="group">
+                    <textarea type="text" name="message" required></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Poruka</label>
+                </div>
+                
+                <input class="btn" type="submit" value="pošalji">
+            </form>
+        </div>
+        <!--        
         <div style="position: absolute; width:50%; left:25%; top:30%;">
             
             <!--map load
@@ -114,33 +127,11 @@
 
                 --><!--
 
-            <form action="https://formspree.io/desicne@gmail.com" method="POST">
-                <div class="group">
-                    <input type="text" name="name" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Ime</label>
-                </div>
-                <div class="group">
-                    <input type="email" name="_replyto" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Email</label>
-                </div>
-                
-                <div class="group">
-                    <textarea type="text" name="message" required></textarea>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Poruka</label>
-                </div>
-                
-                <input class="btn" type="submit" value="pošalji">
-            </form>
-
         </div>
 
-    </div>-->
+        </div>-->
+
+    </div>    
 
     <!--Google Analytics-->
 
