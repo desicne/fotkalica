@@ -309,20 +309,19 @@ textarea:focus ~ .highlight {
 
 #weddText, #bdayText, #corpText, #contText {
   position: absolute;
-  top: 15%;
-  width: 100%;
-  height: 85%;
+  top: 0%;
+  height: 100%;
 
   background-color: rgba(254,254,254, 0.95);
 
   opacity: 0;
   visibility: hidden;
-  padding: 10px;
+  padding: 20px;
 
-  -webkit-animation: fadeInCol 1s ease;
-  -moz-animation:    fadeInCol 1s ease;
-  -o-animation:      fadeInCol 1s ease;
-  animation:         fadeInCol 1s ease;
+  -webkit-animation: fadeIn 1s ease;
+  -moz-animation:    fadeIn 1s ease;
+  -o-animation:      fadeIn 1s ease;
+  animation:         fadeIn 1s ease;
 }
 
 .logoLoad {
@@ -368,10 +367,10 @@ textarea:focus ~ .highlight {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-@-webkit-keyframes fadeInCol { from { opacity:0;background-color: rgba(254,254,254, 0.1) } to { opacity:1;background-color: (254,254,254, 0.9) } }
-@-o-keyframes fadeInCol {from { opacity:0;background-color: rgba(254,254,254, 0.1) } to { opacity:1;background-color: (254,254,254, 0.9) } }
-@-moz-keyframes fadeInCol { from { opacity:0;background-color: rgba(254,254,254, 0.1) } to { opacity:1;background-color: (254,254,254, 0.9) } }
-@keyframes fadeInCol { from { opacity:0;background-color: rgba(254,254,254, 0.1) } to { opacity:1;background-color: (254,254,254, 0.9) } }
+@-webkit-keyframes fadeInCol { from { opacity:0 } to { opacity:1 } }
+@-o-keyframes fadeInCol {from { opacity:0 } to { opacity:1 } }
+@-moz-keyframes fadeInCol { from { opacity:0 } to { opacity:1 } }
+@keyframes fadeInCol { from { opacity:0 } to { opacity:1 } }
 
 @-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
 @-o-keyframes fadeOut {from { opacity:1; } to { opacity:0; } }
