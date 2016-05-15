@@ -313,6 +313,7 @@ textarea:focus ~ .highlight {
   height: 100%;
 
   background-color: rgba(254,254,254, 0.95);
+  text-align: justify;
 
   opacity: 0;
   visibility: hidden;
@@ -322,6 +323,44 @@ textarea:focus ~ .highlight {
   -moz-animation:    fadeIn 1s ease;
   -o-animation:      fadeIn 1s ease;
   animation:         fadeIn 1s ease;
+}
+
+.weddImg{
+  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.bdayImg{
+  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
+  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.corpImg{
+  background: -moz-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -webkit-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
+  background: linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-bottom: 30px;
 }
 
 .logoLoad {
