@@ -294,7 +294,7 @@ textarea:focus ~ .highlight {
 #weddText, #bdayText, #corpText, #contText {
   position: absolute;
   top: 0%;
-  height: 99%;
+  height: 96%;
 
   background-color: rgba(254,254,254, 0.95);
   text-align: justify;
@@ -308,7 +308,7 @@ textarea:focus ~ .highlight {
 #wModal1Text, #wModal2Text, #bModal1Text, #bModal2Text, #cModal1Text, #cModal2Text {
   position: absolute;
   top: 0%;
-  height: 99%;
+  height: 96%;
 
   background-color: rgba(254,254,254, 0.95);
   text-align: justify;
