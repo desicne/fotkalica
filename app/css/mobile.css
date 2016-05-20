@@ -305,6 +305,20 @@ textarea:focus ~ .highlight {
 
 }
 
+#wModal1Text, #wModal2Text, #bModal1Text, #bModal2Text, #cModal1Text, #cModal2Text {
+  position: absolute;
+  top: 0%;
+  height: 99%;
+
+  background-color: rgba(254,254,254, 0.95);
+  text-align: justify;
+
+  opacity: 0;
+  visibility: hidden;
+  padding: 20px;
+
+}
+
 .weddImg{
   background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
   background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;

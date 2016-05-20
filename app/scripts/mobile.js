@@ -15,10 +15,28 @@ function showDetail(menuItem) {
     // part where everything is defined, what we take or not
     if (menuItem === 'cont') {
         zIndexVal = 50;
-    } else if (menuItem === 'wModal1' || menuItem === 'wModal2' ||
-                menuItem === 'bModal1' || menuItem === 'bModal2' ||
-                menuItem === 'cModal1' || menuItem === 'cModal2') {
+
+    } else if (menuItem === 'wModal1' || menuItem === 'wModal2') {
         zIndexVal = 40;
+        var mot = document.getElementById('weddText');
+        mot.style.visibility = "hidden";
+        mot.style.top = 0;  
+        mot.style.opacity = 0;
+    
+    } else if (menuItem === 'bModal1' || menuItem === 'bModal2') {
+        zIndexVal = 40;
+        var mot = document.getElementById('bdayText');
+        mot.style.visibility = "hidden";
+        mot.style.top = 0;  
+        mot.style.opacity = 0;
+
+    } else if (menuItem === 'cModal1' || menuItem === 'cModal2') {
+        zIndexVal = 40;
+        var mot = document.getElementById('corpText');
+        mot.style.visibility = "hidden";
+        mot.style.top = 0;  
+        mot.style.opacity = 0;
+
     };
 
     //show context
@@ -62,8 +80,23 @@ function hideDetail(menuItem) {
     var other2 = document.getElementById('corp');
     var other3 = document.getElementById('cont');
 
-    //other from main page, hide
-    if (menuItem === 'weddText' || menuItem === 'bdayText' || menuItem === 'corpText' || menuItem === 'contText'){
+    if (menuItem === 'wModal1Text' || menuItem === 'wModal2Text') {
+        var mot = document.getElementById('weddText');
+        mot.style.visibility = "visible";  
+        mot.style.opacity = 1;
+    
+    } else if (menuItem === 'bModal1Text' || menuItem === 'bModal2Text') {
+        var mot = document.getElementById('bdayText');
+        mot.style.visibility = "visible";  
+        mot.style.opacity = 1;
+
+    } else if (menuItem === 'cModal1Text' || menuItem === 'cModal2Text') {
+        var mot = document.getElementById('corpText');
+        mot.style.visibility = "visible";  
+        mot.style.opacity = 1;
+
+    } else {
+
         home.style.visibility = "visible";
         other.style.visibility = "visible";
         other.style.top = '75%';   
@@ -79,7 +112,8 @@ function hideDetail(menuItem) {
         other1.style.opacity = 1;
         other2.style.opacity = 1;
         other3.style.opacity = 1;  
-    }
+
+    };
 
     //show context
     context.style.WebkitAnimation = "fadeOut 1s 1";
