@@ -294,7 +294,7 @@ textarea:focus ~ .highlight {
 #weddText, #bdayText, #corpText, #contText {
   position: absolute;
   top: 0%;
-  height: 100%;
+  height: 99%;
 
   background-color: rgba(254,254,254, 0.95);
   text-align: justify;
@@ -303,10 +303,6 @@ textarea:focus ~ .highlight {
   visibility: hidden;
   padding: 20px;
 
-  -webkit-animation: fadeIn 1s ease;
-  -moz-animation:    fadeIn 1s ease;
-  -o-animation:      fadeIn 1s ease;
-  animation:         fadeIn 1s ease;
 }
 
 .weddImg{
