@@ -307,6 +307,7 @@ textarea:focus ~ .highlight {
 }
 
 #weddText, #bdayText, #corpText, #contText {
+
   position: absolute;
   top: 0%;
   height: 96%;
@@ -321,6 +322,9 @@ textarea:focus ~ .highlight {
 }
 
 #wModal1Text, #wModal2Text, #bModal1Text, #bModal2Text, #cModal1Text, #cModal2Text {
+  
+  display: none;
+
   position: absolute;
   top: 0%;
 
@@ -438,3 +442,10 @@ textarea:focus ~ .highlight {
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
 }
+
+  /************************************/
+
+  /* CSS GATHERED FROM INLINE CLASSES */
+
+  /************************************/
+

@@ -50,16 +50,22 @@ function showDetail(menuItem) {
         mot2.style.opacity = 0;
         mot3.style.visibility = "hidden";
         mot3.style.opacity = 0;
+        mot3.style.display = 'none';
         mot4.style.visibility = "hidden";
         mot4.style.opacity = 0;
+        mot4.style.display = 'none';
         mot5.style.visibility = "hidden";
         mot5.style.opacity = 0;
+        mot5.style.display = 'none';
         mot6.style.visibility = "hidden";
         mot6.style.opacity = 0;
+        mot6.style.display = 'none';
         mot7.style.visibility = "hidden";
         mot7.style.opacity = 0;
+        mot7.style.display = 'none';
         mot8.style.visibility = "hidden";
         mot8.style.opacity = 0;
+        mot8.style.display = 'none';
         
 
     } else if (menuItem === 'wModal1' || menuItem === 'wModal2') {
@@ -68,6 +74,8 @@ function showDetail(menuItem) {
         mot.style.visibility = "hidden";
         mot.style.top = 0;  
         mot.style.opacity = 0;
+
+        context.style.display = 'block';
     
     } else if (menuItem === 'bModal1' || menuItem === 'bModal2') {
         zIndexVal = 40;
@@ -76,12 +84,16 @@ function showDetail(menuItem) {
         mot.style.top = 0;  
         mot.style.opacity = 0;
 
+        context.style.display = 'block';
+    
     } else if (menuItem === 'cModal1' || menuItem === 'cModal2') {
         zIndexVal = 40;
         var mot = document.getElementById('corpText');
         mot.style.visibility = "hidden";
         mot.style.top = 0;  
         mot.style.opacity = 0;
+
+        context.style.display = 'block';
 
     };
 
@@ -130,16 +142,22 @@ function hideDetail(menuItem) {
         var mot = document.getElementById('weddText');
         mot.style.visibility = "visible";  
         mot.style.opacity = 1;
+
+        context.style.display = 'none';
     
     } else if (menuItem === 'bModal1Text' || menuItem === 'bModal2Text') {
         var mot = document.getElementById('bdayText');
         mot.style.visibility = "visible";  
         mot.style.opacity = 1;
 
+        context.style.display = 'none';
+
     } else if (menuItem === 'cModal1Text' || menuItem === 'cModal2Text') {
         var mot = document.getElementById('corpText');
         mot.style.visibility = "visible";  
         mot.style.opacity = 1;
+
+        context.style.display = 'none';
 
     } else {
 
