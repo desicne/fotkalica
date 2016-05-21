@@ -16,6 +16,52 @@ function showDetail(menuItem) {
     if (menuItem === 'cont') {
         zIndexVal = 50;
 
+        home.style.visibility = "hidden";
+        other.style.visibility = "hidden";
+        other.style.top = 0;   
+        other1.style.visibility = "hidden";
+        other1.style.top = 0;    
+        other2.style.visibility = "hidden";
+        other2.style.top = 0;    
+        other3.style.visibility = "hidden";
+        other3.style.top = 0;  
+
+        home.style.opacity = 0;
+        other.style.opacity = 0;
+        other1.style.opacity = 0;
+        other2.style.opacity = 0;
+        other3.style.opacity = 0;  
+
+        var mot = document.getElementById('weddText');
+        var mot1 = document.getElementById('bdayText');
+        var mot2 = document.getElementById('corpText');
+        var mot3 = document.getElementById('wModal1Text');
+        var mot4 = document.getElementById('wModal2Text');
+        var mot5 = document.getElementById('bModal1Text');
+        var mot6 = document.getElementById('bModal2Text');
+        var mot7 = document.getElementById('cModal1Text');
+        var mot8 = document.getElementById('cModal2Text');
+
+        mot.style.visibility = "hidden";
+        mot.style.opacity = 0;
+        mot1.style.visibility = "hidden";
+        mot1.style.opacity = 0;
+        mot2.style.visibility = "hidden";
+        mot2.style.opacity = 0;
+        mot3.style.visibility = "hidden";
+        mot3.style.opacity = 0;
+        mot4.style.visibility = "hidden";
+        mot4.style.opacity = 0;
+        mot5.style.visibility = "hidden";
+        mot5.style.opacity = 0;
+        mot6.style.visibility = "hidden";
+        mot6.style.opacity = 0;
+        mot7.style.visibility = "hidden";
+        mot7.style.opacity = 0;
+        mot8.style.visibility = "hidden";
+        mot8.style.opacity = 0;
+        
+
     } else if (menuItem === 'wModal1' || menuItem === 'wModal2') {
         zIndexVal = 40;
         var mot = document.getElementById('weddText');
@@ -49,7 +95,7 @@ function showDetail(menuItem) {
     window.scrollTo(0, 0);
     
     //other from main page, hide
-    if (menuItem === 'wedd' || menuItem === 'bday' || menuItem === 'corp' || menuItem === 'cont'){
+    if (menuItem === 'wedd' || menuItem === 'bday' || menuItem === 'corp'){
         home.style.visibility = "hidden";
         other.style.visibility = "hidden";
         other.style.top = 0;   
