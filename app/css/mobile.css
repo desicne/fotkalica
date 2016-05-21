@@ -323,9 +323,8 @@ textarea:focus ~ .highlight {
 #wModal1Text, #wModal2Text, #bModal1Text, #bModal2Text, #cModal1Text, #cModal2Text {
   position: absolute;
   top: 0%;
-  height: 96%;
 
-  background-color: rgba(254,254,254, 0.95);
+  background-color: rgb(254,254,254);
   text-align: justify;
 
   opacity: 0;
