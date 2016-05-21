@@ -906,3 +906,231 @@ textarea:focus ~ .highlight {
     from {left: 20%;}
     to {left: -100%;}
 }
+
+/***********************************/
+
+/* STUFF EXTRACTED FROM INLINE CSS */
+
+/***********************************/
+
+.logoImage {
+    height:8rem; 
+    margin-top:0.5rem;
+}
+
+.sideMenuFix {
+  position: fixed; 
+  left: 0; 
+  height: 100%; 
+  width: 20%;
+  background: rgba(250,250,250,1); 
+  text-align:center; 
+  overflow: hidden; 
+  z-index:100;
+}
+
+.sideMenuLogoFix {
+  left: 0; 
+  height: 30%; 
+  width: 100%; 
+  text-align:center; 
+  display: inline-block; 
+  overflow: hidden; 
+  color: #dadaea;
+}
+
+.sideMenuFirstItem {
+  margin-top: 20%;
+}
+
+.sideMenuItems {
+  left: 0; 
+  height: 15%; 
+  width: 100%; 
+  text-align:center; 
+  display: inline-block; 
+  overflow: hidden;  
+  font-size: 2.1rem;
+}
+
+.sideMenuSocial {
+  left: 0; 
+  bottom: 0;
+  height: 5%; 
+  margin-top:5%; 
+  width: 100%; 
+  text-align:center; 
+  display: inline-block;
+}
+
+.sideMenuCopy {
+  left: 0; 
+  bottom: 0;
+  height: 5%; 
+  margin-top:5%; 
+  width: 100%; 
+  text-align:center; 
+  display: inline-block; 
+  overflow: hidden; 
+  font-size: 0.7rem; 
+  color: #444444;
+}
+
+.cont3FlexL {
+  position: relative; 
+  top: 50%; 
+  left: 0;
+}
+
+.cont3FlexR {
+  position: relative; 
+  top: 50%; 
+  right: 0;
+}
+
+.closeImg {
+  border: none; 
+  height: 16px; 
+  width: 16px; 
+  position: absolute; 
+  top: 10px;
+  right: 10px;
+}
+
+.contDetDiv {
+  position: absolute; 
+  top: 80px; 
+  right: 40px;
+  width: 40%;
+}
+
+.contDetDivHead {
+  position: relative; 
+  margin: auto;
+  text-align: center; 
+  font-size: 2.5rem;
+}
+
+.contDetDivPriceIn {
+  position: absolute; 
+  top: 80%; 
+  left: 20px; 
+  color: #ebebeb;
+}
+
+.contDetDivPriceList {
+  position: relative; 
+  left: 8px; 
+  font-size: 2.8rem; 
+  font-weight: bold; 
+  margin: 0; 
+}
+
+.modalHead {
+  position: absolute; 
+  top: 0; 
+  width: 100%; 
+  text-align: center;
+}
+
+.modalBreak {
+  position: absolute; 
+  top: 17%; 
+  width: 100%; 
+  text-align: center; 
+  height: 7%;
+}
+
+.modalTableOne {
+  color: #999; 
+  position: absolute; 
+  top: 28%; 
+  margin-left:0; 
+  padding-left: 5%; 
+  width: 40%; 
+  text-align: center;
+}
+
+.modalTableTwo {
+  margin-left:45%; 
+  padding-left: 5%; 
+  border-left: 1px solid;
+}
+
+.modalTableBreak {
+  margin-top: 20px; 
+  width:100%; 
+  left: 10%;
+}
+
+.modalStar {
+  position: absolute; 
+  top: 88%; 
+  padding-left: 10px; 
+  width: 70%; 
+  text-align: left; 
+  color: #999;
+}
+
+.modalReserveB {
+  position: absolute; 
+  top: 88%; 
+  right: 10px;
+}
+
+.contQuesMain {
+  position:absolute; 
+  width:100%; 
+  height:15%; 
+  background: #0088cc; 
+  text-align: center; 
+  z-index: 60;
+}
+
+.contQuesSub {
+  position: absolute; 
+  width:100%; 
+  height: 7%; 
+  top:15%; 
+  background: #fefefe; 
+  text-align: left; 
+  z-index: 60;
+}
+
+.contQuesSubH {
+  margin-top: 10px; 
+  margin-left: 40px;
+}
+
+.contQuesMAQ {
+  position: absolute; 
+  width:100%; 
+  top:22%; 
+  height: 75vh; 
+  overflow-y: scroll;
+}
+
+.contContP1 {
+  display:inline-block; 
+  margin-top: 10px; 
+  margin-left: 40px;
+}
+
+.contContP2 {
+  display:inline-block; 
+  position: absolute; 
+  right: 30px; 
+  margin-top: 10px;
+}
+.telephone {
+  color: rgb(106,21,223); 
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+.formDesk {
+  position: absolute; 
+  width:50%; 
+  left:25%; 
+  top:30%;
+}

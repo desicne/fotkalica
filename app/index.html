@@ -25,7 +25,7 @@
         <div class="home">
             
             <div id="mainLogo">
-                <img src="./images/menu-logo.png" alt="Fotkalica" style="height:8rem; margin-top:0.5rem;"/>
+                <img src="./images/menu-logo.png" alt="Fotkalica" class="logoImage"/>
                 <h1>fotkalica</h1>
             </div>
 
@@ -45,24 +45,24 @@
 
     <!--  SIDE MENU  -->
     
-    <div class="main fade-in row" style="position: fixed; left: 0; height: 100%; width: 20%;background: rgba(250,250,250,1); text-align:center; overflow: hidden; z-index:100;">
+    <div class="main fade-in sideMenuFix">
         
         <!-- Logo in the menu field-->
-        <a href="#" class="sideLink" style="left: 0; height: 30%; width: 100%; text-align:center; display: inline-block; overflow: hidden; color: #dadaea" onclick="closeMenu()">
+        <a href="#" class="sideLink sideMenuLogoFix" onclick="closeMenu()">
             <img id="sideLogo" src="./images/menu-logo-name.png" alt="Fotkalica" style="height:70%; margin-top:15%;">
         </a>
 
-        <a href="#" id="ponudeMenu" class="fade-in sideLink" style="left: 0; margin-top: 20%; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('ponude')">    
+        <a href="#" id="ponudeMenu" class="fade-in sideLink sideMenuItems sideMenuFirstItem" onclick="showMenu('ponude')">    
             ponude
         </a>
-        <a href="#" id="pitanjaMenu" class="fade-in sideLink" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden;  font-size: 2.1rem" onclick="showMenu('pitanja')">    
+        <a href="#" id="pitanjaMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('pitanja')">    
             pitanja
         </a>
-        <a href="#" id="kontaktMenu" class="fade-in sideLink" style="left: 0; height: 15%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 2.1rem" onclick="showMenu('kontakt')">    
+        <a href="#" id="kontaktMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('kontakt')">    
             kontakt
         </a>
 
-        <div style="left: 0; bottom: 0;height: 5%; margin-top:5%; width: 100%; text-align:center; display: inline-block;"> 
+        <div class="sideMenuSocial"> 
             <a href="https://www.facebook.com/moja.fotkalica" target="_blank" style="margin-right:20px; text-decoration: none">
                 <img src="./images/face.svg" alt="Facebook Fotkalica" style="height:100%">
             </a>
@@ -71,7 +71,7 @@
             </a>
         </div>
 
-        <div style="left: 0; bottom: 0;height: 5%; margin-top:5%; width: 100%; text-align:center; display: inline-block; overflow: hidden; font-size: 0.7rem; color: #444444;"> 2016@fotkalica 
+        <div class="sideMenuCopy"> 2016@fotkalica 
         </div>
 
     </div>
@@ -82,7 +82,7 @@
 
         <!--    vencanja     -->
         <div id="vencanja" class="ponudeCont" onclick="showDetailMenu('wedding-detail')">
-            <div style="position: relative; top: 50%; left: 0" >
+            <div class="cont3FlexL" >
                 <span onclick="showDetailMenu('wedding-detail')">Venčanja</span><br>
                 <a href="#" class="activeLink" onclick="showDetailMenu('wedding-detail')">saznaj više</a>
             </div>
@@ -90,7 +90,7 @@
 
         <!--    rodjendani     -->
         <div id="rodjendani" class="ponudeCont" onclick="showDetailMenu('bday-detail')">
-            <div style="position: relative; top: 50%; right: 0" >
+            <div class="cont3FlexR">
                 <span onclick="showDetailMenu('bday-detail')">Rođendani i Proslave</span><br>
                 <a href="#" class="activeLink" onclick="showDetailMenu('bday-detail')">saznaj više</a>
             </div>
@@ -98,7 +98,7 @@
 
         <!--    poslovni     -->
         <div id="poslovne" class="ponudeCont" onclick="showDetailMenu('corp-detail')">
-            <div style="position: relative; top: 50%; right: 0" >
+            <div class="cont3FlexR">
                 <span onclick="showDetailMenu('corp-detail')">Poslovni događaji</span><br>
                 <a href="#" class="activeLink" onclick="showDetailMenu('corp-detail')">saznaj više</a>
             </div>
@@ -108,10 +108,10 @@
 
     <!-- SET SPACE FOR WEDDING VIEW -->
     <div id="wedding-detail">
-        <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
+        <img class="closeImg" src="./images/close.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
 
-        <div style="position: absolute; top: 80px; right: 40px;width: 40%">
-            <h2 style="position: relative; margin: auto; color: rgb(0,170,255); text-align: center; font-size: 2.5rem">Venčanja</h2>
+        <div class="contDetDiv">
+            <h2 class="contDetDivHead" style="color: rgb(0,170,255);">Venčanja</h2>
 
             <p class="wbcText">
                 Vaš poseban dan je i naš poseban dan!<br>
@@ -132,28 +132,28 @@
 
         </div>
 
-        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('wedModal')">
+        <div class="contDetDivPriceIn" onclick="showModal('wedModal')">
             od
-            <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
+            <p class="contDetDivPriceList">120€
             </p>
         </div>
 
-        <!-- Detalji modal background -->
+        <!-- Details modal background -->
         <div id="wedModal" class="modalBack" style="position: absolute;">
-            <!-- Detalji modal basically -->
-            <div class="modalCont"><!--Overflow samo na ekrane nize od 600px recimo, treba proveriti-->
+            <!-- Details modal basically -->
+            <div class="modalCont"><!--Overflow screens < 600px -->
 
-                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(0,170,255); text-align: center;">Open Air foto kabina</h2>
-                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal')"/>
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Open Air foto kabina</h2>
+                <img class="closeImg" src="./images/close.png" alt="close" onclick="closeModal('wedModal')"/>
 
-                <div style="background-color: rgba(0,170,255, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                <div class="modalTableOne">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table>
                             <tr>
                                 <td style="color: rgb(0,170,255)">2 slike po sesiji</td>
@@ -179,11 +179,11 @@
 
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem">Dodaci:</i>
 
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table style="text-align: left">
                             <tr>
                                 <td>Minimalno vreme rezervisanja</td>
@@ -211,9 +211,9 @@
 
                 </div>
 
-                <p style="position: absolute; top: 88%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>* minimalna cena za iznajmljivanje od 2h je 120€</i></p>
+                <p class="modalStar"><i>* minimalna cena za iznajmljivanje od 2h je 120€</i></p>
 
-                <div style="position: absolute; top: 88%; right: 10px">
+                <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -221,20 +221,20 @@
             </div>
         </div>
 
-        <!-- Detalji modal 2!!!! background -->
+        <!-- Details modal 2 background -->
         <div id="wedModal2" class="modalBack" style="position: absolute;">
-            <!-- Detalji modal basically -->
+            <!-- Details modal basically -->
             <div class="modalCont">
-                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(0,170,255); text-align: center;">Social Print</h2>
-                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('wedModal2')"/>
-                <div style="background-color: rgba(0,170,255, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Social Print</h2>
+                <img class="closeImg" src="./images/close.png" alt="close" onclick="closeModal('wedModal2')"/>
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                <div class="modalTableOne">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table>
                             <tr>
                                 <td style="color: rgb(0,170,255)">100 slika po satu</td>
@@ -257,11 +257,11 @@
 
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem">Dodaci:</i>
 
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table style="text-align: left">
                             <tr>
                                 <td>Minimalno vreme rezervisanja</td>
@@ -283,7 +283,7 @@
                     </div>
                 </div>
 
-                <div style="position: absolute; top: 88%; right: 10px">
+                <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -297,10 +297,10 @@
 
     <!-- SET SPACE FOR B-DAY VIEW -->
     <div id="bday-detail">
-        <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeDetailMenu('bday-detail')"/>
+        <img class="closeImg" src="./images/close.png" alt="close" onclick="closeDetailMenu('bday-detail')"/>
 
-        <div style="position: absolute; top: 80px; right: 40px;width: 40%">
-            <h2 style="position: relative; margin: auto; color: rgb(255,0,170); text-align: center; font-size: 2.5rem">Rođendani i Proslave</h2>
+        <div class="contDetDiv">
+            <h2 class="contDetDivHead" style="color: rgb(255,0,170);">Rođendani i Proslave</h2>
 
             <p class="wbcText">
                 Želite da vaš rođendan učinite nezaboravnim?<br>Ne gledajte dalje, sve što vam je potrebno da odlučite jeste vreme i mesto! <br><br>
@@ -319,27 +319,27 @@
 
         </div>
 
-        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('bdaModal')">
+        <div class="contDetDivPriceIn" onclick="showModal('bdaModal')">
             od
-            <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">60€
+            <p class="contDetDivPriceList">60€
             </p>
         </div>
 
-        <!-- Detalji modal background -->
+        <!-- Details modal background -->
         <div id="bdaModal" class="modalBack" style="position: absolute;">
-            <!-- Detalji modal basically -->
+            <!-- Details modal basically -->
             <div class="modalCont">
-                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(255,0,170); text-align: center;">Open Air foto kabina</h2>
-                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal')"/>
+                <h2 class="modalHead" style="color: rgb(255,0,170);">Open Air foto kabina</h2>
+                <img class="closeImg" src="./images/close.png" alt="close" onclick="closeModal('bdaModal')"/>
 
-                <div style="background-color: rgba(255,0,170, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                <div class="modalBreak" style="background-color: rgba(255,0,170, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                <div class="modalTableOne">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table>
                             <tr>
                                 <td style="color: rgb(255,0,170)">2 slike po sesiji</td>
@@ -362,11 +362,11 @@
 
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem">Dodaci:</i>
 
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table style="text-align: left">
                             <tr>
                                 <td>Minimalno vreme rezervisanja</td>
@@ -392,10 +392,10 @@
                     </div>
                 </div>
 
-                <p style="position: absolute; top: 82%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>* nakon 19h minimum je 2h</i></p>
-                <p style="position: absolute; top: 90%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>** cena za 1h je 60€, doplata za drugi sat u igraonicama je 30€</i></p>
+                <p class="modalStar" style="top: 82%;"><i>* nakon 19h minimum je 2h</i></p>
+                <p class="modalStar" style="top: 90%;"><i>** cena za 1h je 60€, doplata za drugi sat u igraonicama je 30€</i></p>
 
-                <div style="position: absolute; top: 88%; right: 10px">
+                <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -403,20 +403,20 @@
             </div>
         </div>
 
-        <!-- Detalji modal 2!!!! background -->
+        <!-- Details modal 2 background -->
         <div id="bdaModal2" class="modalBack" style="position: absolute;">
             <!-- Detalji modal basically -->
             <div class="modalCont">
-                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(255,0,170); text-align: center;">Social Print</h2>
-                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('bdaModal2')"/>
-                <div style="background-color: rgba(255,0,170, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                <h2 class="modalHead" style="color: rgb(255,0,170);">Social Print</h2>
+                <img class="closeImg" src="./images/close.png" alt="close" onclick="closeModal('bdaModal2')"/>
+                <div class="modalBreak" style="background-color: rgba(255,0,170, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                <div class="modalTableOne">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table>
                             <tr>
                                 <td style="color: rgb(255,0,170)">100 slika po satu</td>
@@ -439,11 +439,11 @@
 
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem">Dodaci:</i>
 
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div  class="modalTableBreak">
                         <table style="text-align: left">
                             <tr>
                                 <td>Minimalno vreme rezervisanja</td>
@@ -467,7 +467,7 @@
                 </div>
 
 
-                <div style="position: absolute; top: 88%; right: 10px">
+                <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -480,10 +480,10 @@
 
     <!-- SET SPACE FOR CORP VIEW -->
     <div id="corp-detail">
-        <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeDetailMenu('corp-detail')"/>
+        <img class="closeImg" src="./images/close.png" alt="close" onclick="closeDetailMenu('corp-detail')"/>
 
-        <div style="position: absolute; top: 80px; right: 40px;width: 40%">
-            <h2 style="position: relative; margin: auto; color: rgb(106,22,223); text-align: center; font-size: 2.5rem">Poslovni događaji</h2>
+        <div class="contDetDiv">
+            <h2 class="contDetDivHead" style="color: rgb(106,22,223);">Poslovni događaji</h2>
 
             <p class="wbcText">
                 Bilo da se radi o Happy Hour petku, proslavi Vaše firme ili animaciji i predstavljanju klijentima? <br><br>
@@ -502,27 +502,27 @@
 
         </div>
 
-        <div style="position: absolute; top: 80%; left: 20px; color: #ebebeb" onclick="showModal('corModal')">
+        <div class="contDetDivPriceIn" onclick="showModal('corModal')">
             od
-            <p style="position: relative; left: 8px; font-size: 2.8rem; font-weight: bold; margin: 0 ">120€
+            <p class="contDetDivPriceList">120€
             </p>
         </div>
 
-        <!-- Detalji modal background -->
+        <!-- Details modal background -->
         <div id="corModal" class="modalBack" style="position: absolute;">
-            <!-- Detalji modal basically -->
+            <!-- Details modal basically -->
             <div class="modalCont">
-                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(106,22,223); text-align: center;">Open Air foto kabina</h2>
-                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal')"/>
+                <h2 class="modalHead" style="color: rgb(106,22,223);">Open Air foto kabina</h2>
+                <img class="closeImg" src="./images/close.png" alt="close" onclick="closeModal('corModal')"/>
 
-                <div style="background-color: rgba(106,22,223, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                <div class="modalBreak" style="background-color: rgba(106,22,223, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                <div class="modalTableOne">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table>
                             <tr>
                                 <td style="color: rgb(106,22,223)">2 slike po sesiji</td>
@@ -545,11 +545,11 @@
 
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem">Dodaci:</i>
 
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table style="text-align: left">
                             <tr>
                                 <td>Minimalno vreme rezervisanja</td>
@@ -581,9 +581,9 @@
 
                 </div>
 
-                <p style="position: absolute; top: 88%; padding-left: 10px; width: 70%; text-align: left; color: #999;"><i>* minimalna cena za iznajmljivanje od 2h je 120€</i></p>
+                <p class="modalStar"><i>* minimalna cena za iznajmljivanje od 2h je 120€</i></p>
 
-                <div style="position: absolute; top: 88%; right: 10px">
+                <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -592,21 +592,20 @@
         </div>
      
 
-        <!-- Detalji modal 2!!!! background -->
+        <!-- Details modal 2 background -->
         <div id="corModal2" class="modalBack" style="position: absolute;">
-            <!-- Detalji modal basically -->
+            <!-- Details modal basically -->
             <div class="modalCont">
-                <h2 style="position: absolute; top: 0; width: 100%; color: rgb(106,22,223); text-align: center;">Social Print</h2>
-                <img style="border: none; height: 16px; width: 16px; position: absolute; top: 10px ;right: 10px" src="./images/close.png" alt="close" onclick="closeModal('corModal2')"/>
-                
-                <div style="background-color: rgba(106,22,223, 0.45); position: absolute; top: 17%; width: 100%; text-align: center; height: 7%;">
+                <h2 class="modalHead" style="color: rgb(106,22,223);">Social Print</h2>
+                <img class="closeImg" src="./images/close.png" alt="close" onclick="closeModal('corModal2')"/>
+                <div class="modalBreak" style="background-color: rgba(106,22,223, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:0; padding-left: 5%; width: 40%; text-align: center;">
+                <div class="modalTableOne">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table>
                             <tr>
                                 <td style="color: rgb(106,22,223)">100 slika po satu</td>
@@ -629,11 +628,11 @@
 
                 </div>
 
-                <div style="color: #999; position: absolute; top: 28%; margin-left:45%; width: 40%; padding-left: 5%; border-left: 1px solid; text-align: center">
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem">Dodaci:</i>
 
                     <br>
-                    <div style="margin-top: 20px; width:100%; left: 10%">
+                    <div class="modalTableBreak">
                         <table style="text-align: left">
                             <tr>
                                 <td>Minimalno vreme rezervisanja</td>
@@ -661,7 +660,7 @@
 
                 </div>
                 
-                <div style="position: absolute; top: 88%; right: 10px">
+                <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
                         Rezerviši
                     </a>
@@ -674,15 +673,15 @@
 
     <!--   CONTAINER 2 SET HERE -->
     <div id="pitanja">
-        <div style="position:absolute; width:100%; height:15%; background: #0088cc; text-align: center; z-index: 60;">
+        <div class="contQuesMain">
             <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
             <h2 style="color:#fefefe">pitanja</h2>
 
         </div>
-        <div style="position: absolute; width:100%; height: 7%; top:15%; background: #fefefe; text-align: left; z-index: 60;">
-                <p style="margin-top: 10px; margin-left: 40px">Najčešće postavljana pitanja</p>
+        <div class="contQuesSub">
+                <p class="contQuesSubH">Najčešće postavljana pitanja</p>
         </div>
-        <div style="position: absolute; width:100%; top:22%; height: 75vh; overflow-y: scroll">
+        <div class="contQuesMAQ">
             <div class="queCont">
                 <div id="q1" class="question" onclick="toggleAnswer('q1','a1')">
                     Kako funkcioniše ceo proces rezervacije?
@@ -734,26 +733,25 @@
                         Cene ponuda su izražene u EUR. Plaćanje se vrši prema srednjem kursu NBS na dan obračuna.                        
                     </div>
             </div>
-            </div>
-
+        </div>
     </div>
     <!--   CONTAINER 3 SET HERE -->
     <div id="kontakt">
 
-        <div style="position:absolute; width:100%; height:15%; background: #6a16df; text-align: center">
+        <div class="contQuesMain" style="background: #6a16df;">
             <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
             <h2 style="color:#fefefe">kontakt</h2>
         </div>
 
-        <div style="position: absolute; width:100%; height: 7%; top:15%; background: #fefefe; text-align: left; z-index: 60;">
-                <p style="display:inline-block; margin-top: 10px; margin-left: 40px">Pozovite nas ili nam pošaljite poruku!</p>
-                <p style="display:inline-block; position: absolute; right: 30px; margin-top: 10px;">
+        <div class="contQuesSub">
+                <p class="contContP1">Pozovite nas ili nam pošaljite poruku!</p>
+                <p class="contContP2">
                     Kontakt telefon: 
-                    <a style="color: rgb(106,21,223); text-decoration: none; font-weight: bold" href="tel:+381642754253">+381642754253</a>
+                    <a class="telephone" href="tel:+381642754253">+381642754253</a>
                 </p>
         </div>
 
-        <div style="position: absolute; width:50%; left:25%; top:30%;">
+        <div class="formDesk">
             
             <form action="https://formspree.io/moja@fotkalica.com" method="POST">
                 <div class="group">
@@ -780,36 +778,6 @@
             </form>
 
         </div>
-        <!--map load
-        <div id="map" style="position: relative; top:15%; width:50%; height:85%">
-        </div>
-        -->
-        <!--map description and contact form
-        <div style="position: relative; top:15%; width:50%; height:85%;">
-            <div style="height:20%; background:#ff28ff;"></div>
-            <div style="height:80%; background:#ffddff;"></div>
-        </div>
-        
-
-        <script type="text/javascript">
-
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 45.258374, lng: 19.819484},
-                zoom: 13
-            });
-
-        }
-
-        </script>
-        -->
-<!-- NASA ADRESA
-    
-    lat: 45.235954, lng: 19.796398
-
--->
-
 
     </div>
 
