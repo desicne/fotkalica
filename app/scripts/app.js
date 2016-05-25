@@ -22,6 +22,7 @@ function showMenu(menuItem) {
 
     var logoBig = document.getElementById("mainLogo");
     var head = document.getElementById("headline");
+    var subhead = document.getElementById("subhead");
     var akc = document.getElementById("akcija");
     var logoSide = document.getElementById("sideLogo");
     var shortcut = document.getElementById("linkDetailCont");
@@ -154,6 +155,8 @@ function showMenu(menuItem) {
             logoBig.style.animation = "fadeIn 2s 1";
             head.style.WebkitAnimation = "fadeIn 2s 1";
             head.style.animation = "fadeIn 2s 1";
+            subhead.style.WebkitAnimation = "fadeIn 2s 1";
+            subhead.style.animation = "fadeIn 2s 1";
             akc.style.WebkitAnimation = "fadeIn 2s 1";
             akc.style.animation = "fadeIn 2s 1";
             shortcut.style.WebkitAnimation = "fadeIn 2s 1";
@@ -168,6 +171,7 @@ function showMenu(menuItem) {
 
                 logoBig.style.opacity = 1;
                 head.style.opacity = 1;
+                subhead.style.opacity = 1;
                 akc.style.opacity = 1;
                 shortcut.style.opacity = 1;
                 logoSide.style.opacity = 0;
@@ -254,6 +258,8 @@ function showMenu(menuItem) {
         logoBig.style.animation = "fadeOut 2s 1";
         head.style.WebkitAnimation = "fadeOut 2s 1";
         head.style.animation = "fadeOut 2s 1";
+        subhead.style.WebkitAnimation = "fadeOut 2s 1";
+        subhead.style.WebkitAnimation = "fadeOut 2s 1";
         akc.style.WebkitAnimation = "fadeOut 2s 1";
         akc.style.animation = "fadeOut 2s 1";
         shortcut.style.WebkitAnimation = "fadeOut 2s 1";
@@ -265,6 +271,7 @@ function showMenu(menuItem) {
         setTimeout(function(){
             logoBig.style.opacity = 0;
             head.style.opacity = 0;
+            subhead.style.opacity = 0;
             akc.style.opacity = 0;
             shortcut.style.opacity = 0;
             logoSide.style.opacity = 1;
@@ -360,6 +367,7 @@ function closeMenu() {
     
     var logoBig = document.getElementById("mainLogo");
     var head = document.getElementById("headline");
+    var subhead = document.getElementById("subhead");
     var akc = document.getElementById("akcija");
     var logoSide = document.getElementById("sideLogo");
     var shortcut = document.getElementById("linkDetailCont");
@@ -462,6 +470,8 @@ function closeMenu() {
         logoBig.style.animation = "fadeIn 2s 1";
         head.style.WebkitAnimation = "fadeIn 2s 1";
         head.style.animation = "fadeIn 2s 1";
+        subhead.style.WebkitAnimation = "fadeIn 2s 1";
+        subhead.style.animation = "fadeIn 2s 1";
         akc.style.WebkitAnimation = "fadeIn 2s 1";
         akc.style.animation = "fadeIn 2s 1";
         shortcut.style.WebkitAnimation = "fadeIn 2s 1";
@@ -484,6 +494,7 @@ function closeMenu() {
 
             logoBig.style.opacity = 1;
             head.style.opacity = 1;
+            subhead.style.opacity = 1;
             akc.style.opacity = 1;
             shortcut.style.opacity = 1;
             logoSide.style.opacity = 0;
