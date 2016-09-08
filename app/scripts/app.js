@@ -201,7 +201,7 @@ function showMenu(menuItem) {
         console.log("Izabrani meni nije vidljiv , prosao inicijalno ok");
 
 
-        if(siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible"){
+        if(siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible" || siblingThree.style.visibility === "visible"){
 
             console.log("Usao u dodatnu petlju, drugi element neki je otvoren, sklanja ga animacijom");
 

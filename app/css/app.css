@@ -963,7 +963,7 @@ textarea:focus ~ .highlight {
   left: 0; 
   bottom: 0;
   height: 5%; 
-  margin-top:5%; 
+  margin-top: -10%; 
   width: 100%; 
   text-align:center; 
   display: inline-block;
@@ -973,7 +973,7 @@ textarea:focus ~ .highlight {
   left: 0; 
   bottom: 0;
   height: 5%; 
-  margin-top:5%; 
+  margin-top: 0; 
   width: 100%; 
   text-align:center; 
   display: inline-block; 
