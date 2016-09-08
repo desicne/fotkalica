@@ -401,10 +401,12 @@ function closeMenu() {
     var main = document.getElementById("ponude");
     var siblingOne = document.getElementById("pitanja");
     var siblingTwo = document.getElementById("kontakt");
+    var siblingThree = document.getElementById("gallery");
 
     var menuName = document.getElementById("pitanjaMenu");
     var menuSibOne = document.getElementById("ponudeMenu");
     var menuSibTwo = document.getElementById("kontaktMenu");
+    var menuSibThree = document.getElementById("galleryMenu");
 
     var venc = document.getElementById("wedding-detail");
     var rodj = document.getElementById("bday-detail");
@@ -452,7 +454,7 @@ function closeMenu() {
     };
     // modal removal end
 
-    if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible"
+    if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible" || siblingThree.style.visibility === "visible"
         || venc.style.visibility === "visible" || rodj.style.visibility === "visible" || posl.style.visibility === "visible")
         {
         console.log("Usao u petlju da je izabrani meni vidljiv");
@@ -469,6 +471,10 @@ function closeMenu() {
             siblingTwo.style.WebkitAnimation = "hideMove 2s 1";
             siblingTwo.style.animation = "hideMove 2s 1";
             siblingTwo.style.left = "0";
+        } else if (siblingThree.style.visibility === "visible"){
+            siblingThree.style.WebkitAnimation = "hideMove 2s 1";
+            siblingThree.style.animation = "hideMove 2s 1";
+            siblingThree.style.left = "0";
         };
 
         if (venc.style.visibility === "visible"){
@@ -488,6 +494,7 @@ function closeMenu() {
         menuName.style.color = "#888";
         menuSibOne.style.color = "#888";
         menuSibTwo.style.color = "#888";
+        menuSibThree.style.color = "#888";
 
         logoSide.style.WebkitAnimation = "fadeOut 1s 1";
         logoSide.style.animation = "fadeOut 1s 1";
@@ -511,6 +518,8 @@ function closeMenu() {
             siblingOne.style.left = "20%";
             siblingTwo.style.visibility = "hidden";   
             siblingTwo.style.left = "20%";
+            siblingThree.style.visibility = "hidden";   
+            siblingThree.style.left = "20%";
             venc.style.visibility = "hidden";   
             venc.style.left = "20%";
             rodj.style.visibility = "hidden";   

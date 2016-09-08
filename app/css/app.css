@@ -341,37 +341,37 @@ textarea:focus ~ .highlight {
 }
 
 
-#vencanja {
-  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
+#photobooth {
+  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
 }
 
-#rodjendani {
-  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;;
+#socialprint {
+  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
 }
 
-#poslovne {
-  background: -moz-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;;
+#threesix {
+  background: -moz-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -webkit-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
