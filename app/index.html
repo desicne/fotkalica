@@ -15,7 +15,7 @@
     <meta name="keywords" content="foto kabina, photobooth srbija, photobooth novi sad, slikanje vencanja, slikanje rodjendani" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="./css/app.min.css" type='text/css' />
+    <link rel="stylesheet" href="./css/app.css" type='text/css' />
    
     <!--Switch font maybe-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext' rel='stylesheet' type='text/css'>
@@ -47,7 +47,7 @@
 
             <h2 id="headline" style="margin-bottom: 2%">Momenti koji se ne zaboravljaju</h2>
 
-            <h3 id="subhead" style="color:#dadada; margin-bottom: 10%"><i>iznajmljivanje foto kabine za sve vrste proslava i događaja</i></h3>
+            <h3 id="subhead" style="color:#dadada; margin-bottom: 5%"><i>iznajmljivanje foto kabine za sve vrste proslava i događaja</i></h3>
             
             <a id="akcija" href="#" onclick="showMenu('ponude')">Saznaj više</a>
             
@@ -68,9 +68,16 @@
             <img id="sideLogo" src="./images/menu-logo-name-min.png" alt="Fotkalica" style="height:70%; margin-top:15%;">
         </a>
 
-        <a href="#" id="ponudeMenu" class="fade-in sideLink sideMenuItems sideMenuFirstItem" onclick="showMenu('ponude')">    
+        <a href="#" id="ponudeMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('ponude')">    
             ponude
         </a>
+        <!-- ******************************** N O V O ********************************   -->
+        
+        <a href="#" id="galleryMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('gallery')">    
+            galerija
+        </a>
+
+        <!-- *******************************************************************************   -->
         <a href="#" id="pitanjaMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('pitanja')">    
             pitanja
         </a>
@@ -686,6 +693,21 @@
 
     </div>
 
+    <!--  ***************************** N O V O *********************************    -->
+    <!--   CONTAINER 4 SET HERE -->
+    <div id="gallery">
+        <div class="contQuesMain">
+            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
+            <h2 style="color:#fefefe">galerija</h2>
+
+        </div>
+        <div class="contQuesSub">
+                <p class="contQuesSubH">Najčešće postavljana pitanja</p>
+        </div>
+        
+    </div>
+    <!--****************************************************************************************-->
+
 
     <!--   CONTAINER 2 SET HERE -->
     <div id="pitanja">
@@ -819,7 +841,7 @@
       <img src="./images/animateLogo.gif" alt="Fotkalica">
     </div>
 
-    <script src="./scripts/app.min.js"></script>
+    <script src="./scripts/app.js"></script>
 
   </body>
 </html>

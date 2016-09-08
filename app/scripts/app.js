@@ -19,6 +19,7 @@ function showMenu(menuItem) {
     var nameOne = 'ponude';
     var nameTwo = 'pitanja';
     var nameThree = 'kontakt';
+    var nameFour = 'gallery';
 
     var logoBig = document.getElementById("mainLogo");
     var head = document.getElementById("headline");
@@ -77,30 +78,48 @@ function showMenu(menuItem) {
         var main = document.getElementById("ponude");
         var siblingOne = document.getElementById("pitanja");
         var siblingTwo = document.getElementById("kontakt");
+        var siblingThree = document.getElementById("gallery");
 
         var menuName = document.getElementById("ponudeMenu");
         var menuSibOne = document.getElementById("pitanjaMenu");
         var menuSibTwo = document.getElementById("kontaktMenu");
+        var menuSibThree = document.getElementById("galleryMenu");
 
     } else if (menuItem == nameTwo){
         console.log('Pitanja su kliknuta');
         var main = document.getElementById("pitanja");
         var siblingOne = document.getElementById("ponude");
         var siblingTwo = document.getElementById("kontakt");
+        var siblingThree = document.getElementById("gallery");
 
         var menuName = document.getElementById("pitanjaMenu");
         var menuSibOne = document.getElementById("ponudeMenu");
         var menuSibTwo = document.getElementById("kontaktMenu");
+        var menuSibThree = document.getElementById("galleryMenu");
 
     } else if (menuItem == nameThree){
         console.log('Kontakt je kliknut');
         var main = document.getElementById("kontakt");
         var siblingOne = document.getElementById("pitanja");
         var siblingTwo = document.getElementById("ponude");
+        var siblingThree = document.getElementById("gallery");
 
         var menuName = document.getElementById("kontaktMenu");
         var menuSibOne = document.getElementById("pitanjaMenu");
         var menuSibTwo = document.getElementById("ponudeMenu");
+        var menuSibThree = document.getElementById("galleryMenu");
+
+    } else if (menuItem == nameFour){
+        console.log('Gallery je kliknut');
+        var main = document.getElementById("gallery");
+        var siblingOne = document.getElementById("pitanja");
+        var siblingTwo = document.getElementById("ponude");
+        var siblingThree = document.getElementById("kontakt");
+
+        var menuName = document.getElementById("galleryMenu");
+        var menuSibOne = document.getElementById("pitanjaMenu");
+        var menuSibTwo = document.getElementById("ponudeMenu");
+        var menuSibThree = document.getElementById("kontaktMenu");
 
     } else {
         console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
@@ -196,6 +215,11 @@ function showMenu(menuItem) {
             siblingTwo.style.left = "0";
             menuSibTwo.style.color = "#888";
 
+            siblingThree.style.WebkitAnimation = "hideMove 1s 1";
+            siblingThree.style.animation = "hideMove 1s 1";
+            siblingThree.style.left = "0";
+            menuSibThree.style.color = "#888";
+
 
             setTimeout(function(){
 
@@ -205,6 +229,8 @@ function showMenu(menuItem) {
                 siblingOne.style.left = "20%";
                 siblingTwo.style.visibility = "hidden";   
                 siblingTwo.style.left = "20%"; 
+                siblingThree.style.visibility = "hidden";   
+                siblingThree.style.left = "20%"; 
             }, 1000);
 
         } else if(venc.style.visibility === "visible" || rodj.style.visibility === "visible" || posl.style.visibility === "visible"){
@@ -248,7 +274,7 @@ function showMenu(menuItem) {
         
         if (menuItem == nameOne) {
             menuName.style.color = "#00aaff";
-        } else if (menuItem === nameTwo) {
+        } else if (menuItem === nameTwo || menuItem === nameFour) {
             menuName.style.color = "#0088cc";
         } else {
             menuName.style.color = "#6a16df";

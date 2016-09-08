@@ -154,7 +154,7 @@ textarea:focus ~ .highlight {
 /***************************************/
 /*************BUTTON********************/
 /* Button FOR CONTACT FORM */
-  .btn {
+.btn {
   position: relative;
 
   padding: 10px;
@@ -783,6 +783,12 @@ textarea:focus ~ .highlight {
 
 }
 
+.fade-in.galleryMenu{
+  -webkit-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
 .fade-in.pitanjaMenu{
   -webkit-animation-delay: 2.7s;
   -moz-animation-delay: 2.7s;
@@ -790,9 +796,9 @@ textarea:focus ~ .highlight {
 }
 
 .fade-in.kontaktMenu{
-  -webkit-animation-delay: 3.3s;
-  -moz-animation-delay: 3.3s;
-  animation-delay: 3.3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .shadow{
@@ -812,7 +818,7 @@ textarea:focus ~ .highlight {
  *  NEW ANIMATION FOR THE MENU
  */
 
- #ponude, #pitanja, #kontakt {
+ #ponude, #pitanja, #kontakt, #gallery {
     display: flex;
     width: 80%;
     height: 100%;
@@ -825,7 +831,7 @@ textarea:focus ~ .highlight {
     cursor: pointer;
 }
 
-#pitanja, #kontakt {
+#pitanja, #kontakt, #gallery {
     background: rgba(255,255,255,0.85);
 }
 
