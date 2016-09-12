@@ -835,7 +835,7 @@ textarea:focus ~ .highlight {
     background: rgba(255,255,255,0.85);
 }
 
-#wedding-detail, #bday-detail, #corp-detail {
+#wedding-detail, #bday-detail, #corp-detail, #photobooth-detail, #socialprint-detail, #threesix-detail {
     display: flex;
     width: 80%;
     height: 100%;
@@ -876,6 +876,39 @@ textarea:focus ~ .highlight {
   background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+#photobooth-detail {
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#socialprint-detail {
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/photowall.jpg') no-repeat;
+  background-attachment: scroll;
+  background-size: cover; 
+}
+
+#threesix-detail {
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background-attachment: scroll;
+  background-size: cover; 
 }
 
 #mainLogo, #headline {

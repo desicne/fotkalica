@@ -134,6 +134,552 @@
 
     <!-- **************************************************************************** -->
 
+    <!-- SET SPACE FOR PHOTOBOOTH VIEW -->
+    <div id="photobooth-detail">
+        <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
+
+        <div class="contDetDiv">
+            <h2 class="contDetDivHead" style="color: rgb(0,170,255);">Venčanja</h2>
+
+            <p class="wbcText">
+                Vaš poseban dan je i naš poseban dan!<br>
+                Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
+                Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
+
+            </p>
+
+            <div class="wbcButtonContainer">
+
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal')">
+                    Foto kabina
+                </a>
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal2')">
+                    Social Print
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Details modal background -->
+        <div id="wedModal" class="modalBack" style="position: absolute;">
+            <!-- Details modal basically -->
+            <div class="modalCont"><!--Overflow screens < 600px -->
+
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Open Air foto kabina</h2>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal')"/>
+
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div class="modalTableOne">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div class="modalTableBreak">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">2 slike po sesiji</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tema venčanja</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div class="modalTableBreak">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Live feed</td>
+                                <td><b>10€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">60€/h</b>*</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+                <p class="modalStar"><i>* popust za iznajmljivanja duža od 2h</i></p>
+
+                <div class="modalReserveB">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details modal 2 background -->
+        <div id="wedModal2" class="modalBack" style="position: absolute;">
+            <!-- Details modal basically -->
+            <div class="modalCont">
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Social Print</h2>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal2')"/>
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div class="modalTableOne">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div class="modalTableBreak">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">100 slika po satu</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div class="modalTableBreak">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>na upit</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">50€/h</b></td>
+                            </tr>
+                        </table>                   
+                    </div>
+                </div>
+
+                <div class="modalReserveB">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SET SPACE FOR SOCIAL PRINT VIEW -->
+    <div id="socialprint-detail">
+        <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
+
+        <div class="contDetDiv">
+            <h2 class="contDetDivHead" style="color: rgb(0,170,255);">Venčanja</h2>
+
+            <p class="wbcText">
+                Vaš poseban dan je i naš poseban dan!<br>
+                Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
+                Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
+
+            </p>
+
+            <div class="wbcButtonContainer">
+
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal')">
+                    Foto kabina
+                </a>
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal2')">
+                    Social Print
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Details modal background -->
+        <div id="wedModal" class="modalBack" style="position: absolute;">
+            <!-- Details modal basically -->
+            <div class="modalCont"><!--Overflow screens < 600px -->
+
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Open Air foto kabina</h2>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal')"/>
+
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div class="modalTableOne">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div class="modalTableBreak">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">2 slike po sesiji</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tema venčanja</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div class="modalTableBreak">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Live feed</td>
+                                <td><b>10€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">60€/h</b>*</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+                <p class="modalStar"><i>* popust za iznajmljivanja duža od 2h</i></p>
+
+                <div class="modalReserveB">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details modal 2 background -->
+        <div id="wedModal2" class="modalBack" style="position: absolute;">
+            <!-- Details modal basically -->
+            <div class="modalCont">
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Social Print</h2>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal2')"/>
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div class="modalTableOne">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div class="modalTableBreak">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">100 slika po satu</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div class="modalTableBreak">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>na upit</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">50€/h</b></td>
+                            </tr>
+                        </table>                   
+                    </div>
+                </div>
+
+                <div class="modalReserveB">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SET SPACE FOR 360 VIEW -->
+    <div id="threesix-detail">
+        <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
+
+        <div class="contDetDiv">
+            <h2 class="contDetDivHead" style="color: rgb(0,170,255);">Venčanja</h2>
+
+            <p class="wbcText">
+                Vaš poseban dan je i naš poseban dan!<br>
+                Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
+                Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
+
+            </p>
+
+            <div class="wbcButtonContainer">
+
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal')">
+                    Foto kabina
+                </a>
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal2')">
+                    Social Print
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Details modal background -->
+        <div id="wedModal" class="modalBack" style="position: absolute;">
+            <!-- Details modal basically -->
+            <div class="modalCont"><!--Overflow screens < 600px -->
+
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Open Air foto kabina</h2>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal')"/>
+
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div class="modalTableOne">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div class="modalTableBreak">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">2 slike po sesiji</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tema venčanja</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div class="modalTableBreak">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Live feed</td>
+                                <td><b>10€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>25€</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">60€/h</b>*</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+                </div>
+
+                <p class="modalStar"><i>* popust za iznajmljivanja duža od 2h</i></p>
+
+                <div class="modalReserveB">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details modal 2 background -->
+        <div id="wedModal2" class="modalBack" style="position: absolute;">
+            <!-- Details modal basically -->
+            <div class="modalCont">
+                <h2 class="modalHead" style="color: rgb(0,170,255);">Social Print</h2>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal2')"/>
+                <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
+                    <!-- Good place for future menu info/pics/pricelist-->
+                </div>
+
+                <div class="modalTableOne">
+                    <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
+                    <br>
+                    <div class="modalTableBreak">
+                        <table>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">100 slika po satu</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Brendiranje slika</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Digitalna kopija</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
+                            </tr>
+                            
+                        </table>
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
+                    <i style="font-size: 1.4rem">Dodaci:</i>
+
+                    <br>
+                    <div class="modalTableBreak">
+                        <table style="text-align: left">
+                            <tr>
+                                <td>Minimalno vreme rezervisanja</td>
+                                <td><b>2h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Neograničeno slikanje</td>
+                                <td><b>10€/h</b></td>
+                            </tr>
+                            <tr>
+                                <td>Specijalni aranžmani</td>
+                                <td><b>na upit</b></td>
+                            </tr>
+                            <tr>
+                                <td>Cena</td>
+                                <td><b style="color: rgb(0,170,255)">50€/h</b></td>
+                            </tr>
+                        </table>                   
+                    </div>
+                </div>
+
+                <div class="modalReserveB">
+                    <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
+                        Rezerviši
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- SET SPACE FOR WEDDING VIEW -->
     <div id="wedding-detail">

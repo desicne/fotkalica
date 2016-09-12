@@ -32,6 +32,10 @@ function showMenu(menuItem) {
     var rodj = document.getElementById("bday-detail");
     var posl = document.getElementById("corp-detail");
 
+    var phtb = document.getElementById("photobooth-detail");
+    var scpt = document.getElementById("socialprint-detail");
+    var tsv = document.getElementById("threesix-detail");
+
     //modal removal
     var wedMod = document.getElementById("wedModal");
     var wedMod2 = document.getElementById("wedModal2");
@@ -125,9 +129,6 @@ function showMenu(menuItem) {
         console.log('Nesto nije bas dobro, kao da nista nije kliknuto');
     };
 
-    var venc = document.getElementById("wedding-detail");
-    var rodj = document.getElementById("bday-detail");
-    var posl = document.getElementById("corp-detail");
 
     if (venc.style.visibility === "visible") {
         venc.style.WebkitAnimation = "hideMove 2s 1";
@@ -156,6 +157,36 @@ function showMenu(menuItem) {
         setTimeout(function(){
             posl.style.visibility = "hidden";   
             posl.style.left = "20%";
+        }, 1000);
+    }
+
+    if (phtb.style.visibility === "visible") {
+        phtb.style.WebkitAnimation = "hideMove 2s 1";
+        phtb.style.animation = "hideMove 2s 1";
+        phtb.style.left = "0";
+
+        setTimeout(function(){
+            phtb.style.visibility = "hidden";   
+            phtb.style.left = "20%";
+        }, 1000);
+
+    } else if (scpt.style.visibility === "visible"){
+        scpt.style.WebkitAnimation = "hideMove 2s 1";
+        scpt.style.animation = "hideMove 2s 1";
+        scpt.style.left = "0";
+
+        setTimeout(function(){
+            scpt.style.visibility = "hidden";   
+            scpt.style.left = "20%";
+        }, 1000);
+    } else if (tsv.style.visibility === "visible"){
+        tsv.style.WebkitAnimation = "hideMove 2s 1";
+        tsv.style.animation = "hideMove 2s 1";
+        tsv.style.left = "0";
+
+        setTimeout(function(){
+            tsv.style.visibility = "hidden";   
+            tsv.style.left = "20%";
         }, 1000);
     }
 
@@ -257,6 +288,33 @@ function showMenu(menuItem) {
                 rodj.style.left = "20%";
                 posl.style.visibility = "hidden";   
                 posl.style.left = "20%";
+
+            }, 1000);
+
+        } else if(phtb.style.visibility === "visible" || scpt.style.visibility === "visible" || tsv.style.visibility === "visible"){
+
+            phtb.style.WebkitAnimation = "hideMove 1s 1";
+            phtb.style.animation = "hideMove 1s 1";
+            phtb.style.left = "0";
+
+            scpt.style.WebkitAnimation = "hideMove 1s 1";
+            scpt.style.animation = "hideMove 1s 1";
+            scpt.style.left = "0";
+
+            tsv.style.WebkitAnimation = "hideMove 1s 1";
+            tsv.style.animation = "hideMove 1s 1";
+            tsv.style.left = "0";
+
+            setTimeout(function(){
+
+                console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
+
+                phtb.style.visibility = "hidden";   
+                phtb.style.left = "20%";
+                scpt.style.visibility = "hidden";   
+                scpt.style.left = "20%";
+                tsv.style.visibility = "hidden";   
+                tsv.style.left = "20%";
 
             }, 1000);
 
@@ -412,6 +470,9 @@ function closeMenu() {
     var rodj = document.getElementById("bday-detail");
     var posl = document.getElementById("corp-detail");
 
+    var phtb = document.getElementById("photobooth-detail");
+    var scpt = document.getElementById("socialprint-detail");
+    var tsv = document.getElementById("threesix-detail");
 
     //modal removal
     var wedMod = document.getElementById("wedModal");
@@ -455,7 +516,8 @@ function closeMenu() {
     // modal removal end
 
     if(main.style.visibility === "visible" || siblingOne.style.visibility === "visible" || siblingTwo.style.visibility === "visible" || siblingThree.style.visibility === "visible"
-        || venc.style.visibility === "visible" || rodj.style.visibility === "visible" || posl.style.visibility === "visible")
+        || venc.style.visibility === "visible" || rodj.style.visibility === "visible" || posl.style.visibility === "visible"
+        || phtb.style.visibility === "visible" || scpt.style.visibility === "visible" || tsv.style.visibility === "visible")
         {
         console.log("Usao u petlju da je izabrani meni vidljiv");
         
@@ -489,6 +551,20 @@ function closeMenu() {
             posl.style.WebkitAnimation = "hideMove 2s 1";
             posl.style.animation = "hideMove 2s 1";
             posl.style.left = "0";
+        };
+
+        if (phtb.style.visibility === "visible"){
+            phtb.style.WebkitAnimation = "hideMove 2s 1";
+            phtb.style.animation = "hideMove 2s 1";
+            phtb.style.left = "0";
+        } else if (scpt.style.visibility === "visible"){
+            scpt.style.WebkitAnimation = "hideMove 2s 1";
+            scpt.style.animation = "hideMove 2s 1";
+            scpt.style.left = "0";
+        } else if(tsv.style.visibility === "visible"){
+            tsv.style.WebkitAnimation = "hideMove 2s 1";
+            tsv.style.animation = "hideMove 2s 1";
+            tsv.style.left = "0";
         };
 
         menuName.style.color = "#888";
@@ -526,6 +602,13 @@ function closeMenu() {
             rodj.style.left = "20%";
             posl.style.visibility = "hidden";   
             posl.style.left = "20%";
+
+            phtb.style.visibility = "hidden";   
+            phtb.style.left = "20%";
+            scpt.style.visibility = "hidden";   
+            scpt.style.left = "20%";
+            tsv.style.visibility = "hidden";   
+            tsv.style.left = "20%";
 
             logoBig.style.opacity = 1;
             head.style.opacity = 1;
