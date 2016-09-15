@@ -458,9 +458,9 @@ textarea:focus ~ .highlight {
 
 .modalCont {
   position: relative; 
-  top: 15%; 
+  top: 10%; 
   left:12%; 
-  height: 70%; 
+  height: 85%; 
   width: 75%; 
   text-align:center; 
   color: #dadaea; 
@@ -634,7 +634,7 @@ textarea:focus ~ .highlight {
   background-color: rgba(106,22,223,0.6);
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 900px){
 
   .wbcText {
     top:20px;
@@ -1077,13 +1077,13 @@ textarea:focus ~ .highlight {
   top: 17%; 
   width: 100%; 
   text-align: center; 
-  height: 7%;
+  height: 3%;
 }
 
 .modalTableOne {
   color: #999; 
   position: absolute; 
-  top: 28%; 
+  top: 23%; 
   margin-left:0; 
   padding-left: 5%; 
   width: 40%; 
@@ -1091,15 +1091,18 @@ textarea:focus ~ .highlight {
 }
 
 .modalTableTwo {
-  margin-left:45%; 
+  margin-left: 50%; 
   padding-left: 5%; 
   border-left: 1px solid;
 }
 
 .modalTableBreak {
-  margin-top: 20px; 
+  margin-top: 5px; 
   width:100%; 
   left: 10%;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: justify;
 }
 
 .modalStar {

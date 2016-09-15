@@ -44,6 +44,9 @@ function showMenu(menuItem) {
     var corMod = document.getElementById("corModal");
     var corMod2 = document.getElementById("corModal2");
 
+    var phtMod = document.getElementById('phtModal');
+    var scpMod = document.getElementById('scpModal');
+
     if (wedMod.style.visibility === "visible" || wedMod2.style.visibility === "visible") {
         wedMod.style.WebkitAnimation = "fadeOut 1.4s 1";
         wedMod.style.animation = "fadeOut 1.4s 1";
@@ -73,6 +76,18 @@ function showMenu(menuItem) {
         setTimeout(function(){
             corMod.style.visibility = "hidden";
             corMod2.style.visibility = "hidden";
+        }, 1450); 
+    } else if (phtMod.style.visibility === "visible") {
+        phtMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        phtMod.style.animation = "fadeOut 1.4s 1";
+        setTimeout(function(){
+            phtMod.style.visibility = "hidden";
+        }, 1450); 
+    } else if (scpMod.style.visibility === "visible") {
+        scpMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        scpMod.style.animation = "fadeOut 1.4s 1";        
+        setTimeout(function(){
+            scpMod.style.visibility = "hidden";
         }, 1450); 
     };
     // modal removal end
@@ -482,6 +497,10 @@ function closeMenu() {
     var corMod = document.getElementById("corModal");
     var corMod2 = document.getElementById("corModal2");
 
+    var phtMod = document.getElementById('phtModal');
+    var scpMod = document.getElementById('scpModal');
+
+
     if (wedMod.style.visibility === "visible" || wedMod2.style.visibility === "visible") {
         wedMod.style.WebkitAnimation = "fadeOut 1.4s 1";
         wedMod.style.animation = "fadeOut 1.4s 1";
@@ -511,6 +530,18 @@ function closeMenu() {
         setTimeout(function(){
             corMod.style.visibility = "hidden";
             corMod2.style.visibility = "hidden";
+        }, 1450); 
+    } else if (phtMod.style.visibility === "visible") {
+        phtMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        phtMod.style.animation = "fadeOut 1.4s 1";
+        setTimeout(function(){
+            phtMod.style.visibility = "hidden";
+        }, 1450); 
+    } else if (scpMod.style.visibility === "visible") {
+        scpMod.style.WebkitAnimation = "fadeOut 1.4s 1";
+        scpMod.style.animation = "fadeOut 1.4s 1";        
+        setTimeout(function(){
+            scpMod.style.visibility = "hidden";
         }, 1450); 
     };
     // modal removal end

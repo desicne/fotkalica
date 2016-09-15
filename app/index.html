@@ -139,46 +139,53 @@
         <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
 
         <div class="contDetDiv">
-            <h2 class="contDetDivHead" style="color: rgb(0,170,255);">Venčanja</h2>
+            <h2 class="contDetDivHead" style="color: rgb(0,170,255);">Foto Kabina</h2>
 
             <p class="wbcText">
-                Vaš poseban dan je i naš poseban dan!<br>
-                Na dan koji slavi vašu ljubav, podelite kroz nezaboravne uspomene svu sreću i veselje koje će krasiti taj dan iznova i iznova sa svima koji su vam dragi.<br><br>
-                Široka paleta prilagođavanja naše usluge svakoj vašoj zamisli će zabavu učiniti baš onakvom kakvu ste oduvek želeli.
+                Sećate li se starih kabina za izradu malih sličica za dokumenta?<br><br>
+                Slično njima naša foto kabina vašim događajima donosi potpuno novu dimenziju. Na inovativan i zabavan način, bilo da se radi o promociji, akciji ili proslavi, vaši 
+                gosti će kući poneti nezaboravnu uspomenu na vaš odličan događaj.
 
             </p>
 
             <div class="wbcButtonContainer">
 
-                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal')">
-                    Foto kabina
-                </a>
-                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('wedModal2')">
-                    Social Print
+                <a class="wbcButton wbcWedAction" href="#" style="margin-right: 10px" onclick="showModal('phtModal')">
+                    Više detalja
                 </a>
             </div>
 
         </div>
 
         <!-- Details modal background -->
-        <div id="wedModal" class="modalBack" style="position: absolute;">
+        <div id="phtModal" class="modalBack" style="position: absolute;">
             <!-- Details modal basically -->
             <div class="modalCont"><!--Overflow screens < 600px -->
 
                 <h2 class="modalHead" style="color: rgb(0,170,255);">Open Air foto kabina</h2>
-                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('wedModal')"/>
+                <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('phtModal')"/>
 
                 <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
                     <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
                 <div class="modalTableOne">
+                    <div class="modalTableBreak">
+                        &nbsp;&nbsp;Open Air Foto kabina kako joj i samo ime kaže, predstavlja otvoreni tip foto kabine, čineći je veoma podobnom kako malim tako i velikim prostorima, usled njenog atraktivnog izgleda i kompaktnih dimenzija.
+                        <br><br>
+                        U paketu sa kabinom stižu i zanimljivi dodaci za slikanje (maske, šeširi, brkovi..) kao i tehnička pomoć koja obezbeđuje da ceo događaj prođe savršeno. <br><br>
+                        Slike se izrađuju u roku od 10 sekundi od slikanja u jednom od formata koje Vi izaberete.<br>
+                        Za sva dalja pitanja i želje slobodno nas kontaktirajte! 
+                    </div>                    
+
+                </div>
+
+                <div class="modalTableOne modalTableTwo">
                     <i style="font-size: 1.4rem;">Ponuda obuhvata:</i>
-                    <br>
                     <div class="modalTableBreak">
                         <table>
                             <tr>
-                                <td style="color: rgb(0,170,255)">2 slike po sesiji</td>
+                                <td style="color: rgb(0,170,255)">Neograničeno slikanje</td>
                             </tr>
                             <tr>
                                 <td style="color: rgb(0,170,255)">Biranje izgleda i formata slika</td>
@@ -190,54 +197,17 @@
                                 <td style="color: rgb(0,170,255)">Digitalna kopija</td>
                             </tr>
                             <tr>
-                                <td style="color: rgb(0,170,255)">Tema venčanja</td>
-                            </tr>
-                            <tr>
                                 <td style="color: rgb(0,170,255)">Tematski dodaci (propsi)</td>
                             </tr>
                             
                         </table>
-                    </div>                    
+                    </div>        
 
                 </div>
-
-                <div class="modalTableOne modalTableTwo">
-                    <i style="font-size: 1.4rem">Dodaci:</i>
-
-                    <br>
-                    <div class="modalTableBreak">
-                        <table style="text-align: left">
-                            <tr>
-                                <td>Minimalno vreme rezervisanja</td>
-                                <td><b>2h</b></td>
-                            </tr>
-                            <tr>
-                                <td>Neograničeno slikanje</td>
-                                <td><b>10€/h</b></td>
-                            </tr>
-                            <tr>
-                                <td>Live feed</td>
-                                <td><b>10€</b></td>
-                            </tr>
-                            <tr>
-                                <td>Specijalni aranžmani</td>
-                                <td><b>25€</b></td>
-                            </tr>
-                            <tr>
-                                <td>Cena</td>
-                                <td><b style="color: rgb(0,170,255)">60€/h</b>*</td>
-                            </tr>
-                        </table>
-                        
-                    </div>
-
-                </div>
-
-                <p class="modalStar"><i>* popust za iznajmljivanja duža od 2h</i></p>
 
                 <div class="modalReserveB">
                     <a class="wbcButton" href="#" onclick="showMenu('kontakt')">
-                        Rezerviši
+                        Kontakt
                     </a>
                 </div>
             </div>
