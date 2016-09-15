@@ -384,6 +384,53 @@ function showDetailMenu(menuItem) {
     var main = document.getElementById(menuItem);
     var logoSide = document.getElementById("sideLogo");
 
+
+    var venc = document.getElementById("wedding-detail");
+    var rodj = document.getElementById("bday-detail");
+    var posl = document.getElementById("corp-detail");
+
+    //buttons should be edited here
+    if (venc.style.visibility === "visible") {
+        
+        venc.style.WebkitAnimation = "hideMove 1s 1";
+        venc.style.animation = "hideMove 1s 1";
+        venc.style.left = "0";
+
+        setTimeout(function(){
+
+            console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
+            venc.style.visibility = "hidden";  
+            venc.style.left = "20%";
+
+        }, 1200);   
+
+    } else if (posl.style.visibility === "visible") {
+
+        posl.style.WebkitAnimation = "hideMove 1s 1";
+        posl.style.animation = "hideMove 1s 1";
+        posl.style.left = "0";
+
+        setTimeout(function(){
+            posl.style.visibility = "hidden";   
+            posl.style.left = "20%";
+        }, 1000);
+
+    } else if (rodj.style.visibility === "visible") {
+
+        rodj.style.WebkitAnimation = "hideMove 1s 1";
+        rodj.style.animation = "hideMove 1s 1";
+        rodj.style.left = "0";
+
+        setTimeout(function(){
+
+            console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
+            rodj.style.visibility = "hidden";   
+            rodj.style.left = "20%";
+                     
+        }, 800);        
+
+    }
+
     main.style.WebkitAnimation = "mymove 2s 1";
     main.style.animation = "mymove 2s 1";
     main.style.right = "0";
