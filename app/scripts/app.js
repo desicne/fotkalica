@@ -14,6 +14,25 @@ if ((width < 600) || (height < 550)) {
 
 var hoverActive;
 
+var logoBig = document.getElementById("mainLogo");
+var head = document.getElementById("headline");
+var subhead = document.getElementById("subhead");
+var akc = document.getElementById("akcija");
+var logoSide = document.getElementById("sideLogo");
+var shortcut = document.getElementById("linkDetailCont");
+
+var venc = document.getElementById("wedding-detail");
+var rodj = document.getElementById("bday-detail");
+var posl = document.getElementById("corp-detail");
+
+var phtb = document.getElementById("photobooth-detail");
+var scpt = document.getElementById("socialprint-detail");
+var tsv = document.getElementById("threesix-detail");
+
+var phtMod = document.getElementById('phtModal');
+var scpMod = document.getElementById('scpModal');
+
+
 function showMenu(menuItem) {
     
     var nameOne = 'ponude';
@@ -21,26 +40,7 @@ function showMenu(menuItem) {
     var nameThree = 'kontakt';
     var nameFour = 'gallery';
 
-    var logoBig = document.getElementById("mainLogo");
-    var head = document.getElementById("headline");
-    var subhead = document.getElementById("subhead");
-    var akc = document.getElementById("akcija");
-    var logoSide = document.getElementById("sideLogo");
-    var shortcut = document.getElementById("linkDetailCont");
-
-    var venc = document.getElementById("wedding-detail");
-    var rodj = document.getElementById("bday-detail");
-    var posl = document.getElementById("corp-detail");
-
-    var phtb = document.getElementById("photobooth-detail");
-    var scpt = document.getElementById("socialprint-detail");
-    var tsv = document.getElementById("threesix-detail");
-
     //modal removal
-
-    var phtMod = document.getElementById('phtModal');
-    var scpMod = document.getElementById('scpModal');
-
     if (phtMod.style.visibility === "visible") {
         phtMod.style.WebkitAnimation = "fadeOut 1.4s 1";
         phtMod.style.animation = "fadeOut 1.4s 1";
@@ -346,13 +346,7 @@ function showDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
     var main = document.getElementById(menuItem);
-    var logoSide = document.getElementById("sideLogo");
-
-
-    var venc = document.getElementById("wedding-detail");
-    var rodj = document.getElementById("bday-detail");
-    var posl = document.getElementById("corp-detail");
-
+    
     //buttons should be edited here
     if (venc.style.visibility === "visible") {
         
@@ -412,7 +406,6 @@ function closeDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
     var main = document.getElementById(menuItem);
-    var logoSide = document.getElementById("sideLogo");
     var dad = document.getElementById("ponude");
 
     main.style.WebkitAnimation = "hideMove 2s 1";
@@ -475,13 +468,7 @@ function toggleAnswer(question, answer){
 
 function closeMenu() {
     
-    var logoBig = document.getElementById("mainLogo");
-    var head = document.getElementById("headline");
-    var subhead = document.getElementById("subhead");
-    var akc = document.getElementById("akcija");
-    var logoSide = document.getElementById("sideLogo");
-    var shortcut = document.getElementById("linkDetailCont");
-
+    
     var main = document.getElementById("ponude");
     var siblingOne = document.getElementById("pitanja");
     var siblingTwo = document.getElementById("kontakt");
@@ -492,19 +479,7 @@ function closeMenu() {
     var menuSibTwo = document.getElementById("kontaktMenu");
     var menuSibThree = document.getElementById("galleryMenu");
 
-    var venc = document.getElementById("wedding-detail");
-    var rodj = document.getElementById("bday-detail");
-    var posl = document.getElementById("corp-detail");
-
-    var phtb = document.getElementById("photobooth-detail");
-    var scpt = document.getElementById("socialprint-detail");
-    var tsv = document.getElementById("threesix-detail");
-
     //modal removal
-
-    var phtMod = document.getElementById('phtModal');
-    var scpMod = document.getElementById('scpModal');
-
 
     if (phtMod.style.visibility === "visible") {
         phtMod.style.WebkitAnimation = "fadeOut 1.4s 1";
