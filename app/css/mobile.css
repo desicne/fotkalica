@@ -206,12 +206,12 @@ textarea:focus ~ .highlight {
   left:0;
   width:100%;
   height:100%;
-  background: -moz-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -webkit-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -webkit-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -o-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -ms-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;;
+  background: -moz-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -webkit-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -webkit-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -o-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -ms-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;;
   background-attachment: scroll;
   background-size: cover;
 
@@ -338,12 +338,12 @@ textarea:focus ~ .highlight {
 }
 
 .weddImg{
-  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;;
+  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
@@ -351,24 +351,24 @@ textarea:focus ~ .highlight {
 }
 
 .bdayImg{
-  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;
-  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/brt.jpg') no-repeat;;
+  background: -moz-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/orig/brt.jpg') no-repeat;
+  background: -webkit-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/orig/brt.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(255,0,170,0.6),rgba(255,0,170,0.6)), url('../images/orig/brt.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/orig/brt.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/orig/brt.jpg') no-repeat;
+  background: linear-gradient(rgba(255,0,170,0.6), rgba(255,0,170,0.6)), url('../images/orig/brt.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
   margin-bottom: 30px;
 }
 .corpImg{
-  background: -moz-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;
-  background: linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/ofc.jpg') no-repeat;;
+  background: -moz-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/orig/ofc.jpg') no-repeat;
+  background: -webkit-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/orig/ofc.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(106,22,223,0.6),rgba(106,22,223,0.6)), url('../images/orig/ofc.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/orig/ofc.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/orig/ofc.jpg') no-repeat;
+  background: linear-gradient(rgba(106,22,223,0.6), rgba(106,22,223,0.6)), url('../images/orig/ofc.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;

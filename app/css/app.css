@@ -253,12 +253,12 @@ textarea:focus ~ .highlight {
   left:0;
   width:100%;
   height:100%;
-  background: -moz-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -webkit-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -webkit-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -o-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: -ms-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;
-  background: linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/back1.jpg') no-repeat;;
+  background: -moz-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -webkit-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -webkit-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -o-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: -ms-linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;
+  background: linear-gradient(249deg, rgba(22,223,171,0.6) 0%, #6a16df), url('../images/orig/back1.jpg') no-repeat;;
   background-attachment: scroll;
   background-size: cover;
 
@@ -342,36 +342,36 @@ textarea:focus ~ .highlight {
 
 
 #photobooth {
-  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;;
+  background: -moz-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0,170,255,0.6),rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
 }
 
 #socialprint {
-  background: -moz-linear-gradient(rgba(255,0,170,0.5),rgba(255,0,170,0.5)), url('../images/photowall.jpg') no-repeat;
-  background: -webkit-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/photowall.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(255,0,170,0.5),rgba(255,0,170,0.5)), url('../images/photowall.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/photowall.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/photowall.jpg') no-repeat;
-  background: linear-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/photowall.jpg') no-repeat;;
+  background: -moz-linear-gradient(rgba(255,0,170,0.5),rgba(255,0,170,0.5)), url('../images/orig/photowall.jpg') no-repeat;
+  background: -webkit-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/orig/photowall.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(255,0,170,0.5),rgba(255,0,170,0.5)), url('../images/orig/photowall.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/orig/photowall.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/orig/photowall.jpg') no-repeat;
+  background: linear-gradient(rgba(255,0,170,0.5), rgba(255,0,170,0.5)), url('../images/orig/photowall.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
 }
 
 #threesix {
-  background: -moz-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -webkit-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -webkit-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -ms-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;;
+  background: -moz-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -webkit-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -ms-linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
@@ -847,67 +847,67 @@ textarea:focus ~ .highlight {
 }
 
 #wedding-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/wedd.jpg') no-repeat;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/wedd.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
 #bday-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/bday.jpg') no-repeat;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/bday.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/bday.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/bday.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/bday.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/bday.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/bday.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover; 
 }
 
 #corp-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/officepart.jpg') no-repeat;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/orig/officepart.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/orig/officepart.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/orig/officepart.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/orig/officepart.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/orig/officepart.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(106,22,223,0.6)), url('../images/orig/officepart.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
 #photobooth-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/photobig.jpg') no-repeat;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(0,170,255,0.6)), url('../images/orig/photobig.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
 #socialprint-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/polaroid-wall.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/polaroid-wall.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/polaroid-wall.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/polaroid-wall.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/polaroid-wall.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/polaroid-wall.jpg') no-repeat;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/polaroid-wall.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/polaroid-wall.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/polaroid-wall.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/polaroid-wall.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/polaroid-wall.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(255,0,170,0.6)), url('../images/orig/polaroid-wall.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover; 
 }
 
 #threesix-detail {
-  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
-  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/360.jpg') no-repeat;
+  background: -moz-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -webkit-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -webkit-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -o-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: -ms-linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
+  background: linear-gradient(295deg, rgba(255,255,255, 0.95) 51%, rgba(50,50,50,0.8)), url('../images/orig/360.jpg') no-repeat;
   background-attachment: scroll;
   background-size: cover; 
 }
@@ -1258,19 +1258,19 @@ textarea:focus ~ .highlight {
 }
 
 .fotokabina-img {
-  background-image: linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/polaroid-wall.jpg');
+  background-image: linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
   background-repeat: no-repeat;
   background-position: 35% 35%;
 }
 
 .facebook-img {
-  background-image: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/sessionphoto.jpg');
+  background-image: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
   background-repeat: no-repeat;
   background-position:15% 35%;
 }
 
 .instagram-img {
-  background-image: linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/photowall.jpg');
+  background-image: linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
   background-repeat: no-repeat;
   background-position: 15% 35%;
 }
