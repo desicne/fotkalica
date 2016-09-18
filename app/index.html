@@ -418,14 +418,57 @@
             <h2 style="color:#fefefe">galerija</h2>
 
         </div>
-        <div class="contQuesMAQ" style="padding: 0px; top: 18%">
+        <div class="contQuesMAQ" style="padding: 0px; top: 18%; text-align:center">
                 
-                <a class="card fotokabina-img">foto kabina</a>
+                <a class="card fotokabina-img" onclick="showModal('phtSlideModal')">foto kabina</a>
                 <a class="card facebook-img" target="blank" href="http://facebook.com/moja.fotkalica">facebook</a>
                 <a class="card instagram-img" target="blank" href="http://instagram.com/fotkalica_">instagram</a>
         </div>
         
     </div>
+
+    <div id="phtSlideModal" class="modalBack" style="position: absolute; left: 15%; width: 90%;">
+        <!-- Details modal basically -->
+        <div class="modalCont" style="height: auto; padding-top: 0"><!--Overflow screens < 600px -->
+            <img class="closeImg" src="./images/close-min.png" alt="close" onclick="closeModal('phtSlideModal')"/>
+
+            <div class="mySlides fader">
+
+              <div class="numbertext">1 / 6</div>
+              <img src="./images/360.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fader">
+              <div class="numbertext">2 / 6</div>
+              <img src="./images/360.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fader">
+              <div class="numbertext">3 / 6</div>
+              <img src="./images/360.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fader">
+              <div class="numbertext">4 / 6</div>
+              <img src="./images/360.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fader">
+              <div class="numbertext">5 / 6</div>
+              <img src="./images/360.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fader">
+              <div class="numbertext">6 / 6</div>
+              <img src="./images/360.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+    </div>
+
+
     <!--****************************************************************************************-->
 
 
