@@ -1296,18 +1296,33 @@ textarea:focus ~ .highlight {
 }
 
 .fotokabina-img {
+  background-image: -moz-linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
+  background-image: -webkit-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
+  background-image: -webkit-linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
+  background-image: -o-linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
+  background-image: -ms-linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
   background-image: linear-gradient(rgba(50,50,50,0.6), rgba(50,50,50,0.6)), url('../images/orig/polaroid-wall.jpg');
   background-repeat: no-repeat;
   background-position: 35% 35%;
 }
 
 .facebook-img {
+  background-image: -moz-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
+  background-image: -webkit-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
+  background-image: -webkit-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
+  background-image: -o-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
+  background-image: -ms-linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
   background-image: linear-gradient(rgba(0,170,255,0.6), rgba(0,170,255,0.6)), url('../images/orig/sessionphoto.jpg');
   background-repeat: no-repeat;
   background-position:15% 35%;
 }
 
 .instagram-img {
+  background-image: -moz-linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
+  background-image: -webkit-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
+  background-image: -webkit-linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
+  background-image: -o-linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
+  background-image: -ms-linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
   background-image: linear-gradient(rgba(255,0,170,0.4), rgba(255,0,170,0.4)), url('../images/orig/photowall.jpg');
   background-repeat: no-repeat;
   background-position: 15% 35%;

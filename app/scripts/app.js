@@ -42,23 +42,23 @@ function showMenu(menuItem) {
 
     //modal removal
     if (phtMod.style.visibility === "visible") {
-        phtMod.style.WebkitAnimation = "fadeOut 1.4s 1";
-        phtMod.style.animation = "fadeOut 1.4s 1";
+        phtMod.style.WebkitAnimation = "fadeOut 1s 1";
+        phtMod.style.animation = "fadeOut 1s 1";
         setTimeout(function(){
             phtMod.style.visibility = "hidden";
-        }, 1450); 
+        }, 800); 
     } else if (scpMod.style.visibility === "visible") {
-        scpMod.style.WebkitAnimation = "fadeOut 1.4s 1";
-        scpMod.style.animation = "fadeOut 1.4s 1";        
+        scpMod.style.WebkitAnimation = "fadeOut 1s 1";
+        scpMod.style.animation = "fadeOut 1s 1";        
         setTimeout(function(){
             scpMod.style.visibility = "hidden";
-        }, 1450); 
+        }, 800); 
     } else if (phtSlideMod.style.visibility === "visible") {
-        phtSlideMod.style.WebkitAnimation = "fadeOut 1.4s 1";
-        phtSlideMod.style.animation = "fadeOut 1.4s 1";
+        phtSlideMod.style.WebkitAnimation = "fadeOut 1s 1";
+        phtSlideMod.style.animation = "fadeOut 1s 1";
         setTimeout(function(){
             phtSlideMod.style.visibility = "hidden";
-        }, 1450); 
+        }, 800); 
     };
     // modal removal end
 
@@ -238,7 +238,6 @@ function showMenu(menuItem) {
 
 
             setTimeout(function(){
-
                 console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
 
                 siblingOne.style.visibility = "hidden";   
@@ -247,7 +246,7 @@ function showMenu(menuItem) {
                 siblingTwo.style.left = "20%"; 
                 siblingThree.style.visibility = "hidden";   
                 siblingThree.style.left = "20%"; 
-            }, 1000);
+            }, 500);
 
         } else if(venc.style.visibility === "visible" || rodj.style.visibility === "visible" || posl.style.visibility === "visible"){
 
@@ -351,54 +350,94 @@ function showMenu(menuItem) {
 function showDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
-    var main = document.getElementById(menuItem);
+    var main4 = document.getElementById(menuItem);
     
     //buttons should be edited here
     if (venc.style.visibility === "visible") {
         
         venc.style.WebkitAnimation = "hideMove 1s 1";
         venc.style.animation = "hideMove 1s 1";
-        venc.style.left = "0";
-
+        venc.style.left = "0"; 
         setTimeout(function(){
 
             console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
-            venc.style.visibility = "hidden";  
             venc.style.left = "20%";
-
-        }, 1200);   
+            venc.style.visibility = "hidden"; 
+        }, 250);   
 
     } else if (posl.style.visibility === "visible") {
 
         posl.style.WebkitAnimation = "hideMove 1s 1";
         posl.style.animation = "hideMove 1s 1";
-        posl.style.left = "0";
-
+        posl.style.left = "0";  
+            
         setTimeout(function(){
-            posl.style.visibility = "hidden";   
             posl.style.left = "20%";
-        }, 1000);
+            posl.style.visibility = "hidden"; 
+        }, 250);
 
     } else if (rodj.style.visibility === "visible") {
 
         rodj.style.WebkitAnimation = "hideMove 1s 1";
         rodj.style.animation = "hideMove 1s 1";
-        rodj.style.left = "0";
+        rodj.style.left = "0"; 
+            
+        setTimeout(function(){
+
+            console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
+            rodj.style.left = "20%";
+            rodj.style.visibility = "hidden";  
+                     
+        }, 250);        
+
+    } else if (phtb.style.visibility === "visible") {
+
+        phtb.style.WebkitAnimation = "hideMove 1s 1";
+        phtb.style.animation = "hideMove 1s 1";
+        phtb.style.left = "0";
 
         setTimeout(function(){
 
             console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
-            rodj.style.visibility = "hidden";   
-            rodj.style.left = "20%";
+            phtb.style.visibility = "hidden";   
+            phtb.style.left = "20%";
+                     
+        }, 800);        
+
+    } else if (scpt.style.visibility === "visible") {
+
+        scpt.style.WebkitAnimation = "hideMove 1s 1";
+        scpt.style.animation = "hideMove 1s 1";
+        scpt.style.left = "0";
+
+        setTimeout(function(){
+
+            console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
+            scpt.style.visibility = "hidden";   
+            scpt.style.left = "20%";
+                     
+        }, 800);        
+
+    } else if (tsv.style.visibility === "visible") {
+
+        tsv.style.WebkitAnimation = "hideMove 1s 1";
+        tsv.style.animation = "hideMove 1s 1";
+        tsv.style.left = "0";
+
+        setTimeout(function(){
+
+            console.log("Menja drugom elementu visibility na hidden, sa tajmautom");
+            tsv.style.visibility = "hidden";   
+            tsv.style.left = "20%";
                      
         }, 800);        
 
     }
 
-    main.style.WebkitAnimation = "mymove 2s 1";
-    main.style.animation = "mymove 2s 1";
-    main.style.right = "0";
-    main.style.visibility = "visible";
+    main4.style.WebkitAnimation = "mymove 2s 1";
+    main4.style.animation = "mymove 2s 1";
+    main4.style.right = "0";
+    main4.style.visibility = "visible";
 
     if (logoSide.style.opacity !== 1) {
         logoSide.style.WebkitAnimation = "fadeIn 1s 1";
@@ -411,15 +450,15 @@ function showDetailMenu(menuItem) {
 function closeDetailMenu(menuItem) {
 
     console.log(menuItem + 'kliknut');
-    var main = document.getElementById(menuItem);
+    var main1 = document.getElementById(menuItem);
     var dad = document.getElementById("ponude");
 
-    main.style.WebkitAnimation = "hideMove 2s 1";
-    main.style.animation = "hideMove 2s 1";
+    main1.style.WebkitAnimation = "hideMove 2s 1";
+    main1.style.animation = "hideMove 2s 1";
 
     setTimeout(function(){
-            main.style.visibility = "hidden";   
-            main.style.left = "20%";
+            main1.style.visibility = "hidden";   
+            main1.style.left = "20%";
             if (dad.style.visibility !== "visible") {
                 logoSide.style.WebkitAnimation = "fadeOut 1s 1";
                 logoSide.style.animation = "fadeOut 1s 1";
@@ -432,24 +471,24 @@ function closeDetailMenu(menuItem) {
 function showModal(menuItem) {
 
     console.log(menuItem + 'kliknut');
-    var main = document.getElementById(menuItem);
+    var main2 = document.getElementById(menuItem);
 
-    main.style.WebkitAnimation = "fadeIn 1.4s 1";
-    main.style.animation = "fadeIn 1.4s 1";
-    main.style.visibility = "visible";
+    main2.style.WebkitAnimation = "fadeIn 1.4s 1";
+    main2.style.animation = "fadeIn 1.4s 1";
+    main2.style.visibility = "visible";
     
 };
 
 function closeModal(menuItem) {
 
     console.log(menuItem + 'kliknut');
-    var main = document.getElementById(menuItem);
+    var main3 = document.getElementById(menuItem);
 
-    main.style.WebkitAnimation = "fadeOut 1.4s 1";
-    main.style.animation = "fadeOut 1.4s 1";
+    main3.style.WebkitAnimation = "fadeOut 1.4s 1";
+    main3.style.animation = "fadeOut 1.4s 1";
 
     setTimeout(function(){
-            main.style.visibility = "hidden";
+            main3.style.visibility = "hidden";
     }, 650); 
 };
 
