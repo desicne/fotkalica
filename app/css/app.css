@@ -60,7 +60,7 @@ input, textarea {
   background-color: rgba(255,255,255,0);
 }
 textarea {
-  height: 150px;
+  height: 100px;
   resize: none;
 }
 
@@ -1173,9 +1173,18 @@ textarea:focus ~ .highlight {
 
 .formDesk {
   position: absolute; 
-  width:50%; 
-  left:25%; 
-  top:30%;
+  width:30%; 
+  left:60%; 
+  top:25%;
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 25px;
+  padding-top: 10px;
+  background: #fff;
+  text-align: center;
 }
 
 /* images galery style */
