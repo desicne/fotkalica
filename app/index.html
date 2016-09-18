@@ -14,13 +14,10 @@
 
     <meta name="keywords" content="foto kabina, photobooth srbija, photobooth novi sad, slikanje vencanja, slikanje rodjendani" />
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/app.css" type='text/css' />
+    <link rel="stylesheet" href="./css/app.min.css" type='text/css' />
    
-    <!--Switch font maybe-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext' rel='stylesheet' type='text/css'>
 
-    <!--Google Analytics-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -59,11 +56,9 @@
         </div>
     </div>
 
-    <!--  SIDE MENU  -->
     
     <div class="main fade-in sideMenuFix">
         
-        <!-- Logo in the menu field-->
         <a href="#" class="sideLink sideMenuLogoFix" onclick="closeMenu()">
             <img id="sideLogo" src="./images/min/menu-logo-name-min.png" alt="Fotkalica" style="height:70%; margin-top:15%;">
         </a>
@@ -71,13 +66,11 @@
         <a href="#" id="ponudeMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('ponude')">    
             ponude
         </a>
-        <!-- ******************************** N O V O ********************************   -->
         
         <a href="#" id="galleryMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('gallery')">    
             galerija
         </a>
 
-        <!-- *******************************************************************************   -->
         <a href="#" id="pitanjaMenu" class="fade-in sideLink sideMenuItems" onclick="showMenu('pitanja')">    
             pitanja
         </a>
@@ -99,11 +92,8 @@
 
     </div>
 
-    <!-- **************************** NOVO ***************************************** -->
-    <!--   CONTAINER 1 SET HERE -->
     <div id="ponude" style="padding: 0px;">
 
-        <!--    photobooth     -->
         <div id="photobooth" class="ponudeCont" onclick="showDetailMenu('photobooth-detail')">
             <div class="cont3FlexL" >
                 <span onclick="showDetailMenu('photobooth-detail')">Foto Kabina</span><br>
@@ -111,7 +101,6 @@
             </div>
         </div>
 
-        <!--    social-print     -->
         <div id="socialprint" class="ponudeCont" onclick="showDetailMenu('socialprint-detail')">
             <div class="cont3FlexR">
                 <span onclick="showDetailMenu('socialprint-detail')">Social Print</span><br>
@@ -119,7 +108,6 @@
             </div>
         </div>
 
-        <!--    threesix     -->
         <div id="threesix" class="ponudeCont" onclick="showDetailMenu('threesix-detail')">
             <div class="cont3FlexR">
                 <span onclick="showDetailMenu('threesix-detail')">360 Snimanje</span><br>
@@ -129,12 +117,6 @@
 
     </div>
 
-    <!-- LINKS SHOULD BE CHECKED TO MATCH wedding-detail i.e. both in JS and CSS -->
-
-
-    <!-- **************************************************************************** -->
-
-    <!-- SET SPACE FOR PHOTOBOOTH VIEW -->
     <div id="photobooth-detail">
         <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeDetailMenu('photobooth-detail')"/>
 
@@ -157,16 +139,13 @@
 
         </div>
 
-        <!-- Details modal background -->
         <div id="phtModal" class="modalBack" style="position: absolute;">
-            <!-- Details modal basically -->
-            <div class="modalCont"><!--Overflow screens < 600px -->
+            <div class="modalCont">
 
                 <h2 class="modalHead" style="color: rgb(0,170,255);">Open Air Foto Kabina</h2>
                 <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeModal('phtModal')"/>
 
                 <div class="modalBreak" style="background-color: rgba(0,170,255, 0.45);">
-                    <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
                 <div class="modalTableOne">
@@ -215,7 +194,6 @@
 
     </div>
 
-    <!-- SET SPACE FOR SOCIAL PRINT VIEW -->
     <div id="socialprint-detail">
         <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeDetailMenu('socialprint-detail')"/>
 
@@ -239,16 +217,13 @@
 
         </div>
 
-        <!-- Details modal background -->
         <div id="scpModal" class="modalBack" style="position: absolute;">
-            <!-- Details modal basically -->
-            <div class="modalCont"><!--Overflow screens < 600px -->
+            <div class="modalCont">
 
                 <h2 class="modalHead" style="color: rgb(255,0,170);">Social Print</h2>
                 <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeModal('scpModal')"/>
 
                 <div class="modalBreak" style="background-color: rgba(255,0,170, 0.45);">
-                    <!-- Good place for future menu info/pics/pricelist-->
                 </div>
 
                 <div class="modalTableOne">
@@ -301,7 +276,6 @@
 
     </div>
 
-    <!-- SET SPACE FOR 360 VIEW -->
     <div id="threesix-detail">
         <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeDetailMenu('threesix-detail')"/>
 
@@ -329,7 +303,6 @@
     </div>
 
 
-    <!-- SET SPACE FOR WEDDING VIEW -->
     <div id="wedding-detail">
         <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeDetailMenu('wedding-detail')"/>
 
@@ -357,7 +330,6 @@
     </div>
 
 
-    <!-- SET SPACE FOR B-DAY VIEW -->
     <div id="bday-detail">
         <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeDetailMenu('bday-detail')"/>
 
@@ -383,8 +355,6 @@
 
     </div>
 
-
-    <!-- SET SPACE FOR CORP VIEW -->
     <div id="corp-detail">
         <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeDetailMenu('corp-detail')"/>
 
@@ -410,11 +380,8 @@
 
     </div>
 
-    <!--  ***************************** N O V O *********************************    -->
-    <!--   CONTAINER 4 SET HERE -->
     <div id="gallery">
         <div class="contQuesMain">
-            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
             <h2 style="color:#fefefe">galerija</h2>
 
         </div>
@@ -428,8 +395,7 @@
     </div>
 
     <div id="phtSlideModal" class="modalBack" style="position: absolute; left: 15%; width: 90%;">
-        <!-- Details modal basically -->
-        <div class="modalCont" style="height: auto; padding-top: 0"><!--Overflow screens < 600px -->
+        <div class="modalCont" style="height: auto; padding-top: 0">
             <img class="closeImg" src="./images/icons/close-min.png" alt="close" onclick="closeModal('phtSlideModal')"/>
 
             <div class="mySlides fader">
@@ -469,13 +435,8 @@
     </div>
 
 
-    <!--****************************************************************************************-->
-
-
-    <!--   CONTAINER 2 SET HERE -->
     <div id="pitanja">
         <div class="contQuesMain">
-            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
             <h2 style="color:#fefefe">pitanja</h2>
 
         </div>
@@ -544,11 +505,10 @@
             </div>
         </div>
     </div>
-    <!--   CONTAINER 3 SET HERE -->
+
     <div id="kontakt">
 
         <div class="contQuesMain" style="background: #6a16df;">
-            <!-- This is good representation, but should change to maybe h3 or h4 with same props-->
             <h2 style="color:#fefefe">kontakt</h2>
         </div>
 
@@ -611,13 +571,11 @@
 
     </div>
 
-
-    <!--Add logo container-->
     <div class="logoLoad">
       <img src="./images/animateLogo.gif" alt="Fotkalica">
     </div>
 
-    <script src="./scripts/app.js"></script>
+    <script src="./scripts/app.min.js"></script>
 
   </body>
 </html>
