@@ -36,11 +36,7 @@ function showDetail(menuItem) {
         var mot1 = document.getElementById('bdayText');
         var mot2 = document.getElementById('corpText');
         var mot3 = document.getElementById('wModal1Text');
-        var mot4 = document.getElementById('wModal2Text');
         var mot5 = document.getElementById('bModal1Text');
-        var mot6 = document.getElementById('bModal2Text');
-        var mot7 = document.getElementById('cModal1Text');
-        var mot8 = document.getElementById('cModal2Text');
 
         mot.style.visibility = "hidden";
         mot.style.opacity = 0;
@@ -51,21 +47,9 @@ function showDetail(menuItem) {
         mot3.style.visibility = "hidden";
         mot3.style.opacity = 0;
         mot3.style.display = 'none';
-        mot4.style.visibility = "hidden";
-        mot4.style.opacity = 0;
-        mot4.style.display = 'none';
         mot5.style.visibility = "hidden";
         mot5.style.opacity = 0;
         mot5.style.display = 'none';
-        mot6.style.visibility = "hidden";
-        mot6.style.opacity = 0;
-        mot6.style.display = 'none';
-        mot7.style.visibility = "hidden";
-        mot7.style.opacity = 0;
-        mot7.style.display = 'none';
-        mot8.style.visibility = "hidden";
-        mot8.style.opacity = 0;
-        mot8.style.display = 'none';
         
 
     } else if (menuItem === 'wModal1' || menuItem === 'wModal2') {
@@ -138,21 +122,21 @@ function hideDetail(menuItem) {
     var other2 = document.getElementById('corp');
     var other3 = document.getElementById('cont');
 
-    if (menuItem === 'wModal1Text' || menuItem === 'wModal2Text') {
+    if (menuItem === 'wModal1Text') {
         var mot = document.getElementById('weddText');
         mot.style.visibility = "visible";  
         mot.style.opacity = 1;
 
         context.style.display = 'none';
     
-    } else if (menuItem === 'bModal1Text' || menuItem === 'bModal2Text') {
+    } else if (menuItem === 'bModal1Text') {
         var mot = document.getElementById('bdayText');
         mot.style.visibility = "visible";  
         mot.style.opacity = 1;
 
         context.style.display = 'none';
 
-    } else if (menuItem === 'cModal1Text' || menuItem === 'cModal2Text') {
+    } else if (menuItem === 'cModal1Text') {
         var mot = document.getElementById('corpText');
         mot.style.visibility = "visible";  
         mot.style.opacity = 1;
