@@ -1,0 +1,30 @@
+{
+  "name": "fotkalica",
+  "version": "1.0.0",
+  "description": "Vanilla JS website for Fotkalica",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-removelogs": "^0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-strip-comments": "^2.4.3",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/desicne/fotkalica.git"
+  },
+  "author": "Dejan Nesic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desicne/fotkalica/issues"
+  },
+  "homepage": "https://github.com/desicne/fotkalica#readme"
+}
